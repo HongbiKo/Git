@@ -236,6 +236,7 @@ section.business{
 }
 .business h2{
     font-size: 2.6rem;
+    margin-top: 10%;
 }
 .business .box{
     width: 100%;
@@ -245,12 +246,12 @@ section.business{
     display: flex;
     flex-flow: row nowrap;
     overflow-x: auto;
-    flex-basis: 300px;
+    flex-basis: 280px;
     width: 78%;
 }
 .business .wrapper{
     width: 100%;
-    height: 300px;
+    height: 250px;
     flex-shrink: 0;
 }   
 .business .wrapper:first-child,
@@ -291,6 +292,32 @@ section.business{
 }
 .business .box .wrapper:last-child .subbox.maincircle > div:last-child > span:last-child::before{
     bottom: 21px;
+}
+.business .mbusiness{
+    display: block;
+    height: 50px;
+    line-height: 45px;
+    font-size: 1.2rem;
+}
+.basicSwiper .swiper-slide.swiper-slide-active .business .mbusiness{
+    animation: arrowAnimation_mobile 2s ease-out both;
+    animation-delay: 2s;
+}
+@keyframes arrowAnimation_mobile {
+    0% {
+    transform: translateY(-10px);
+    opacity: 0
+    }
+    30% {
+    opacity: 0.5
+    }
+    60% {
+    opacity: 0.8
+    }
+    to {
+    transform: translateY(0px);
+    opacity: 1
+    }
 }
 
 

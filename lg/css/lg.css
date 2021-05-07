@@ -309,7 +309,8 @@ nav .menu .brandmenu .submenu_first .submenu_second li a:hover{
 .intro2 a,
 .intro3 a,
 .hr > a,
-.investment > a{
+.investment > a,
+.business > a{
     display: block;
     width: 150px;
     height: 60px;
@@ -686,6 +687,9 @@ section.business{
     background-size: contain;
     bottom: 30px;
     left: 15px;
+}
+.business .mbusiness{
+    display: none;
 }
 
 /* investment part */
