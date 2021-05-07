@@ -1,11 +1,17 @@
 /* contents start */
 .inner .box{
-    margin-top: 130px;
+    width: 100%;
+    margin-top: 15%;
+    margin-bottom: 20%;
     text-align: center;
+    border: 2px solid #c60d41;
+    animation: text1 1s .2s both;
 }
 .inner .box h1{
     font-size: 4rem;
+    margin-top: 20px;
     margin-bottom: 20px;
+    animation: text1 1s .8s both;
 }
 .inner .box h1 span{
     color: #c60d41;
@@ -13,12 +19,18 @@
 .inner .box h2{
     font-size: 2rem;
     font-weight: 400;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
+    animation: text1 1s 1.2s both;
 }
 .inner .box p{
     font-size: 1rem;
     font-weight: 300;
-    margin-bottom: 10%;
+    animation: text1 1s 1.6s both;
+    margin-bottom: 50px;
+}
+@keyframes text1{
+    0% { opacity: 0; transform: translateY(20px);}
+    100% { opacity: 1; transform: translateY(0);}
 }
 .inner .wrapper{
     display: flex;
@@ -30,11 +42,14 @@
     flex-flow: row wrap;
     justify-content: center;
     width: 100%;
+    margin-bottom: 15%;
+}
+.inner .wrapper .wrapbox:first-child{
+    animation: text1 1s 2s both;
 }
 .inner .wrapper .wrapbox .pic{
     width: 45%;
     height: 250px;
-    margin-bottom: 90px;
     margin-right: 40px;
 }
 .inner .wrapper .wrapbox .pic.company{
@@ -68,23 +83,31 @@
     word-break: keep-all;
     text-align: justify;
 }
-.inner .wrapper .wrapcenter p{
-    text-align: center;
-    margin-top: 80px;
-}
 .inner .wrapper .wrapcenter{
     width: 100%;
+    margin-bottom: 10%;
+    margin-top: -2%;
+}
+.inner .wrapper .wrapcenter p{
+    text-align: center;
 }
 .inner .wrapper .wrapcenter table{
-    width: 100%;
+    width: 80%;
     height: auto;
     border-collapse: collapse;
-    margin-bottom: 80px;
+    margin: 0 auto;
 }
-td{
-    border: 1px solid #000;
+.inner .wrapper .wrapcenter table tr td,
+.inner .wrapper .wrapcenter table tr th{
+    border: 1px solid #aaa;
     width: 50%;
     height: 50px;
     text-align: center;
+    font-weight: 300;
 }
-
+.inner .wrapper .wrapcenter table tr th{
+    border-left: none;
+}
+.inner .wrapper .wrapcenter table tr td{
+    border-right: none;
+}
