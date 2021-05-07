@@ -1,9 +1,8 @@
 @charset "utf-8";
 /* contents start */
 .inner .box{
-    margin-top: 100px;
+    margin-top: 40%;
 }
-
 .inner .box h1{
     font-size: 2rem;
 }
@@ -16,4 +15,34 @@
 .inner .wrapper{
     flex-flow: column wrap;
     justify-content: flex-start;
+}
+.inner .wrapper .wrapbox{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+.inner .wrapper .wrapbox .pic{
+    width: 100%;
+    height: 160px;
+    margin-right: 0;
+}
+.inner .wrapper .wrapbox .description{
+    width: 100%;
+}
+.inner .wrapper .wrapbox .description p:first-child,
+.inner .wrapper .wrapcenter p{
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.inner .wrapper .wrapbox .description p:last-child{
+    font-size: 0.9rem;
+}
+.inner .wrapper .wrapcenter table{
+    width: 100%;
+}
+.inner .wrapper .wrapcenter table tr td,
+.inner .wrapper .wrapcenter table tr th{
+    padding: 10px;
 }
