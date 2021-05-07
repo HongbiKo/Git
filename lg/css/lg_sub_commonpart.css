@@ -27,7 +27,7 @@ a{
 /*lg 로고 */
 body > .inner > a{
     display: block;
-    background: url(../subimages/verticallogo_black.png) 0 0 no-repeat;
+    background: url(/portfolio/lg/subimages/verticallogo_black.png) 0 0 no-repeat;
     background-size: contain;
     width: 45px;
     height: 210px;
@@ -78,7 +78,7 @@ nav .menu > li > a{
 }
 nav .menu > li:nth-child(2) > a{
     display: block;
-    background: url(../images/circle_logo.png) 0 0 no-repeat;
+    background: url(/portfolio/lg/images/circle_logo.png) 0 0 no-repeat;
     background-size: contain;
     width: 60px;
     height: 60px;
@@ -225,11 +225,11 @@ nav .menu .submenu li:nth-child(3) .submenu_first > li:first-child::before{
     z-index: 0;
 }
 nav .menu .submenu li:first-child .submenu_first > li:first-child::before{
-    background: url(../images/companypic2.png) 0 0 no-repeat;
+    background: url(/portfolio/lg/images/companypic2.png) 0 0 no-repeat;
     background-size: contain;
 }
 nav .menu .submenu li:nth-child(2) .submenu_first > li:first-child::before{
-    background: url(../images/graph.png) 0 0 no-repeat;
+    background: url(/portfolio/lg/images/graph.png) 0 0 no-repeat;
     background-size: contain;
     position: absolute;
     left: 100px;
@@ -237,7 +237,7 @@ nav .menu .submenu li:nth-child(2) .submenu_first > li:first-child::before{
     height: 210px;
 }
 nav .menu .submenu li:nth-child(3) .submenu_first > li:first-child::before{
-    background: url(../images/hands.png) 50% 0 no-repeat;
+    background: url(/portfolio/lg/images/hands.png) 50% 0 no-repeat;
     background-size: contain;
     position: absolute ;
     left: 220px;
@@ -298,7 +298,7 @@ footer .inner{
 }
 footer .inner > div:first-child a{
     display: block;
-    background: url(../images/horizontal_logo.png) 0 0 no-repeat;
+    background: url(/portfolio/lg/images/horizontal_logo.png) 0 0 no-repeat;
     background-size: contain;
     width: 140px;
     height: 100px;
