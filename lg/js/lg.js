@@ -44,31 +44,29 @@ if(iw < 641) {
 }
 
 var swiper3 = new Swiper('.swiper-container.subSwiper2', {
-    slidesPerView: 4,
-    spaceBetween: 30,
-    freeMode: true,
+    slidesPerView: 1,
+    spaceBetween: 10,
     loop: true,
     pagination: {
-        el: '.swiper-pagination.controller2',
-        dynamicBullets: true,
-        clickable: true
-    }
-});
-
-var iw = window.innerWidth;
-if(iw < 641) {
-    var swiper3 = new Swiper('.swiper-container.subSwiper2', {
-        slidesPerView: 1,
-        spaceBetween: 10,
-        freeMode: true,
-        loop: true,
-        pagination: {
             el: '.swiper-pagination.controller2',
             dynamicBullets: true,
-            clickable: true
+            clickable: true,
+    },
+    breakpoints: {
+        640: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+            freeMode: true,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination.controller2',
+                dynamicBullets: true,
+                clickable: true
+            }
         }
-    });
-}
+    }
+    
+});
 
 var swiper4 = new Swiper('.swiper-container.subSwiper3', {
     spaceBetween: 0,
@@ -86,6 +84,8 @@ var swiper4 = new Swiper('.swiper-container.subSwiper3', {
     }
 
 });
+
+
 function counting() {
     $('.num_animation').each(function() {
         var $this = $(this),

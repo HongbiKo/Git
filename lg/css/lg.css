@@ -146,17 +146,18 @@ nav .menu .brandmenu .submenu_first{
     top: 101%;
     left: 0;
     width: 100%;
-    height: 62vh;
+    height: 65vh;
     background: rgba(255, 255, 255, 1);
     display: none;
     border-bottom: 1px solid #ccc;
+    overflow-y: scroll;
 }
 nav .menu .submenu li:first-child .submenu_first,
 nav .menu .submenu li:nth-child(3) .submenu_first{
-    height: 42vh;
+    height: 55vh;
 }
 nav .menu .submenu li:nth-child(2) .submenu_first{
-    height: 45vh;
+    height: 60vh;
 }
 nav .menu .submenu li:nth-child(4) .submenu_first{
     height: 12vh;
@@ -176,7 +177,7 @@ nav .menu .brandmenu > li:hover .submenu_first{
 }
 nav .menu .submenu .submenu_first > li,
 nav .menu .brandmenu .submenu_first > li
-{   width: 15%;
+{   width: 13%;
     height: 60px;
     line-height: 60px;
     padding-top: 15px;
@@ -235,6 +236,11 @@ nav .menu .submenu .submenu_first .submenu_second > li > a{
 nav .menu .brandmenu .submenu_first .submenu_second > li> a{
     font-size: 1rem;
 }
+nav .menu .submenu li:first-child .submenu_first > li:first-child,
+nav .menu .submenu li:nth-child(2) .submenu_first > li:first-child,
+nav .menu .submenu li:nth-child(3) .submenu_first > li:first-child{
+    position: relative;
+}
 nav .menu .submenu li:first-child .submenu_first > li:first-child::before,
 nav .menu .submenu li:nth-child(2) .submenu_first > li:first-child::before,
 nav .menu .submenu li:nth-child(3) .submenu_first > li:first-child::before{
@@ -243,7 +249,7 @@ nav .menu .submenu li:nth-child(3) .submenu_first > li:first-child::before{
     width: 220px;
     height: 200px;
     position: absolute ;
-    left: 60px;
+    left: -150%;
     top: 60px;
     z-index: 0;
 }
@@ -258,12 +264,13 @@ nav .menu .submenu li:nth-child(2) .submenu_first > li:first-child::before{
     left: 100px;
     width: 230px;
     height: 210px;
+    left: -160%;
 }
 nav .menu .submenu li:nth-child(3) .submenu_first > li:first-child::before{
     background: url(/portfolio/lg/images/hands.png) 50% 0 no-repeat;
     background-size: contain;
     position: absolute ;
-    left: 220px;
+    left: -160%;
     border: 1px solid #ccc;
 }
 .searching{
@@ -544,6 +551,7 @@ section.business{
     font-weight: 500;
     color: #fff;
     opacity: 0;
+    margin-top: 20px;
 }
 .business h2 > a{
     color: #fff;
@@ -703,6 +711,7 @@ section.investment{
     font-size: 3.2rem;
     font-weight: 500;
     margin-bottom: 30px;
+    margin-top: 50px;
     color: #fff;
 }
 .basicSwiper .swiper-slide.swiper-slide-active .investment h2 {
@@ -791,7 +800,7 @@ section.news{
     font-size: 3rem;
     font-weight: 500;
     color: #000;
-    margin: 30px 0 30px 0;
+    margin: 70px 0 20px;
 }
 .news .box{
     width: 100%;
@@ -799,7 +808,7 @@ section.news{
 }
 .news .box .subbox{
     width: 23%;
-    height: 270px;
+    height: 230px;
     /* border: 2px solid #cdd0cb; */
     background-color: #fff;
     transition: transform 250ms ease-in-out;
@@ -842,7 +851,7 @@ section.news{
     font-size: 1.1rem;
     font-weight: 400;
     text-align: justify;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .news .box .subbox > span {
     margin-top: 10px;
@@ -919,10 +928,11 @@ section.hr{
     animation: text1 1.2s .2s both;
 }
 .hr h2{
-    font-size: 3.4rem;
+    font-size: 3.2rem;
     font-weight: 500;
     color: #fff;
     margin-bottom: 40px;
+    margin-top: -8%;
 }
 .basicSwiper .swiper-slide.swiper-slide-active .hr .box {
     animation: text1 1.2s .5s both;
