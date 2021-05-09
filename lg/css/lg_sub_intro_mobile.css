@@ -3,6 +3,7 @@
 .inner .box{
     margin-top: 40%;
     border: none;
+    width: 100%;
 }
 .inner .box h1{
     font-size: 2rem;
@@ -36,6 +37,9 @@
     margin-top: 20px;
     margin-bottom: 30px;
     text-align: center;
+}
+.inner .wrapper .wrapbox .description p:first-child{
+    word-break: keep-all;
 }
 .inner .wrapper .wrapbox .description p:last-child{
     font-size: 0.9rem;
