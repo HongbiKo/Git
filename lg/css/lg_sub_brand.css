@@ -82,10 +82,32 @@ h1{
 .tab .conBox .wrap_2{
     width: 100%;
     height: auto;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
 }
-
-
-
+.tab .conBox .wrap_2 .swiperbox{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.tab .conBox .wrap_2 .swiperbox > span{
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.tab .conBox .wrap_2 .swiperbox .Subswiper{
+    width: 85%;
+}
+.tab .conBox .wrap_2 .swiperbox .Subswiper .swiper-wrapper{
+    width: 100%;
+}
 .swiper-slide{
     width: 200px;
+    height: auto;
+}
+.tab .conBox .wrap_2 .swiperbox .Subswiper .swiper-wrapper .swiper-slide .box{
+    margin: 0;
 }

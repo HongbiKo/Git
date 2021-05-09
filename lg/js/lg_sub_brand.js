@@ -8,7 +8,7 @@ $(document).ready(function(){
 });
 
 var swiper1 = new Swiper(".mySwiper.Subswiper", {
-    slidesPerView: 4,
+    slidesPerView: 5,
     spaceBetween: 0,
     loop: true,
     pagination: {
