@@ -8,11 +8,22 @@ $(document).ready(function(){
 });
 
 var swiper1 = new Swiper(".mySwiper.Subswiper", {
-    slidesPerView: 5,
-    spaceBetween: 0,
-    loop: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
+    slidesPerView: 1,
+            spaceBetween: 0,
+            loop: true,
+            pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            },
+    breakpoints : {
+        640 : {
+            slidesPerView: 5,
+            spaceBetween: 0,
+            loop: true,
+            pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            }
+        }
     }
 });
