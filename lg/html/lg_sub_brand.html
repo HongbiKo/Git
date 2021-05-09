@@ -7,12 +7,14 @@
         <meta name= "description" content="Portfolio_Website_Life and Health of LG">
         <meta name ="author" content="Hongbi Ko"> 
         <link rel="icon" type="image/png" href="/portfolio/lg/images/circle_logo.png">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
         <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
         <link rel="stylesheet" type="text/css" href="/portfolio/lg/css/lg_sub_brand.css" />
         <link rel="stylesheet" type="text/css" href="/portfolio/lg/css/lg_sub_commonpart.css" />
         <link rel="stylesheet" media="all and (max-width: 640px)" href="/portfolio/lg/css/lg_sub_brand_mobile.css">
         <link rel="stylesheet" media="all and (max-width: 640px)" href="/portfolio/lg/css/lg_sub_mobile_commonpart.css">
         <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
         <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script defer src="/portfolio/lg/js/lg_sub_common.js"></script>
         <script defer src="/portfolio/lg/js/lg_sub_brand.js"></script>
@@ -455,7 +457,7 @@
     <!-- ________________common part__all subpages -->
 
     <!-- contents start -->
-            <h1>브랜드</h1>
+            <h1>사업분야</h1>
             <div class="tab">
                 <ul>
                     <li data-id="con1" class="on">화장품</li>
@@ -558,9 +560,99 @@
                         </div>
                     </div>
                 </div>
-                <div id="con2" class="conBox"></div>
-                <div id="con3" class="conBox"></div>
+                <div id="con2" class="conBox">
+                    <div class="wrap_2">
+                        <span>헤어케어</span>
+                        <div>
+                            <div class="swiper-container mySwiper Subswiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="box">
+                                            <div class="brandpic elastin"></div>
+                                            <span>엘라스틴</span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="box">
+                                            <div class="brandpic organist"></div>
+                                            <span>오가니스트</span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="box">
+                                            <div class="brandpic rien"></div>
+                                            <span>리엔</span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="box">
+                                            <div class="brandpic drgrut"></div>
+                                            <span>닥터그루트</span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="box">
+                                            <div class="brandpic silkteraphy"></div>
+                                            <span>실크테라피</span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="box">
+                                            <div class="brandpic pitoderma"></div>
+                                            <span>피토더마</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="con3" class="conBox">
+                    <div class="wrap"></div>
+                </div>
             </div>
         </div>
+    <!-- ________________common part__all subpages_footer -->
+        <footer>
+            <div class="container">
+                <div class="inner">
+                    <div>
+                        <a href="#" class="horizontal_logo"></a>
+                    </div>
+                    <div class="text">
+                        <div>
+                            <span>이용약관</span>
+                            <span>개인정보처리방침</span>
+                            <span>이메일무단수집거부</span>
+                            <span>Contact US</span>
+                            <span>English</span>
+                            <span>열린구매</span>
+                            <span>정도경영</span>
+                            <select onChange="openSite(this);">
+                                <option selected="selected" value="none">패밀리사이트</option>
+                                <option value="https://www.l-caremembers.com/kr/index.jsp">엘케어멤버스</option>
+                                <option value="http://www.lghshop.co.kr/index.jsp">LGHShop</option>
+                                <option value="https://oc.lgcare.co.kr:593/index.jsp">LG뷰티카운셀러</option>
+                            </select>
+                        </div>
+                        <div>
+                            <P>&#12828;LG생활건강 대표이사 : 차석용</P>
+                            <P>서울시 종로구 새문안로 58 LG광화문빌딩 LG생활건강</P>
+                            <P>
+                                <span>사업자등록번호 : 107-81-98143</span>
+                                <span>고객상담실 : 080-023-7007</span>
+                            </P>
+                            <p>본 사이트의 콘텐츠는 포트폴리오용입니다.</p>
+                        </div>
+                    </div>
+                    <div class="contact">
+                        <span>고객상담실</span>
+                        <span>080-023-7007</span>
+                        <p>상담가능시간<br>월 ~ 목요일 09:00 ~ 18:00<br>금요일 09:00 ~ 17:30</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
