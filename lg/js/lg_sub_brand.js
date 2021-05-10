@@ -33,7 +33,7 @@ var swiper1 = new Swiper(".mySwiper.Subswiper", {
             spaceBetween: 0,
             pagination: {
             el: ".swiper-pagination",
-            clickable: true,
+            clickable: true
             }
         }
     }
