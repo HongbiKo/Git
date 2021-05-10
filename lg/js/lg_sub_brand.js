@@ -3,6 +3,8 @@ $(document).ready(function(){
     $(".tab ul li").click(function(){
         $(this).addClass('on').siblings().removeClass('on');
         $("#"+$(this).data('id')).addClass('on').siblings().removeClass('on');
+        $("#"+$(this).data('id')).find('.swiper-container')[0].swiper.update();
+        $("#"+$(this).data('id')).find('.swiper-container')[1].swiper.update();
     });
 
 });

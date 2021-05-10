@@ -54,7 +54,7 @@ var swiper3 = new Swiper('.swiper-container.subSwiper2', {
     },
     breakpoints: {
         640: {
-            slidesPerView: 4,
+            slidesPerView: 3,
             spaceBetween: 30,
             freeMode: true,
             loop: true,
@@ -63,6 +63,12 @@ var swiper3 = new Swiper('.swiper-container.subSwiper2', {
                 dynamicBullets: true,
                 clickable: true
             }
+        },
+        1024: {
+            slidesPerView: 2
+        },
+        1280: {
+            slidesPerView: 4
         }
     }
     
