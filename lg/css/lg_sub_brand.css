@@ -16,6 +16,16 @@ h1{
     margin-bottom: 5%;
     position: relative;
 }
+.tab ul::after{
+    display: block;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
 .tab ul li{
     width: 33.3%;
     height: 80px;
@@ -46,19 +56,10 @@ h1{
     height: auto;
     /* border-top: 1px solid #ccc; */
 }
-.tab ul::after{
-    display: block;
-    content: "";
-    width: 100%;
-    height: 1px;
-    background-color: #ccc;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
 .tab .conBox.on{
     display: block;
 }
+
 
 .box{
     display: flex;
@@ -71,6 +72,21 @@ h1{
     margin-left: 20px;
     margin-bottom: 20px;
 }
+.box .brandpic{
+    width: 70%;
+    height: 60px;
+    border: 1px solid #000;
+    margin-bottom: 20px;
+}
+.box > span{
+    font-weight: 300;
+}
+
+
+/* _______________________brand common part */
+
+
+/* cosmetic part */
 .tab .conBox .wrap{
     margin-top: 5%;
     width: 100%;
@@ -78,6 +94,11 @@ h1{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+}
+
+/* household goods & beverage part */
+.swiper-pagination-bullet{
+    background-color: #c60d41;
 }
 .tab .conBox .wrap_2{
     width: 100%;
@@ -111,3 +132,19 @@ h1{
 .tab .conBox .wrap_2 .swiperbox .Subswiper .swiper-wrapper .swiper-slide .box{
     margin: 0;
 }
+
+
+/* brand picture */
+.box .brandpic.hu{
+    background: url(/portfolio/lg/subimages/brandlogo/cosmetics/hu.png) 0 0 no-repeat;
+    background-size: contain;
+}
+.box .brandpic.ohui{
+    background: url(/portfolio/lg/subimages/brandlogo/cosmetics/ohui.png) 0 0 no-repeat;
+    background-size: contain;
+}
+.box .brandpic.sum{
+    background: url(/portfolio/lg/subimages/brandlogo/cosmetics/sum.png) 0 0 no-repeat;
+    background-size: contain;
+}
+
