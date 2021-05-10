@@ -153,6 +153,17 @@ $(document).ready(function(){
     });
 
 
+    //news link
+    $(".twitter").click(function(){
+        window.open("https://twitter.com/lgtalks");
+    });
+    $(".facebook").click(function(){
+        window.open("https://www.facebook.com/pages/LG%EC%83%9D%ED%99%9C%EA%B1%B4%EA%B0%95/124274684253644");
+    });
+    $(".youtube").click(function(){
+        window.open("https://www.youtube.com/channel/UC60e4j7LVEFzLSSgt2DZTZg");
+    });
+
 
     
 });
@@ -167,3 +178,5 @@ function openSite(select)
         return;
     }
 }
+
+
