@@ -16,6 +16,22 @@ $(document).ready(function(){
         
     });
 
+
+    //box hover
+    if($(window).width() > 640){
+        $('.box').mouseover(function(){
+            $(this).addClass('on');
+        })
+        $('.box p').mouseover(function(){
+            $(this).addClass('on');
+        })
+        $('.box').mouseleave(function(){
+            $(this).removeClass('on');
+        })
+        $('.box p').mouseleave(function(){
+            $(this).removeClass('on');
+        })
+    }
 });
 
 var swiper1 = new Swiper(".mySwiper.Subswiper", {
