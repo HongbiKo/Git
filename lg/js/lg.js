@@ -54,7 +54,7 @@ var swiper3 = new Swiper('.swiper-container.subSwiper2', {
     },
     breakpoints: {
         640: {
-            slidesPerView: 4,
+            slidesPerView: 3,
             spaceBetween: 30,
             freeMode: true,
             loop: true,
@@ -63,6 +63,12 @@ var swiper3 = new Swiper('.swiper-container.subSwiper2', {
                 dynamicBullets: true,
                 clickable: true
             }
+        },
+        1024: {
+            slidesPerView: 2
+        },
+        1280: {
+            slidesPerView: 4
         }
     }
     
@@ -147,6 +153,17 @@ $(document).ready(function(){
     });
 
 
+    //news link
+    $(".twitter").click(function(){
+        window.open("https://twitter.com/lgtalks");
+    });
+    $(".facebook").click(function(){
+        window.open("https://www.facebook.com/pages/LG%EC%83%9D%ED%99%9C%EA%B1%B4%EA%B0%95/124274684253644");
+    });
+    $(".youtube").click(function(){
+        window.open("https://www.youtube.com/channel/UC60e4j7LVEFzLSSgt2DZTZg");
+    });
+
 
     
 });
@@ -161,3 +178,5 @@ function openSite(select)
         return;
     }
 }
+
+

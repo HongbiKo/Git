@@ -837,15 +837,15 @@ section.news{
 }
 .news .box .subbox .image.news4{
     background: url(/portfolio/lg/images/activity.png) 50% 0 no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 .news .box .subbox .image.news5{
     background: url(/portfolio/lg/images/newsletter.png) 70% 0 no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 .news .box .subbox .image.news6{
     background: url(/portfolio/lg/images/charitryimage.png) 0 0 no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 .news .box .subbox > p {
     font-size: 1.1rem;
