@@ -21,15 +21,11 @@ $(document).ready(function(){
     if($(window).width() > 640){
         $('.box').mouseover(function(){
             $(this).addClass('on');
-        })
-        $('.box p').mouseover(function(){
-            $(this).addClass('on');
+            $(this).children('p').addClass('on');
         })
         $('.box').mouseleave(function(){
             $(this).removeClass('on');
-        })
-        $('.box p').mouseleave(function(){
-            $(this).removeClass('on');
+            $(this).children('p').removeClass('on');
         })
     }
 });
