@@ -17,7 +17,7 @@ $(document).ready(function(){
     });
 
 
-    //box hover
+    //pc box hover
     if($(window).width() > 640){
         $('.box').mouseover(function(){
             $(this).addClass('on');
