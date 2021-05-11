@@ -270,6 +270,29 @@ nav .menu .submenu li:nth-child(3) .submenu_first > li:first-child::before{
     font-size: 1.3rem;
     color: #404040;
 }
+.language{
+    position: fixed;
+    left: 5%;
+    top: 25px;
+    z-index: 10000;
+}
+.language > span{
+    display: inline-block;
+    border: 1px solid #c60d41;
+    border-radius: 50%;
+    color: #c60d41;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 400;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+}
+.language > span:hover{
+    background-color: rgba(198,13,65,0.8);
+    color: #fff;
+}
 nav .menu li a:hover,
 nav .menu .submenu li a:hover,
 nav .menu .submenu .submenu_first li a:hover,

@@ -98,7 +98,7 @@ h1 > span{
     color: #c60d41;
 }
 .box.on{
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(238,238,238,0.6);
     background-blend-mode: multiply;
     transition: all 1s;
 }
@@ -263,7 +263,7 @@ h1 > span{
     background-size: contain;
 }
 .box .brandpic.organist{
-    background: url(/portfolio/lg/subimages/brandlogo/householdgoods/) 50% 50% no-repeat;
+    background: url(/portfolio/lg/subimages/brandlogo/householdgoods/organist.png) 50% 50% no-repeat;
     background-size: contain;
 }
 .box .brandpic.rien{
@@ -283,7 +283,7 @@ h1 > span{
     background-size: contain;
 }
 .box .brandpic.belmon{
-    background: url(/portfolio/lg/subimages/brandlogo/householdgoods/) 50% 50% no-repeat;
+    background: url(/portfolio/lg/subimages/brandlogo/householdgoods/velment.png) 50% 50% no-repeat;
     background-size: contain;
 }
 .box .brandpic.gentology{
@@ -495,14 +495,18 @@ h1 > span{
     background-size: contain;
 }
 .box .brandpic.glaso{
-    background: url(/portfolio/lg/subimages/brandlogo/beverages/) 50% 50% no-repeat;
+    background: url(/portfolio/lg/subimages/brandlogo/beverages/glaso.png) 50% 50% no-repeat;
     background-size: contain;
 }
 .box .brandpic.ades{
-    background: url(/portfolio/lg/subimages/brandlogo/beverages/) 50% 50% no-repeat;
+    background: url(/portfolio/lg/subimages/brandlogo/beverages/ades.png) 50% 50% no-repeat;
     background-size: contain;
 }
 .box .brandpic.haetae{
     background: url(/portfolio/lg/subimages/brandlogo/beverages/haetaehtb.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+.box .brandpic.sunkist{
+    background: url(/portfolio/lg/subimages/brandlogo/beverages/sunkist.png) 50% 50% no-repeat;
     background-size: contain;
 }
