@@ -152,6 +152,7 @@ body > .inner .mallbar.on{
     font-family: "Font Awesome 5 Pro";
     font-weight: 500;
     padding-top: 15px;
+    padding-left: 10px;
 }
 .mnav .m_searching .lang{
     display: inline-block;
