@@ -51,11 +51,11 @@
 }
 .inner .wrapper .wrapbox .pic{
     width: 45%;
-    height: 250px;
+    height: 230px;
     margin-right: 40px;
 }
 .inner .wrapper .wrapbox .pic.company{
-    background: url(/portfolio/lg/images/companypic.png) 0 50% no-repeat;
+    background: url(/portfolio/lg/images/companypic.png) 0 60% no-repeat;
     background-size: cover;
 }
 .inner .wrapper .wrapbox .pic.person{
