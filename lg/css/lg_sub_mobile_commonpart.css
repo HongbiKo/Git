@@ -59,7 +59,7 @@ body > .inner .mallbar.on{
 }
 .mnav .m_menu{
     width: 100%;
-    height: 85vh;
+    height: 77vh;
     background-color: #fff;
     overflow-y: scroll;
     display: flex;
@@ -118,7 +118,6 @@ body > .inner .mallbar.on{
     font-family: "Font Awesome 5 Pro";
     font-weight: 500;
     padding-top: 15px;
-    padding-left: 10px;
 }
 .mnav .m_searching .lang{
     display: inline-block;
