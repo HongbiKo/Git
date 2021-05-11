@@ -297,7 +297,7 @@ nav .menu .submenu li:nth-child(3) .submenu_first > li:first-child::before{
 .language{
     position: fixed;
     left: 5%;
-    top: 25px;
+    top: 20px;
     z-index: 10000;
 }
 .language > span{
