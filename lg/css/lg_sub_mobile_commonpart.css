@@ -110,7 +110,7 @@ body > .inner .mallbar.on{
 .mnav .m_searching{
     display: flex;
     justify-content: space-between;
-    width: 67%;
+    width: 65%;
     font-size: 2rem;
     color: #c60d41;
     padding-top: 10px;
