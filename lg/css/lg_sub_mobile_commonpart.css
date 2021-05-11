@@ -39,8 +39,6 @@ body > .inner .mallbar.on{
     width: 100%;
     height: auto;
     display: none;
-    position: fixed;
-    background-color: #fff;
 }
 .mnav.on{
     display: block;
@@ -89,11 +87,13 @@ body > .inner .mallbar.on{
 .mnav .m_menu .depth1 .m_menu_1 .depth2{
     height: auto;
 }
-.mnav .m_menu .depth1 .m_menu_1 .depth2 .m_menu_2{
+.mnav .m_menu .depth1 .m_menu_1 .depth2 .m_menu_2,
+.mnav .m_menu .depth1 .m_menu_1 .depth2 .m_menu_2_1{
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
 }
-.mnav .m_menu .depth1 .m_menu_1 .depth2 .m_menu_2 .depth3 > a{
+.mnav .m_menu .depth1 .m_menu_1 .depth2 .m_menu_2 .depth3 > a,
+.mnav .m_menu .depth1 .m_menu_1 .depth2 .m_menu_2_1 .depth3 > a{
     font-size: 0.9rem;
     font-weight: 300;
 }
@@ -129,6 +129,7 @@ body > .inner .mallbar.on{
     line-height: 40px;
     font-size: 0.9rem;
     text-align: center;
+
 }
 
 /* pc navigation */
