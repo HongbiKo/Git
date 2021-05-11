@@ -33,6 +33,7 @@ body > .inner .mallbar.on{
 /* mobile navigaition */
 .mnav{
     display: block;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 99;
