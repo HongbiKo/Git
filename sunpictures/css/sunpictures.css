@@ -1,0 +1,304 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bungee+Outline&family=Cinzel:wght@400;500;600&family=Homemade+Apple&family=Kranky&family=Londrina+Sketch&family=Monoton&family=Montserrat+Subrayada:wght@400;700&family=Zilla+Slab+Highlight&display=swap');
+@import url('https://pro.fontawesome.com/releases/v5.10.0/css/all.css');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+:root {
+    font-size: 16px;
+}
+.inner {
+    width: 90%;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+    font-family: 'Newsreader', serif;
+}
+body{
+    min-width: 85%;
+    cursor: default;
+    overflow-x: hidden;
+}
+.bgcolor{
+    background-image: url(data:image/png;base64,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);
+    width: 100%;
+    height: auto;
+}
+.bigbox{
+    display: flex;
+}
+.postit{
+    background: url(/portfolio/sunpictures/images/postit.png) 0 0 no-repeat;
+    width: 350px;
+    height: 130px;
+    position: relative;
+    top: -40px;
+    left: 42%;
+}
+.postit h2{
+    transform:rotate(-6deg);
+    padding: 25px 0 0 60px;
+    color:#7F0000;
+    font-family: 'Fredericka the Great', cursive;
+    font-weight: 400;
+    font-size: 3rem;
+}
+
+/* intro section */
+.bgcolor.salmon{
+    background-color: #efd9d1;
+    height: 100%;
+}
+.intro{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    padding-top: 12%;
+    width: 100%;
+}
+.intro .title h1,
+.intro .title p{
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 6.5rem;
+    font-weight: 400;
+    text-align: center;
+    /* color: #c24914; */
+    /* darkorange */
+    /* color: #ec0101; */
+    /* lightred */
+    /* color: #BA0F30; */
+    /* burgundy */
+    /* color: #DE0001; */
+    /* scalet */
+    /* color: #F54D3D; */
+    /* coral */
+    color: #7F0000;
+    /* darkburgundy */
+}
+.intro .title p:first-of-type{
+    line-height: 0;
+}
+.intro .title p:last-of-type{
+    line-height: 0;
+}
+.intro .title h1{
+    padding-top: 45px;
+    margin-bottom: -17px;
+}
+.intro .title{
+    margin-bottom: 3%;
+}
+.intro .subtitle{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+.intro .subtitle p{
+    font-family: 'Fredericka the Great', cursive;
+    font-weight: 400;
+    color: #7F0000;
+}
+.intro .subtitle p:first-of-type{
+    font-size: 2rem;
+    margin-top: 10px;
+}
+.intro .subtitle p:last-of-type{
+    font-size: 2.8rem;
+    margin-top: 5%;
+    text-align: center;
+}
+.intro .subtitle a{
+    color: #7F0000;
+    font-size: 3rem;
+    margin-top: 25%;
+    margin-bottom: 35%;
+}
+
+/* history section */
+.bgcolor.white{
+    background-color: #fff;
+}
+.history{
+    position: relative;
+    padding-bottom: 15%;
+}
+.history .bigbox .box{
+    display: flex;
+    width: 90%;
+}
+.history .bigbox .box .description{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Newsreader', serif;
+    width: 35%;
+}
+.history .bigbox .box .pic{
+    width: 65%;
+    height: 400px;
+}
+.history .bigbox .box .description span{
+    font-size: 3rem;
+    font-weight: 300;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+.history .bigbox .box .description p{
+    font-size: 1.5rem;
+    line-height: 37px;
+    font-weight: 200;
+    word-break: initial;
+    text-align: justify;
+}
+.history .bigbox.first,
+.history .bigbox.third{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 15%;
+    margin-bottom: 20%;
+}
+.history .bigbox.third{
+    margin-top: 20%;
+    margin-bottom: 0;
+    padding-top: 0;
+}
+.history .bigbox.first .box .description,
+.history .bigbox.third .box .description{
+    margin-right: 60px;
+}
+.history .bigbox.second .box .description{
+    margin-left: 60px;
+}
+.history .bigbox .box .pic.vintage1{
+    background: url(/portfolio/sunpictures/images/vintage1.png) 30% 97% no-repeat;
+    background-size: cover;
+}
+.history .bigbox .box .pic.vintage2{
+    background: url(/portfolio/sunpictures/images/sun-pictures.png) 0 0 no-repeat;
+    background-size: cover;
+}
+.history .bigbox .box .pic.vintage3{
+    background: url(/portfolio/sunpictures/images/sunpicturesatnight.jpeg) 40% 77% no-repeat;
+    background-size: cover;
+}
+.history > a{
+    display: block;
+    margin: 0 auto;
+    font-weight: 200;
+    font-size: 2rem;
+    text-align: center;
+    color: #000;
+    width: 200px;
+    height: 70px;
+    line-height: 70px;
+    border: 1px solid rgba(127, 0, 0, 0.5);
+    margin-top: 10%;
+}
+
+/* facility section */
+.silver{
+    background: #fdfaf6;
+}
+.facility .inner{
+    position: relative;
+}
+.facility .inner .bigbox{
+    margin-top: 13%;
+    padding-bottom: 15%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+}
+.facility .inner .bigbox .wrap{
+    display: flex;
+    flex-flow: column wrap;
+    width: 28%;
+    height: auto;
+}
+.facility .inner .bigbox .wrap .fac_picture{
+    width: 100%;
+    height: 500px;
+    margin-bottom: 60px;
+}
+.facility .inner .bigbox .wrap .fac_picture.inside1{
+    background: url(/portfolio/sunpictures/images/insdieseat2.jpg) 30% 20% no-repeat;
+    background-size: cover;
+    height: 700px;
+}
+.facility .inner .bigbox .wrap .fac_picture.inside2{
+    background: url(/portfolio/sunpictures/images/insideseat1.jpg) 70% 20% no-repeat;
+    background-size: cover;
+    height: 700px;
+}
+.facility .inner .bigbox .wrap .fac_picture.outside1{
+    background: url(/portfolio/sunpictures/images/outsideseat2.jpeg) 50% 0 no-repeat;
+    background-size: cover;
+}
+.facility .inner .bigbox .wrap .fac_picture.outside2{
+    background: url(/portfolio/sunpictures/images/outsideseat1.jpg) 50% 70% no-repeat;
+    background-size: cover;
+}
+.facility .inner .bigbox .wrap .fac_picture.outside3{
+    background: url(/portfolio/sunpictures/images/oldmachine.jpg) 40% 20% no-repeat;
+    background-size: cover;
+}
+.facility .inner .bigbox .wrap .fac_picture.stuff1{
+    background: url(/portfolio/sunpictures/images/sign.jpg) 40% 60% no-repeat;
+    background-size: cover;
+}
+.facility .inner .bigbox .wrap .fac_picture.stuff2{
+    background: url(/portfolio/sunpictures/images/frame.jpg) 0 10% no-repeat;
+    background-size: cover;
+}
+.facility .inner .bigbox .wrap .fac_picture.stuff3{
+    background: url(/portfolio/sunpictures/images/oldbike.jpeg) 45% 0 no-repeat;
+    background-size: cover;
+}
+
+
+
+/* ticket & venu */
+.ticket .inner .bigbox{
+    justify-content: space-between;
+}
+.ticket .inner .bigbox .tbox{
+    width: 50%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+.ticket .inner .bigbox .tbox .ticketSwiper,
+.ticket .inner .bigbox .tbox .text,
+.ticket .inner .bigbox .tbox .tour{
+    width: 78%;
+}
+.ticket .inner .bigbox .tbox .ticketSwiper .swiper-wrapper .swiper-slide .ticket_info{
+    height: 200px;
+    border: 1px solid #000;
+}
+.ticket .inner .bigbox .tbox .text,
+.ticket .inner .bigbox .tbox .tour{
+    height: 200px;
+}
+.ticket .inner .bigbox .tbox > span{
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Bungee Outline', cursive;
+    font-family: 'Cinzel', serif;
+    font-family: 'Homemade Apple', cursive;
+    font-family: 'Kranky', cursive;
+    font-family: 'Londrina Sketch', cursive;
+    font-family: 'Monoton', cursive;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    /* font-family: 'Zilla Slab Highlight', cursive; */
+    font-size: 4rem;
+}

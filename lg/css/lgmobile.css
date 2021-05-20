@@ -73,6 +73,7 @@ body > .inner .mallbar.on{
     height: auto;
     display: none;
     background-color: #fff;
+    border-bottom: 1px solid #ccc;
 }
 .mnav.on{
     display: block;
@@ -146,7 +147,7 @@ body > .inner .mallbar.on{
     font-size: 2rem;
     color: #c60d41;
     padding-top: 10px;
-
+    padding-bottom: 10px;
 }
 .fa, .fas {
     font-family: "Font Awesome 5 Pro";
@@ -371,11 +372,26 @@ section.investment{
 .investment .box .subbox.description p.mark::before{
     width: 120px;
     height: 120px;
-    left: 23%;
+    left: 24%;
     top: 15px;
 }
 .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet{
     margin: -5px 4px;
+}
+.swiper-button-prev,
+.swiper-button-next{
+    width: 40px;
+    height: 60px;
+}
+.swiper-button-prev{
+    background: url(/portfolio/lg/images/previousarrow.png) 0 0 no-repeat;
+    background-size: contain;
+    left: 3px;
+}
+.swiper-button-next{
+    background: url(/portfolio/lg/images/nextarrow.png) 0 0 no-repeat;
+    background-size: contain;
+    right: 3px;
 }
 
 /* news part */

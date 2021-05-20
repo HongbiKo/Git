@@ -436,6 +436,10 @@ h2 > span{
     background-color: rgb(0, 0, 0, 0.4);
     background-blend-mode: multiply;
 }
+.ie10 .intro,
+.ie11 .intro{
+    background: url(/portfolio/lg/images/intro-bg_dark.png) 50% 50% no-repeat;
+}
 /* intro__introduction */
 .intro .inner .introduction {
     display: flex;
@@ -499,6 +503,10 @@ h2 > span{
     background-color: rgb(0, 0, 0, 0.4);
     background-blend-mode: multiply;
 }
+.ie10 .intro2,
+.ie11 .intro2{
+    background: url(/portfolio/lg/images/intro2_dark.png) 0 0 no-repeat;
+}
 .intro2 h1{
     font-size: 4rem;
     font-weight: 700;
@@ -529,6 +537,10 @@ h2 > span{
     background-color: rgb(0, 0, 0, 0.5);
     background-blend-mode: multiply;
     position: relative;
+}
+.ie11 .intro3,
+.ie10 .intro3{
+    background: url(/portfolio/lg/images/hanriver_dark.png) 0 0 no-repeat;
 }
 .intro3 h1{
     font-size: 4rem;
@@ -644,6 +656,10 @@ section.business{
     width: 320px;
     height: 320px;
 }
+.ie10 .business .box .wrapper .subbox.maincircle,
+.ie11 .business .box .wrapper .subbox.maincircle{
+    justify-content: center;
+}
 .business .box .wrapper .subbox.maincircle:hover{
     box-shadow: 0 0 0 0 rgba(230, 237, 255, 0.7);
     animation: pulse 1.7s infinite cubic-bezier(0.66, 0, 0, 1);
@@ -659,6 +675,10 @@ section.business{
     color: #fff;
     word-break: keep-all;
     text-align: justify;
+}
+.ie10 .business .box .wrapper > p,
+.ie11 .business .box .wrapper > p{
+    width: 100%;
 }
 .business .box .wrapper > p > span{
     font-size: 1.8rem;
@@ -684,6 +704,10 @@ section.business{
     display: flex;
     flex-flow: row wrap;
     align-items: flex-end;
+}
+.ie10 .business .box .wrapper .subbox.maincircle > div:last-child,
+.ie11 .business .box .wrapper .subbox.maincircle > div:last-child{
+    margin-top: 45px;
 }
 .business .box .wrapper .subbox.maincircle > div:last-child > span:first-child{
     font-size: 4.2rem;
@@ -730,6 +754,10 @@ section.investment{
     background-size: cover;
     background-color: rgb(0, 0, 0, 0.2);
     background-blend-mode: multiply;
+}
+.ie10 section.investment,
+.ie11 section.investment{
+    background: url(/portfolio/lg/images/invest_dark.png) 0 0 no-repeat;
 }
 .investment h2{
     font-size: 3.2rem;

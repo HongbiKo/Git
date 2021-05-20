@@ -24,15 +24,15 @@ $(document).ready(function(){
     $(".m_menu_2").hide();
     $(".m_menu_1 > .depth2 > a").click(function(){
         $(this).next().slideToggle(300);
-        //after (this)'s next part toggle
+         //after (this)'s next part toggle
+        $(this).toggleClass("on").parent().siblings().children("a").removeClass("on");   
+        //changing text color
+
+
 
         $(".m_menu_1 > .depth2 > a").not(this).next().slideUp(300);
         return false;
         //next part toggle's canceling and after slideup --> the other things are not showing
-    });
-    
-    $(".m_menu_1 > .depth2 > a").click(function(){
-        $(this).toggleClass("on").siblings().removeClass("on");    
     });
 
 

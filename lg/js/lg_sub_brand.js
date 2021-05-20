@@ -32,7 +32,7 @@ $(document).ready(function(){
 
 var swiper1 = new Swiper(".mySwiper.Subswiper", {
     centeredSlides: true,
-    slidesPerView: 2,
+    slidesPerView: 5,
             spaceBetween: 0,
             pagination: {
             el: ".swiper-pagination",
@@ -44,7 +44,7 @@ var swiper1 = new Swiper(".mySwiper.Subswiper", {
     breakpoints : {
         640 : {
             centeredSlides: true,
-            slidesPerView: 5,
+            slidesPerView: 2,
             spaceBetween: 0,
             pagination: {
             el: ".swiper-pagination",

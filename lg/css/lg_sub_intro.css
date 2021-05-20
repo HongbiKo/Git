@@ -85,6 +85,10 @@
     word-break: keep-all;
     text-align: justify;
 }
+.ie10 .inner .wrapper .wrapbox .description p:last-child,
+.ie11 .inner .wrapper .wrapbox .description p:last-child{
+    width: 100%;
+}
 .inner .wrapper .wrapcenter{
     width: 100%;
     margin-bottom: 10%;

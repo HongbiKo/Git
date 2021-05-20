@@ -44,7 +44,7 @@ if(iw < 641) {
 }
 
 var swiper3 = new Swiper('.swiper-container.subSwiper2', {
-    slidesPerView: 1,
+    slidesPerView: 4,
     spaceBetween: 10,
     loop: true,
     pagination: {
@@ -54,7 +54,7 @@ var swiper3 = new Swiper('.swiper-container.subSwiper2', {
     },
     breakpoints: {
         640: {
-            slidesPerView: 3,
+            slidesPerView: 1,
             spaceBetween: 30,
             freeMode: true,
             loop: true,
@@ -66,9 +66,6 @@ var swiper3 = new Swiper('.swiper-container.subSwiper2', {
         },
         1024: {
             slidesPerView: 2
-        },
-        1280: {
-            slidesPerView: 4
         }
     }
     
@@ -117,6 +114,16 @@ function counting() {
 
 
 $(document).ready(function(){
+    //리사이징 할때마다 새로고침
+    var lastWidth = $(window).width();
+    $(window).resize(function(){
+        if($(window).width()!=lastWidth){
+            location.reload();
+            lastWidth = $(window).width();
+            return false;
+        }
+    });
+
 
     //nav togglebutton
     $(".mallbar").click(function(){

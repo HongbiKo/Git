@@ -41,6 +41,7 @@ body > .inner .mallbar.on{
     height: auto;
     display: none;
     background-color: #fff;
+    border-bottom: 1px solid #ccc;
 }
 .mnav.on{
     display: block;
@@ -114,7 +115,7 @@ body > .inner .mallbar.on{
     font-size: 2rem;
     color: #c60d41;
     padding-top: 10px;
-
+    padding-bottom: 10px;
 }
 .fa, .fas {
     font-family: "Font Awesome 5 Pro";
