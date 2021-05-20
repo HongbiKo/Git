@@ -50,6 +50,15 @@ var swiper1 = new Swiper(".mySwiper.Subswiper", {
             el: ".swiper-pagination",
             clickable: true
             }
+        },
+        1024 : {
+            centeredSlides: true,
+            slidesPerView: 4,
+            spaceBetween: 0,
+            pagination: {
+            el: ".swiper-pagination",
+            clickable: true
+            }
         }
     }
 });

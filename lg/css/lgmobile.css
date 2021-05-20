@@ -32,6 +32,7 @@ body > .inner .mallbar.on{
     color: #c60d41;
 }
 
+/* common part */
 .intro .inner .introduction a,
 .intro2 a,
 .intro3 a,
@@ -167,11 +168,6 @@ body > .inner .mallbar.on{
     text-align: center;
 
 }
-
-
-
-
-
 
 
 
@@ -546,4 +542,3 @@ footer .inner .contact{
     margin-top: 10px;
     margin-bottom: 10px;
 }
-

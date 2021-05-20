@@ -1,0 +1,47 @@
+@charset "utf-8";
+.inner .box{
+    margin-top: 25%;
+}
+.inner .box h1{
+    font-size: 3.5rem;
+}
+.inner .box h2{
+    font-size: 1.8rem;
+}
+.inner .wrapper{
+    flex-flow: column wrap;
+    justify-content: flex-start;
+}
+.inner .wrapper .wrapbox{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+.inner .wrapper .wrapbox .pic{
+    width: 90%;
+    height: 300px;
+    margin-right: 0;
+}
+.inner .wrapper .wrapbox .description{
+    width: 90%;
+}
+.inner .wrapper .wrapbox .description p:first-child,
+.inner .wrapper .wrapcenter p{
+    font-size: 1.7rem;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.inner .wrapper .wrapbox .description p:first-child{
+    word-break: keep-all;
+}
+.inner .wrapper .wrapbox .description p:last-child{
+    font-size: 1rem;
+}
+.inner .wrapper .wrapcenter table{
+    width: 100%;
+}
+.inner .wrapper .wrapcenter table tr td,
+.inner .wrapper .wrapcenter table tr th{
+    padding: 10px;
+}

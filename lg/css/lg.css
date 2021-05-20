@@ -433,7 +433,7 @@ h2 > span{
 /* intro1 */
 .intro{
     background: url(/portfolio/lg/images/intro-bg.png) 50% 50% no-repeat;
-    background-color: rgb(0, 0, 0, 0.4);
+    background-color: rgb(0, 0, 0, 0.5);
     background-blend-mode: multiply;
 }
 .ie10 .intro,
@@ -460,7 +460,6 @@ h2 > span{
 }
 .intro .inner .introduction h1:last-of-type{
     margin-bottom: 40px;
-
 }
 .intro .inner .introduction p{
     width: 50%;

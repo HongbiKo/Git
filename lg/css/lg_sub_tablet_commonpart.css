@@ -1,0 +1,221 @@
+@charset "utf-8";
+body{
+    min-width: 641px;
+    max-width: 1024px
+}
+.inner{
+    width: 93%;
+}
+
+/*lg 로고 */
+body > .inner > a{
+    background: url(/portfolio/lg/images/horizontal_logo_gray.png) 0 0 no-repeat;
+    width: 230px;
+    height: 80px;
+    background-size: contain;
+    left: 50px;
+    top: 50px;
+}
+body > .inner > a.on{
+    display: none;
+}
+
+/*m_menu*/
+body > .inner .mallbar{
+    display: block;
+    font-size: 3.1rem;
+    color: #ccc;
+    position: fixed;
+    right: 50px;
+    top: 15px;
+    z-index: 100;
+}
+body > .inner .mallbar.on{
+    color: #c60d41;
+}
+
+/* common part */
+.intro .inner .introduction a,
+.intro2 a,
+.intro3 a,
+.hr > a,
+.investment > a{
+    display: block;
+    width: 150px;
+    height: 65px;
+    line-height: 55px;
+    font-size: 1.3rem;
+}
+
+/* script editing */
+.swiper-container-vertical > .swiper-pagination-bullets {
+    right: 50px;
+}
+.swiper-container-vertical > .swiper-pagination-bullets::before{
+    display: none; 
+}
+.swiper-button-prev,
+.swiper-button-next{
+    display: none;
+}
+
+
+/* mobile navigaition */
+.mnav{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    height: auto;
+    display: none;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+.mnav.on{
+    display: block;
+}
+.mnav ul{
+    list-style: none;
+}
+.mnav .m_menu .depth1 .mnav_logo{
+    display: inline-block;
+    background: url(/portfolio/lg/images/circle_logo.png) 0 0 no-repeat;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    margin: 15px 0 15px;
+}
+.mnav .m_menu{
+    width: 100%;
+    height: 50vh;
+    background-color: #fff;
+    overflow-y: scroll;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    padding-top: 20px;
+}
+.mnav .m_menu .depth1{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.mnav .m_menu .depth1 > a{
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+.mnav .m_menu .depth1 .m_menu_1{
+    margin: 10px 0 10px 0;
+}
+.mnav .m_menu .depth1 .m_menu_1 .depth2 > a{
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+.mnav .m_menu .depth1 .m_menu_1 > .depth2 > a.on{
+    color: #c60d41;
+}
+.mnav .m_menu .depth1 .m_menu_1 .depth2{
+    height: auto;
+}
+.mnav .m_menu .depth1 .m_menu_1 .depth2 .m_menu_2,
+.mnav .m_menu .depth1 .m_menu_1 .depth2 .m_menu_2_1{
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.mnav .m_menu .depth1 .m_menu_1 .depth2 .m_menu_2 .depth3 > a,
+.mnav .m_menu .depth1 .m_menu_1 .depth2 .m_menu_2_1 .depth3 > a{
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+/* brand arrange */
+.mnav .m_menu .depth1:last-child .m_menu_1 .depth2:first-child .m_menu_2{
+    display: flex;
+    flex-flow: row wrap;
+}
+.mnav .m_menu .depth1:last-child .m_menu_1 .depth2:first-child .m_menu_2 > li{
+    width: 50%;
+}
+.mnav .m_searching{
+    display: flex;
+    justify-content: space-between;
+    width: 57%;
+    font-size: 2.5rem;
+    color: #c60d41;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.fa, .fas{
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 500;
+    padding-top: 15px;
+    padding-left: 10px;
+}
+.fa, .fas.fa-search{
+    padding-top: 25px;
+    padding-left: 35px;
+}
+.mnav .m_searching .lang{
+    display: inline-block;
+    border: 1px solid #c60d41;
+    margin: 0;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 0.9rem;
+    text-align: center;
+
+}
+
+/* pc navigation */
+nav{
+    display: none;
+}
+/* footer */
+footer{
+    height: auto;
+}
+footer .inner{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+footer .inner > div:first-child a{
+    display: none;
+}
+footer .inner .text div:nth-child(2) > p:first-child,
+footer .inner .text div:nth-child(2) > p:nth-child(2){
+    margin-bottom: 10px;
+}
+footer .inner .text div:last-child > p:nth-child(3) > span:first-child::after{
+    display: none;
+}
+footer .inner .text div:last-child > p:nth-child(3){
+    display: flex;
+    flex-flow: column wrap;
+}
+footer .inner .contact::after{
+    display: none;
+}
+footer .inner .contact > span:first-of-type{
+    color: #c60d41;
+    text-align: center;
+    font-size: 1.2rem;
+}
+footer .inner .contact > span:nth-of-type(2){
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+footer .inner .contact > p{
+    text-align: center;
+}
+footer .inner .contact{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
