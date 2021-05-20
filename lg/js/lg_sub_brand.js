@@ -51,6 +51,15 @@ var swiper1 = new Swiper(".mySwiper.Subswiper", {
             clickable: true
             }
         },
+        768 : {
+            centeredSlides: true,
+            slidesPerView: 3,
+            spaceBetween: 0,
+            pagination: {
+            el: ".swiper-pagination",
+            clickable: true
+            }
+        },
         1024 : {
             centeredSlides: true,
             slidesPerView: 4,

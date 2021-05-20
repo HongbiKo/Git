@@ -325,7 +325,7 @@ footer .inner{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    padding-top: 15px;
+    padding-top: 18px;
 }
 footer .inner > div:first-child a{
     display: block;

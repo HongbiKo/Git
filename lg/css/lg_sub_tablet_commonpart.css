@@ -183,6 +183,7 @@ footer .inner{
     flex-flow: column wrap;
     justify-content: flex-start;
     align-items: center;
+    padding-bottom: 15px;
 }
 footer .inner > div:first-child a{
     display: none;
@@ -190,6 +191,7 @@ footer .inner > div:first-child a{
 footer .inner .text div:nth-child(2) > p:first-child,
 footer .inner .text div:nth-child(2) > p:nth-child(2){
     margin-bottom: 10px;
+    text-align: center;
 }
 footer .inner .text div:last-child > p:nth-child(3) > span:first-child::after{
     display: none;
