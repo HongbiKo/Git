@@ -39,10 +39,10 @@ body > .inner .mallbar.on{
 .hr > a,
 .investment > a{
     display: block;
-    width: 130px;
-    height: 55px;
+    width: 120px;
+    height: 50px;
     line-height: 45px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 /* script editing */
@@ -154,7 +154,6 @@ body > .inner .mallbar.on{
     font-family: "Font Awesome 5 Pro";
     font-weight: 500;
     padding-top: 15px;
-    padding-left: 10px;
 }
 .mnav .m_searching .lang{
     display: inline-block;
@@ -297,9 +296,10 @@ section.business{
 }
 .business .mbusiness{
     display: block;
+    width: 140px;
     height: 50px;
     line-height: 45px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 .basicSwiper .swiper-slide.swiper-slide-active .business .mbusiness{
     animation: arrowAnimation_mobile 2s ease-out both;
@@ -359,10 +359,10 @@ section.investment{
     color: #fff;
 }
 .investment > a{
-    width: 150px;
+    width: 140px;
     height: 50px;
     line-height: 45px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin-top: 5px;
 }
 .investment .box .subbox.description p.mark::before{
@@ -467,10 +467,10 @@ section.hr{
 }
 .hr > a{
     display: block;
-    width: 200px;
-    font-size: 1.2rem;
-    height: 40px;
-    line-height: 40px;
+    width: 180px;
+    font-size: 1.1rem;
+    height: 50px;
+    line-height: 45px;
 }
 
 
