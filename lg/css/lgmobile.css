@@ -151,9 +151,11 @@ body > .inner .mallbar.on{
     padding-bottom: 10px;
 }
 .fa, .fas {
-    font-family: "Font Awesome 5 Pro";
     font-weight: 500;
     padding-top: 15px;
+}
+.mnav .m_searching .fas.fa-search{
+    padding-left: 10px;
 }
 .mnav .m_searching .lang{
     display: inline-block;
