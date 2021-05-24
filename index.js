@@ -1,0 +1,75 @@
+// 마우스&헤더
+const cursor = document.querySelector('.cursor');
+const cursorFollow = document.querySelector('.follow');
+const cursorFollowActiveBuffer = 0;
+const button = document.querySelectorAll('.button');
+let cursorPosX = 0;
+let cursorPosY = 0;
+let buttonHoverFlag = false;
+
+function mouseMoveCursor(element, event, friction) {
+    cursorPosX += (event.clientX - cursorPosX) * friction;
+    cursorPosY += (event.clientY - cursorPosY) * friction;
+    element.style.transform = `translate(${cursorPosX - element.clientWidth / 2}px,${cursorPosY - element.clientHeight / 2}px)`;
+}
+
+window.addEventListener('mousemove', (e) => {
+    if (buttonHoverFlag === true) {
+        return;
+    }
+
+    mouseMoveCursor(cursor, e, 1.0);
+    mouseMoveCursor(cursorFollow, e, 1.0);
+});
+
+for (let i = 0; i < button.length; i++) {
+    button[i].addEventListener('mousemove', (e) => {
+        buttonHoverFlag = true;
+        cursor.style.backgroundColor = 'transparent';
+        cursorFollow.style.transform = `translate(${e.target.getBoundingClientRect().left - cursorFollowActiveBuffer}px,${e.target.getBoundingClientRect().top - cursorFollowActiveBuffer}px)`;
+        cursorFollow.style.width = e.target.getBoundingClientRect().width + 'px';
+        cursorFollow.style.height = e.target.getBoundingClientRect().height + 'px';
+        cursorFollow.style.padding = cursorFollowActiveBuffer + 'px';
+        cursorFollow.style.borderRadius = 0;
+    });
+}
+
+for (let i = 0; i < button.length; i++) {
+    button[i].addEventListener('mouseleave', () => {
+        buttonHoverFlag = false;
+        cursor.style.backgroundColor = '#00A0F3';
+        cursorFollow.style.width = 10 + 'px';
+        cursorFollow.style.height = 10 + 'px';
+        cursorFollow.style.padding = 32 + 'px';
+        cursorFollow.style.borderRadius = '100%';
+    });
+}
+
+
+
+
+
+$(document).ready(function(){
+    //리사이징 할때마다 새로고침
+    var lastWidth = $(window).width();
+    $(window).resize(function(){
+        if($(window).width()!=lastWidth){
+            location.reload();
+            lastWidth = $(window).width();
+            return false;
+        }
+    });
+
+    //스크롤버튼
+    $(".scroll a").each(function(){
+        var thisOffset = $("."+$(this).data('id')).offset().top;
+
+        $(this).click(function(){
+            $("html, body").animate({
+                scrollTop : thisOffset
+            }, 1000);
+            $(this).addClass('on');
+        });
+    });
+
+});
