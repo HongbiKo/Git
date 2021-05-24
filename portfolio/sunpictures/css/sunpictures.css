@@ -279,7 +279,7 @@ body{
 
 
 
-/* ticket & voucher & venu*/
+/* ticket & voucher section*/
 .ticket .inner .bigbox{
     justify-content: space-between;
     margin-top: 5%;
@@ -379,5 +379,11 @@ body{
     font-size: 1.4rem;
     margin-top: 20px;
     text-align: center;
+}
+
+/* movie section*/
+
+.parallax-bg{
+    background: url(/portfolio/sunpictures/images/)
 }
 
