@@ -9,7 +9,7 @@ body{
 
 /*lg 로고 */
 body > .inner > a{
-    background: url(/portfolio/lg/images/horizontal_logo_gray.png) 0 0 no-repeat;
+    background: url(/Git/portfolio/lg/images/horizontal_logo_gray.png) 0 0 no-repeat;
     width: 230px;
     height: 80px;
     background-size: contain;
@@ -81,7 +81,7 @@ body > .inner .mallbar.on{
 }
 .mnav .m_menu .depth1 .mnav_logo{
     display: inline-block;
-    background: url(/portfolio/lg/images/circle_logo.png) 0 0 no-repeat;
+    background: url(/Git/portfolio/lg/images/circle_logo.png) 0 0 no-repeat;
     background-size: contain;
     width: 50px;
     height: 50px;

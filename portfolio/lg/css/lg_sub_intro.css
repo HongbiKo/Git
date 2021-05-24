@@ -55,15 +55,15 @@
     margin-right: 40px;
 }
 .inner .wrapper .wrapbox .pic.company{
-    background: url(/portfolio/lg/images/companypic.png) 0 60% no-repeat;
+    background: url(/Git/portfolio/lg/images/companypic.png) 0 60% no-repeat;
     background-size: cover;
 }
 .inner .wrapper .wrapbox .pic.person{
-    background: url(/portfolio/lg/subimages/person.jpg) 0 0 no-repeat;
+    background: url(/Git/portfolio/lg/subimages/person.jpg) 0 0 no-repeat;
     background-size: cover;
 }
 .inner .wrapper .wrapbox .pic.desk{
-    background: url(/portfolio/lg/subimages/desk.jpg) 0 0 no-repeat;
+    background: url(/Git/portfolio/lg/subimages/desk.jpg) 0 0 no-repeat;
     background-size: cover;
 }
 .inner .wrapper .wrapbox .description{
