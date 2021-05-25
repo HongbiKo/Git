@@ -27,11 +27,11 @@ body{
 }
 .cursor {
     border-radius: 50%;
-    background-color: #00A0F3;
+    background-color: #FBDB00;
 }
 .follow {
     padding: 32px;
-    border: 2px solid #000066;;
+    border: 2px solid #00FBDB;
     transition: all .2s ease-out;
     border-radius: 50%;
 }
@@ -70,7 +70,21 @@ header{
 section{
     height: 100vh;
 }
-
+.intro .circle{
+    background:
+        radial-gradient(circle at 50% 0,
+        rgba(157, 252, 255, 0.8),
+        rgba(255,0,0,0) 50.71%),
+        radial-gradient(circle at 6.7% 75%,
+        rgba(255, 157, 252, 0.8),
+        rgba(0,0,255,0) 60.71%),
+        radial-gradient(circle at 93.3% 75%,
+        rgba(252, 255, 157, 0.8),
+        rgba(0,255,0,0) 50.71%) beige;
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+}
 
 
 
