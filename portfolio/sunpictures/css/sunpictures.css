@@ -1,9 +1,8 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Vibes&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://pro.fontawesome.com/releases/v5.10.0/css/all.css');
 
 * {
@@ -22,6 +21,7 @@
 a{
     text-decoration: none;
     font-family: 'Playfair Display SC', serif;
+    font-weight: 700;
 }
 body{
     min-width: 85%;
@@ -49,7 +49,7 @@ body{
     padding: 5px 0 0 60px;
     color:#7F0000;
     font-family: 'Vibes', cursive;
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: 5px;
     font-size: 4rem;
 }
@@ -69,15 +69,32 @@ body{
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    position: relative;
+}
+.intro .intro_L{
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+}
+.intro .start{
+    display: block;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    border-radius: 50%;
+    background-color:#7F0000;
+    animation: fadeInOut 3s 4.8s both;
+    color: #3f1717;
+    font-size: 1.5rem;
+    font-weight: 700;
 }
 .intro .animation-box{
     display: flex;
     flex-flow: column wrap;
     width: 65%;
-    height: 60%;
     position: relative;
     font-family: 'Italiana', serif;
+    margin-top: -20px;
 }
 @keyframes topFadeOut {
     0% {
@@ -107,8 +124,12 @@ body{
     opacity: 1;
     }
 }
+.intro .animation-box .first-text{
+    width: 100%;
+    margin-bottom: 25px;
+}
 .intro .animation-box .first-text h1{
-    font-size: 11rem;
+    font-size: 10rem;
     font-weight: 400;
     opacity: 0;
     position: relative;
@@ -117,7 +138,8 @@ body{
     color: #fff;
 }
 .intro .animation-box .second-text {
-    font-size: 5rem;
+    width: 100%;
+    font-size: 4rem;
     font-weight: 400;
     text-align: right;
     position: relative;
@@ -125,13 +147,16 @@ body{
     opacity: 0;
     animation: bottomFadeOut 4s 1.8s both;
     color: #fff;
+    margin-bottom: 20px;
 }
 .intro .animation-box .third-text {
+    width: 100%;
+    overflow-y: hidden;
     transform: rotate(90deg);
     font-size: 2.5rem;
-    position: relative;
+    position: absolute;
     right: -30%;
-    bottom: 10%;
+    bottom: 44%;
     z-index: 1;
     opacity: 0;
     animation: fadeInOut 7s 1.8s both;
@@ -143,30 +168,15 @@ body{
     opacity: 0;
     color: #fff;
     animation: fadeInOut 3s 3.5s both;
-    margin-left: 15%;
-}
-.intro .start{
-    display: block;
-    width: 100px;
-    height: 100px;
-    line-height: 100px;
     text-align: center;
-    border-radius: 50%;
-    background-color:#7F0000;
-    animation: fadeInOut 3s 4.5s both;
-    color: #3f1717;
-    font-size: 1.5rem;
-    font-weight: 700;
-    position: relative;
-    left: 20%;
-
 }
 
 
 
 /* history section */
-.bgcolor.white{
-    background-color: #fff;
+.bgcolor.salmon{
+    background-color: #efd9d1;
+    height: 100%;
 }
 .history{
     position: relative;
@@ -181,23 +191,34 @@ body{
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    font-family: 'Newsreader', serif;
-    width: 35%;
+    font-family: 'Roboto', sans-serif;
+    width: 40%;
+    position: relative;
 }
 .history .bigbox .box .pic{
     width: 65%;
     height: 400px;
 }
 .history .bigbox .box .description span{
-    font-size: 3rem;
-    font-weight: 400;
+    font-family: 'Playfair Display SC', serif;
+    font-size: 6.5rem;
     font-style: italic;
-    margin-bottom: 30px;
+    color: rgba(255,255,255,0.5);
+    position: relative;
+    top: -5%;
+    right: -45%;
+}
+.history .bigbox.second .box .description span{
+    right: auto;
+    left: -48%;
+}
+.history .bigbox.third .box .description span{
+    right: -55%
 }
 .history .bigbox .box .description p{
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     line-height: 37px;
-    font-weight: 200;
+    font-weight: 100;
     word-break: initial;
     text-align: justify;
 }
@@ -236,15 +257,14 @@ body{
 .history > a{
     display: block;
     margin: 0 auto;
-    font-weight: 200;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
-    width: 200px;
-    height: 70px;
-    line-height: 70px;
-    border: 1px solid rgba(127, 0, 0, 0.5);
-    color: #000;
-    font-weight: 300;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border-radius: 50%;
+    background-color: rgba(127, 0, 0, 0.9);
+    color: #fff;
     margin-top: 10%;
 }
 
@@ -312,10 +332,6 @@ body{
 
 
 /* ticket & voucher section*/
-.bgcolor.salmon{
-    background-color: #efd9d1;
-    height: 100%;
-}
 .ticket .inner .bigbox{
     justify-content: space-between;
     margin-top: 5%;
@@ -328,9 +344,9 @@ body{
     align-items: center;
 }
 .ticket .inner .bigbox .tbox > span{
-    font-family: 'Cinzel', serif;
-    font-weight: 700;
-    font-size: 4rem;
+    font-family: 'Italiana', serif;
+    font-weight: 400;
+    font-size: 6rem;
     display: block;
     width: 100%;
     text-align: center;
@@ -350,13 +366,14 @@ body{
     justify-content: center;
 }
 .ticket .inner .bigbox .tbox .ticketSwiper .swiper-wrapper .swiper-slide .ticket_info p{
-    font-family: 'Bebas Neue', cursive;
-    font-size: 2.2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 1.8rem;
     text-align: center;
     line-height: 35px;
 }
 .ticket .inner .bigbox .tbox .ticketSwiper .swiper-wrapper .swiper-slide .ticket_info p span{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 .ticket .inner .bigbox .tbox .ticketSwiper{
     margin: 30px 0;
@@ -364,8 +381,8 @@ body{
 .ticket .inner .bigbox .tbox .text,
 .ticket .inner .bigbox .tbox .tour{
     width: 90%;
-    font-family: 'Newsreader', serif;
-    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
 }
 .ticket .inner .bigbox .tbox .text p:first-of-type{
     font-size: 1.8rem;
@@ -406,8 +423,8 @@ body{
     margin-top: 20%;
 }
 .ticket .inner .bigbox .tbox .tour p:first-child{
-    font-family: 'Cinzel', serif;
-    font-weight: 700;
+    font-family: 'Italiana', serif;
+    font-weight: 400;
     font-size: 2.8rem;
     text-align: center;
 }
