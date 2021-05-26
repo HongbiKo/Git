@@ -2,6 +2,7 @@
 @import url('https://pro.fontawesome.com/releases/v5.10.0/css/all.css');
 @import url('https://fonts.googleapis.com/css2?family=Chonburi&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -20,6 +21,11 @@ body{
     width: 90%;
     margin: 0 auto;
 }
+a{
+    text-decoration: none;
+    color: #000;
+}
+/* mouse section */
 .cursor,
 .follow {
     position: absolute;
@@ -43,7 +49,7 @@ body{
     pointer-events: none;
 }
 header{
-    margin: 2% auto 0;
+    margin: 0 auto;
     width: 100%;
     position: fixed;
     top: 0;
@@ -109,6 +115,15 @@ header{
     opacity: 0.8;            
 }
 
+/* common section */
+h2{
+    padding-top: 50px;
+}
+.wrap{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
 /* about section */
 .about{
     height: 100vh;
@@ -116,8 +131,150 @@ header{
 
 /* work section */
 .work h2{
-    color: transparent;
+    color: #FAFBF4;
 }
+.work .wrap_work{
+    display: flex;
+    flex-flow: column wrap;
+}
+.work .wrap_work .wrap > p{
+    font-family: 'Syncopate', sans-serif;
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: 4%;
+}
+.work .wrap_work .wrap > p > span:first-of-type{
+    font-family: 'Chonburi', cursive;
+    color: #0bf080;
+}
+.work .wrap_work .wrap .box{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 15%;    
+}
+.work .wrap_work .wrap .box .subboxL{
+    width: 45%;
+}
+.work .wrap_work .wrap .box .subboxR{
+    width: 50%;
+}
+.work .wrap_work .wrap .box .subboxL .description{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Noto Sans KR', sans-serif;
+    width: 100%;
+}
+.work .wrap_work .wrap .box .subboxL .description > span{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.work .wrap_work .wrap .box .subboxL .description > p{  width: 85%;
+    font-size: 0.9rem;
+    font-weight: 300;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+.work .wrap_work .wrap .box .subboxL .description .commonbox{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Syncopate', sans-serif;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.work .wrap_work .wrap .box .subboxL .description .commonbox > span{
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+.work .wrap_work .wrap .box .subboxL .description .commonbox > div{
+    display: flex;
+}
+.work .wrap_work .wrap .box .subboxL .description .commonbox > div .color{
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 50%;
+    text-align: center;
+    font-family: 'Noto Sans KR';
+    font-weight: 300;
+    margin-left: 20px;
+}
+.work .wrap_work .wrap .box .subboxL .description .commonbox > div .color.red{
+    background-color: #c60d41;
+    color: #fff;
+    margin-left: 0;
+}
+.work .wrap_work .wrap .box .subboxL .description .commonbox > div .color.white{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    color: #aaa;
+}
+.work .wrap_work .wrap .box .subboxL .description .commonbox > div .color.black{
+    background-color: #000;
+    color: #fff;
+}
+.work .wrap_work .wrap .box .subboxL .description .commonbox .font{
+    margin-top: -10px;
+    font-family: 'Noto Sans KR';
+    font-size: 2rem;
+    font-weight: 500;
+    color: #aaa;
+}
+.work .wrap_work .wrap .box .subboxL .description .commonbox:nth-child(5) > div{
+    align-items: flex-end;
+}
+.work .wrap_work .wrap .box .subboxL .description .commonbox:nth-child(5) > div > div{
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+}
+.work .wrap_work .wrap .box .subboxL .description .commonbox:nth-child(5) > div > div.chrome{
+    background: url(/images/chromeicon.png) 0 0 no-repeat;
+    background-size: cover;
+    margin-left: 0;
+}
+.work .wrap_work .wrap .box .subboxL .description .commonbox:nth-child(5) > div > div.firefox{
+    background: url(/images/firefoxicon.png) 0 -3px no-repeat;
+    background-size: cover;
+}
+.work .wrap_work .wrap .box .subboxL .description .commonbox:nth-child(5) > div > div.edge{
+    background: url(/images/edgeicon.png) 0 0 no-repeat;
+    background-size: cover;
+}
+.work .wrap_work .wrap .box .subboxL .description .commonbox:nth-child(5) > div > div.exploer{
+    background: url(/images/exploericon.png) -0.5px 0 no-repeat;
+    background-size: cover;
+}
+.work .wrap_work .wrap .box .subboxL .description .commonbox:nth-child(5) > div > div.exploer + div{
+    width: 100px;
+    height: 10px;
+    color: #aaa;
+    font-size: 0.9rem;
+}
+.work .wrap_work .wrap .box .subboxL .description .link{
+    
+    display: flex;
+    justify-content: space-between;
+}
+.work .wrap_work .wrap .box .subboxL .description .link a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 30px;
+    border: 1px solid #ccc;
+    font-family: 'Syncopate', sans-serif;
+    font-size: 1.3rem;
+}
+
+
+
 
 
 
