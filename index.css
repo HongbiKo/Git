@@ -109,6 +109,15 @@ header{
     opacity: 0.8;            
 }
 
+/* about section */
+.about{
+    height: 100vh;
+}
+
+/* work section */
+.work h2{
+    color: transparent;
+}
 
 
 
