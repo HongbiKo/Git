@@ -72,4 +72,13 @@ $(document).ready(function(){
         });
     });
 
+    //마우스툴팁
+    $(".circle").mousemove(function(event) {
+        var x = event.pageX;
+        var y = event.pageY;
+        $(".tip").css({left: x +10 , top: y - 40}).addClass("on");
+    }).mouseleave(function() {
+        $(".tip").removeClass("on");
+    });
+
 });
