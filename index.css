@@ -257,7 +257,7 @@ h2{
     margin-left: 0;
 }
 .work .wrap_work .wrap .box .subboxL .description .commonbox:nth-child(5) > div > div.firefox{
-    background: url(images/chromeicon.png) 0 -3px no-repeat;
+    background: url(images/firefoxicon.png) 0 -4px no-repeat;
     background-size: cover;
 }
 .work .wrap_work .wrap .box .subboxL .description .commonbox:nth-child(5) > div > div.edge{
