@@ -252,20 +252,20 @@ h2{
     margin-left: 10px;
 }
 .work .wrap_work .wrap .box .subboxL .description .commonbox:nth-child(5) > div > div.chrome{
-    background: url(/portfolio/images/chromeicon.png) 0 0 no-repeat;
+    background: url(images/chromeicon.png) 0 0 no-repeat;
     background-size: cover;
     margin-left: 0;
 }
 .work .wrap_work .wrap .box .subboxL .description .commonbox:nth-child(5) > div > div.firefox{
-    background: url(/portfolio/images/firefoxicon.png) 0 -4px no-repeat;
+    background: url(images/firefoxicon.png) 0 -4px no-repeat;
     background-size: cover;
 }
 .work .wrap_work .wrap .box .subboxL .description .commonbox:nth-child(5) > div > div.edge{
-    background: url(/portfolio/images/edgeicon.png) 0 0 no-repeat;
+    background: url(images/edgeicon.png) 0 0 no-repeat;
     background-size: cover;
 }
 .work .wrap_work .wrap .box .subboxL .description .commonbox:nth-child(5) > div > div.exploer{
-    background: url(/portfolio/images/exploericon.png) -0.7px 0 no-repeat;
+    background: url(images/exploericon.png) -0.7px 0 no-repeat;
     background-size: cover;
 }
 .work .wrap_work .wrap .box .subboxL .description .commonbox:nth-child(5) > div > div.exploer + div{
