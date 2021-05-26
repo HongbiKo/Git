@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Chonburi&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -66,7 +67,7 @@ header{
     text-transform: uppercase;
     font-family: 'Chonburi', cursive;
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 2.5rem;
     padding: 20px;
 }
 .button:hover {
@@ -93,17 +94,17 @@ header{
         rgba(252, 255, 157, 0.8),
         rgba(0,255,0,0) 50.71%) beige;
     border-radius: 50%;
-    width: 600px;
-    height: 600px;
+    width: 700px;
+    height: 700px;
     text-align: center;
     margin-top: 30px;
     background-attachment: fixed;
 }
 .tip{
-    width: 500px;
-    height: 300px;
+    width: 600px;
+    height: 400px;
     color: #0bf080;
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 400;
     text-align: center;
     position: absolute;
@@ -139,9 +140,10 @@ h2{
 }
 .work .wrap_work .wrap > p{
     font-family: 'Syncopate', sans-serif;
-    font-size: 5rem;
+    font-size: 6rem;
     font-weight: 700;
-    margin-bottom: 4%;
+    margin-bottom: 5%;
+    text-align: right;
 }
 .work .wrap_work .wrap > p > span:first-of-type{
     font-family: 'Chonburi', cursive;
@@ -169,14 +171,16 @@ h2{
     width: 100%;
 }
 .work .wrap_work .wrap .box .subboxL .description > span{
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 700;
     margin-bottom: 10px;
 }
-.work .wrap_work .wrap .box .subboxL .description > p{  width: 85%;
-    font-size: 0.9rem;
+.work .wrap_work .wrap .box .subboxL .description > p{
+    width: 80%;
+    font-size: 1.1em;
     font-weight: 300;
     text-align: justify;
+    word-break: keep-all;
     margin-bottom: 30px;
 }
 .work .wrap_work .wrap .box .subboxL .description .commonbox{
@@ -189,7 +193,7 @@ h2{
     margin-bottom: 30px;
 }
 .work .wrap_work .wrap .box .subboxL .description .commonbox > span{
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin-bottom: 10px;
 }
 .work .wrap_work .wrap .box .subboxL .description .commonbox > div{
@@ -219,6 +223,14 @@ h2{
     background-color: #000;
     color: #fff;
 }
+.work .wrap_work .wrap .box .subboxL .description .commonbox > div .color.brown{
+    background-color: #722a2a;
+    color: #fff;
+}
+.work .wrap_work .wrap .box .subboxL .description .commonbox > div .color.salmon{
+    background-color: #efd9d1;
+    color: #fff;
+}
 .work .wrap_work .wrap .box .subboxL .description .commonbox .font{
     margin-top: -10px;
     font-family: 'Noto Sans KR';
@@ -226,29 +238,34 @@ h2{
     font-weight: 500;
     color: #aaa;
 }
+.work .wrap_work .wrap:last-child .box .subboxL .description .commonbox .font{
+    margin-top: 0;
+    font-family: 'Italiana', serif;
+    font-size: 3rem;
+}
 .work .wrap_work .wrap .box .subboxL .description .commonbox:nth-child(5) > div{
     align-items: flex-end;
 }
 .work .wrap_work .wrap .box .subboxL .description .commonbox:nth-child(5) > div > div{
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     margin-left: 10px;
 }
 .work .wrap_work .wrap .box .subboxL .description .commonbox:nth-child(5) > div > div.chrome{
-    background: url(/images/chromeicon.png) 0 0 no-repeat;
+    background: url(../images/chromeicon.png) 0 0 no-repeat;
     background-size: cover;
     margin-left: 0;
 }
 .work .wrap_work .wrap .box .subboxL .description .commonbox:nth-child(5) > div > div.firefox{
-    background: url(/images/firefoxicon.png) 0 -3px no-repeat;
+    background: url(../images/firefoxicon.png) 0 -3px no-repeat;
     background-size: cover;
 }
 .work .wrap_work .wrap .box .subboxL .description .commonbox:nth-child(5) > div > div.edge{
-    background: url(/images/edgeicon.png) 0 0 no-repeat;
+    background: url(../images/edgeicon.png) 0 0 no-repeat;
     background-size: cover;
 }
 .work .wrap_work .wrap .box .subboxL .description .commonbox:nth-child(5) > div > div.exploer{
-    background: url(/images/exploericon.png) -0.5px 0 no-repeat;
+    background: url(../images/exploericon.png) -0.7px 0 no-repeat;
     background-size: cover;
 }
 .work .wrap_work .wrap .box .subboxL .description .commonbox:nth-child(5) > div > div.exploer + div{
@@ -261,6 +278,7 @@ h2{
     
     display: flex;
     justify-content: space-between;
+    margin-top: 30px;
 }
 .work .wrap_work .wrap .box .subboxL .description .link a{
     display: flex;
