@@ -129,7 +129,7 @@ body{
     margin-bottom: 25px;
 }
 .intro .animation-box .first-text h1{
-    font-size: 10rem;
+    font-size: 11rem;
     font-weight: 400;
     opacity: 0;
     position: relative;
@@ -139,7 +139,7 @@ body{
 }
 .intro .animation-box .second-text {
     width: 100%;
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: 400;
     text-align: right;
     position: relative;
@@ -150,14 +150,14 @@ body{
     margin-bottom: 20px;
 }
 .intro .animation-box .third-text {
-    width: 100%;
+    height: 100%;
     overflow-y: hidden;
     transform: rotate(90deg);
     font-size: 2.5rem;
     position: absolute;
-    right: -30%;
-    bottom: 44%;
-    z-index: 1;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
     opacity: 0;
     animation: fadeInOut 7s 1.8s both;
     color: #3f1717;
