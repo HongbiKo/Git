@@ -55,7 +55,7 @@ header{
     position: fixed;
     top: 0;
     left: 0;
-    z-index:2;
+    z-index: 2;
     display: flex;
     justify-content: space-evenly;
 }
@@ -67,7 +67,7 @@ header{
     text-transform: uppercase;
     font-family: 'Chonburi', cursive;
     font-weight: 400;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     padding: 20px;
 }
 .button:hover {
@@ -94,22 +94,22 @@ header{
         rgba(252, 255, 157, 0.8),
         rgba(0,255,0,0) 50.71%) beige;
     border-radius: 50%;
-    width: 700px;
-    height: 700px;
+    width: 600px;
+    height: 600px;
     text-align: center;
     margin-top: 30px;
     background-attachment: fixed;
 }
 .tip{
-    width: 600px;
-    height: 400px;
+    width: 400px;
+    height: 200px;
     color: #0bf080;
-    font-size: 3rem;
+    font-size: 2.3rem;
     font-weight: 400;
     text-align: center;
     position: absolute;
     opacity: 0;
-    transition: opacity 0.3s ease-out;
+    transition: opacity 0.3s linear;
     font-family: 'Syncopate', sans-serif;
 }
 .tip.on{            
@@ -124,10 +124,16 @@ h2{
     display: flex;
     flex-flow: column nowrap;
 }
+.box{
+    display: flex;
+}
 
 /* about section */
 .about{
     height: 100vh;
+}
+.about h2{
+    color: #FAFBF4;
 }
 
 /* work section */
@@ -140,27 +146,25 @@ h2{
 }
 .work .wrap_work .wrap > p{
     font-family: 'Syncopate', sans-serif;
-    font-size: 6rem;
+    font-size: 4.5rem;
     font-weight: 700;
-    margin-bottom: 5%;
     text-align: right;
+    margin-bottom: 3%;
 }
 .work .wrap_work .wrap > p > span:first-of-type{
     font-family: 'Chonburi', cursive;
     color: #0bf080;
 }
 .work .wrap_work .wrap .box{
-    display: flex;
-    flex-flow: row wrap;
     justify-content: space-between;
     width: 100%;
     margin-bottom: 15%;    
 }
 .work .wrap_work .wrap .box .subboxL{
-    width: 45%;
+    width: 35%;
 }
 .work .wrap_work .wrap .box .subboxR{
-    width: 50%;
+    width: 60%;
 }
 .work .wrap_work .wrap .box .subboxL .description{
     display: flex;
@@ -171,35 +175,37 @@ h2{
     width: 100%;
 }
 .work .wrap_work .wrap .box .subboxL .description > span{
-    font-size: 3rem;
+    font-size: 2.4rem;
     font-weight: 700;
     margin-bottom: 10px;
 }
 .work .wrap_work .wrap .box .subboxL .description > p{
-    width: 80%;
-    font-size: 1.1em;
+    width: 100%;
+    font-size: 1rem;
     font-weight: 300;
     text-align: justify;
     word-break: keep-all;
     margin-bottom: 30px;
 }
+.work .wrap_work .wrap .box .subboxL .description .box{
+    width: 100%;
+    margin-bottom: 30px;
+}
 .work .wrap_work .wrap .box .subboxL .description .commonbox{
     display: flex;
     flex-flow: column wrap;
-    justify-content: center;
     align-items: center;
     font-family: 'Syncopate', sans-serif;
     font-weight: 700;
-    margin-bottom: 30px;
 }
 .work .wrap_work .wrap .box .subboxL .description .commonbox > span{
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-bottom: 10px;
 }
 .work .wrap_work .wrap .box .subboxL .description .commonbox > div{
     display: flex;
 }
-.work .wrap_work .wrap .box .subboxL .description .commonbox > div .color{
+.work .wrap_work .wrap .box .subboxL .description .box .commonbox > div .color{
     width: 80px;
     height: 80px;
     line-height: 80px;
@@ -209,75 +215,77 @@ h2{
     font-weight: 300;
     margin-left: 20px;
 }
-.work .wrap_work .wrap .box .subboxL .description .commonbox > div .color.red{
+/* description .box들어감 */
+.work .wrap_work .wrap .box .subboxL .description .box .commonbox > div .color.red{
     background-color: #c60d41;
     color: #fff;
     margin-left: 0;
 }
-.work .wrap_work .wrap .box .subboxL .description .commonbox > div .color.white{
+.work .wrap_work .wrap .box .subboxL .description .box .commonbox > div .color.white{
     background-color: #fff;
     border: 1px solid #ccc;
     color: #aaa;
 }
-.work .wrap_work .wrap .box .subboxL .description .commonbox > div .color.black{
+.work .wrap_work .wrap .box .subboxL .description .box .commonbox > div .color.black{
     background-color: #000;
     color: #fff;
 }
-.work .wrap_work .wrap .box .subboxL .description .commonbox > div .color.brown{
+.work .wrap_work .wrap .box .subboxL .description .box .commonbox > div .color.brown{
     background-color: #722a2a;
     color: #fff;
 }
-.work .wrap_work .wrap .box .subboxL .description .commonbox > div .color.salmon{
+.work .wrap_work .wrap .box .subboxL .description .box .commonbox > div .color.salmon{
     background-color: #efd9d1;
     color: #fff;
 }
-.work .wrap_work .wrap .box .subboxL .description .commonbox .font{
-    margin-top: -10px;
+.work .wrap_work .wrap .box .subboxL .description .box .commonbox .font{
+    margin-top: 20px;
     font-family: 'Noto Sans KR';
-    font-size: 2rem;
+    font-size: 1.3rem;
     font-weight: 500;
     color: #aaa;
 }
-.work .wrap_work .wrap:last-child .box .subboxL .description .commonbox .font{
-    margin-top: 0;
+.work .wrap_work .wrap:last-child .box .subboxL .description .box .commonbox .font{
     font-family: 'Italiana', serif;
-    font-size: 3rem;
+    font-size: 1.5rem;
 }
-.work .wrap_work .wrap .box .subboxL .description .commonbox:nth-child(5) > div{
-    align-items: flex-end;
-}
-.work .wrap_work .wrap .box .subboxL .description .commonbox:nth-child(5) > div > div{
-    width: 50px;
-    height: 50px;
+/* -------여기까지 */
+
+.work .wrap_work .wrap .box .subboxL .description .commonbox > div > div{
+    width: 33px;
+    height: 33px;
     margin-left: 10px;
 }
-.work .wrap_work .wrap .box .subboxL .description .commonbox:nth-child(5) > div > div.chrome{
+.work .wrap_work .wrap .box .subboxL .description .commonbox > div > div.chrome{
     background: url(images/chromeicon.png) 0 0 no-repeat;
     background-size: cover;
     margin-left: 0;
 }
-.work .wrap_work .wrap .box .subboxL .description .commonbox:nth-child(5) > div > div.firefox{
-    background: url(images/firefoxicon.png) 0 -4px no-repeat;
+.work .wrap_work .wrap .box .subboxL .description .commonbox > div > div.firefox{
+    background: url(images/firefoxicon.png) 0 -3px no-repeat;
     background-size: cover;
 }
-.work .wrap_work .wrap .box .subboxL .description .commonbox:nth-child(5) > div > div.edge{
+.work .wrap_work .wrap .box .subboxL .description .commonbox > div > div.edge{
     background: url(images/edgeicon.png) 0 0 no-repeat;
     background-size: cover;
 }
-.work .wrap_work .wrap .box .subboxL .description .commonbox:nth-child(5) > div > div.exploer{
-    background: url(images/exploericon.png) -0.7px 0 no-repeat;
+.work .wrap_work .wrap .box .subboxL .description .commonbox > div > div.exploer{
+    background: url(images/exploericon.png) -0.5px 0 no-repeat;
     background-size: cover;
 }
-.work .wrap_work .wrap .box .subboxL .description .commonbox:nth-child(5) > div > div.exploer + div{
+.work .wrap_work .wrap .box .subboxL .description .commonbox > div > div.exploer + div{
     width: 100px;
-    height: 10px;
+    height: auto;
     color: #aaa;
     font-size: 0.9rem;
+    font-weight: 200;
+    display: flex;
+    align-items: flex-end;
 }
 .work .wrap_work .wrap .box .subboxL .description .link{
-    
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 30px;
 }
 .work .wrap_work .wrap .box .subboxL .description .link a{
@@ -285,10 +293,14 @@ h2{
     justify-content: center;
     align-items: center;
     width: 200px;
-    height: 30px;
-    border: 1px solid #ccc;
+    height: 50px;
+    border: 2px solid #ccc;
+    border-radius: 30px;
     font-family: 'Syncopate', sans-serif;
-    font-size: 1.3rem;
+    font-size: 1rem;
+}
+.work .wrap_work .wrap .box .subboxR{
+    border: 1px solid #000;
 }
 
 
