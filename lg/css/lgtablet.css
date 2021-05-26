@@ -9,7 +9,7 @@ body{
 
 /*lg 로고 */
 body > .inner > a{
-    background: url(/Git/portfolio/lg/images/horizontal_logo.png) 0 0 no-repeat;
+    background: url(/lg/images/horizontal_logo.png) 0 0 no-repeat;
     width: 230px;
     height: 80px;
     background-size: contain;
@@ -81,7 +81,7 @@ body > .inner .mallbar.on{
 }
 .mnav .m_menu .depth1 .mnav_logo{
     display: inline-block;
-    background: url(/Git/portfolio/lg/images/circle_logo.png) 0 0 no-repeat;
+    background: url(/lg/images/circle_logo.png) 0 0 no-repeat;
     background-size: contain;
     width: 50px;
     height: 50px;
@@ -177,7 +177,7 @@ nav{
 
 /* intro*/
 .intro{
-    background: url(/Git/portfolio/lg/images/bg1-1.png) 70% 60% no-repeat;
+    background: url(/lg/images/bg1-1.png) 70% 60% no-repeat;
     background-size: cover;
     background-color: rgb(0, 0, 0, 0.5);
     background-blend-mode: multiply;
@@ -211,7 +211,7 @@ nav{
 
 /* intro3 */
 .intro3{
-    background: url(/Git/portfolio/lg/images/seoulbigsize.jpg) 50% 0 no-repeat;
+    background: url(/lg/images/seoulbigsize.jpg) 50% 0 no-repeat;
     background: cover;
     background-color: rgb(0, 0, 0, 0.5);
     background-blend-mode: multiply;
@@ -405,7 +405,7 @@ iframe{
 
 /* hr part */
 section.hr{
-    background: url(/Git/portfolio/lg/images/hr-bg.png) 40% 50% no-repeat;
+    background: url(/lg/images/hr-bg.png) 40% 50% no-repeat;
 }
 .hr h2{
     font-size: 3.4rem;

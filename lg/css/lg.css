@@ -39,7 +39,7 @@ a{
 /*lg 로고 */
 body > .inner > a{
     display: block;
-    background: url(/Git/portfolio/lg/images/vertical_logo.png) 0 0 no-repeat;
+    background: url(/lg/images/vertical_logo.png) 0 0 no-repeat;
     background-size: contain;
     width: 45px;
     height: 200px;
@@ -101,7 +101,7 @@ nav .menu > li > a{
 }
 nav .menu > li:nth-child(2) > a{
     display: block;
-    background: url(/Git/portfolio/lg/images/circle_logo.png) 0 0 no-repeat;
+    background: url(/lg/images/circle_logo.png) 0 0 no-repeat;
     background-size: contain;
     width: 60px;
     height: 60px;
@@ -255,11 +255,11 @@ nav .menu .submenu li:nth-child(3) .submenu_first > li:first-child::before{
     z-index: 0;
 }
 nav .menu .submenu li:first-child .submenu_first > li:first-child::before{
-    background: url(/Git/portfolio/lg/images/companypic2.png) 0 0 no-repeat;
+    background: url(/lg/images/companypic2.png) 0 0 no-repeat;
     background-size: contain;
 }
 nav .menu .submenu li:nth-child(2) .submenu_first > li:first-child::before{
-    background: url(/Git/portfolio/lg/images/graph.png) 0 0 no-repeat;
+    background: url(/lg/images/graph.png) 0 0 no-repeat;
     background-size: contain;
     position: absolute;
     left: 100px;
@@ -268,7 +268,7 @@ nav .menu .submenu li:nth-child(2) .submenu_first > li:first-child::before{
     left: -160%;
 }
 nav .menu .submenu li:nth-child(3) .submenu_first > li:first-child::before{
-    background: url(/Git/portfolio/lg/images/hands.png) 50% 0 no-repeat;
+    background: url(/lg/images/hands.png) 50% 0 no-repeat;
     background-size: contain;
     position: absolute ;
     left: -160%;
@@ -394,7 +394,7 @@ h2 > span{
 .swiper-container-vertical > .swiper-pagination-bullets::before{
     display: block;
     content: "";
-    background: url(/Git/portfolio/lg/images/scroll.png) 0 0 no-repeat;
+    background: url(/lg/images/scroll.png) 0 0 no-repeat;
     width: 20px;
     height: 30px;
     transform: translateX(-2px);
@@ -432,13 +432,13 @@ h2 > span{
 
 /* intro1 */
 .intro{
-    background: url(/Git/portfolio/lg/images/intro-bg.png) 50% 50% no-repeat;
+    background: url(/lg/images/intro-bg.png) 50% 50% no-repeat;
     background-color: rgb(0, 0, 0, 0.5);
     background-blend-mode: multiply;
 }
 .ie10 .intro,
 .ie11 .intro{
-    background: url(/Git/portfolio/lg/images/intro-bg_dark.png) 50% 50% no-repeat;
+    background: url(/lg/images/intro-bg_dark.png) 50% 50% no-repeat;
 }
 /* intro__introduction */
 .intro .inner .introduction {
@@ -497,14 +497,14 @@ h2 > span{
 
 /* intro2 */
 .intro2{
-    background: url(/Git/portfolio/lg/images/intro2.jpg) 0 0 no-repeat;
+    background: url(/lg/images/intro2.jpg) 0 0 no-repeat;
     background-size: cover;
     background-color: rgb(0, 0, 0, 0.4);
     background-blend-mode: multiply;
 }
 .ie10 .intro2,
 .ie11 .intro2{
-    background: url(/Git/portfolio/lg/images/intro2_dark.png) 0 0 no-repeat;
+    background: url(/lg/images/intro2_dark.png) 0 0 no-repeat;
 }
 .intro2 h1{
     font-size: 4rem;
@@ -531,7 +531,7 @@ h2 > span{
 
 /* intro3 */
 .intro3{
-    background: url(/Git/portfolio/lg/images/hanriver.jpg) 0 0 no-repeat;
+    background: url(/lg/images/hanriver.jpg) 0 0 no-repeat;
     background: cover;
     background-color: rgb(0, 0, 0, 0.5);
     background-blend-mode: multiply;
@@ -539,7 +539,7 @@ h2 > span{
 }
 .ie11 .intro3,
 .ie10 .intro3{
-    background: url(/Git/portfolio/lg/images/hanriver_dark.png) 0 0 no-repeat;
+    background: url(/lg/images/hanriver_dark.png) 0 0 no-repeat;
 }
 .intro3 h1{
     font-size: 4rem;
@@ -563,7 +563,7 @@ h2 > span{
     z-index: 2;
 }
 .intro3 .companypic{
-    background: url(/Git/portfolio/lg/images/companypic2.png) 0 0 no-repeat;
+    background: url(/lg/images/companypic2.png) 0 0 no-repeat;
     background-size: cover;
     width: 250px;
     height: 250px;
@@ -577,7 +577,7 @@ h2 > span{
 
 /* business part */
 section.business{
-    background: url(/Git/portfolio/lg/images/business-bg.png) 0 40% no-repeat;
+    background: url(/lg/images/business-bg.png) 0 40% no-repeat;
     /* background-color: rgb(0, 0, 0, 0.2);
     background-blend-mode: multiply; */
 }
@@ -726,19 +726,19 @@ section.business{
     height: 100px;
 }
 .business .box .wrapper:first-child .subbox.maincircle > div:last-child > span:last-child::before{
-    background: url(/Git/portfolio/lg/images/livingproduct.png) 0 0 no-repeat;
+    background: url(/lg/images/livingproduct.png) 0 0 no-repeat;
     background-size: contain;
     bottom: 35px;
     left: 15px;
 }
 .business .box .wrapper:nth-child(2) .subbox.maincircle > div:last-child > span:last-child::before{
-    background: url(/Git/portfolio/lg/images/cosmeticsicon.png) 0 0 no-repeat;
+    background: url(/lg/images/cosmeticsicon.png) 0 0 no-repeat;
     background-size: contain;
     bottom: 35px;
     left: 15px;
 }
 .business .box .wrapper:last-child .subbox.maincircle > div:last-child > span:last-child::before{
-    background: url(/Git/portfolio/lg/images/beverageicon.png) 0 0 no-repeat;
+    background: url(/lg/images/beverageicon.png) 0 0 no-repeat;
     background-size: contain;
     bottom: 30px;
     left: 15px;
@@ -749,14 +749,14 @@ section.business{
 
 /* investment part */
 section.investment{
-    background: url(/Git/portfolio/lg/images/invest.png) 0 0 no-repeat;
+    background: url(/lg/images/invest.png) 0 0 no-repeat;
     background-size: cover;
     background-color: rgb(0, 0, 0, 0.2);
     background-blend-mode: multiply;
 }
 .ie10 section.investment,
 .ie11 section.investment{
-    background: url(/Git/portfolio/lg/images/invest_dark.png) 0 0 no-repeat;
+    background: url(/lg/images/invest_dark.png) 0 0 no-repeat;
 }
 .investment h2{
     font-size: 3.2rem;
@@ -819,19 +819,19 @@ section.investment{
     top: 15px;
 }
 .investment .box .subbox.description.con1 p.mark.mark1::before{
-background: url(/Git/portfolio/lg/images/investmentcircle1.png) 0 0 no-repeat;
+background: url(/lg/images/investmentcircle1.png) 0 0 no-repeat;
 background-size: cover;
 }
 .investment .box .subbox.description.con2 p.mark.mark2::before{
-background: url(/Git/portfolio/lg/images/investmentcircle2.png) 0 0 no-repeat;
+background: url(/lg/images/investmentcircle2.png) 0 0 no-repeat;
 background-size: cover;
 }
 .investment .box .subbox.description.con3 p.mark.mark3::before{
-background: url(/Git/portfolio/lg/images/investmentcircle3.png) 0 0 no-repeat;
+background: url(/lg/images/investmentcircle3.png) 0 0 no-repeat;
 background-size: cover;
 }
 .investment .box .subbox.description.con4 p.mark.mark4::before{
-background: url(/Git/portfolio/lg/images/investmentcircle4.png) 0 0 no-repeat;
+background: url(/lg/images/investmentcircle4.png) 0 0 no-repeat;
 background-size: cover;
 }
 
@@ -875,27 +875,27 @@ section.news{
     height: 155px;
 }
 .news .box .subbox .image.news1{
-    background: url(/Git/portfolio/lg/images/thefirstimage.jpg) 50% 0 no-repeat;
+    background: url(/lg/images/thefirstimage.jpg) 50% 0 no-repeat;
     background-size: cover;
 }
 .news .box .subbox .image.news2{
-    background: url(/Git/portfolio/lg/images/supportbusiness.png) 50% 0 no-repeat;
+    background: url(/lg/images/supportbusiness.png) 50% 0 no-repeat;
     background-size: cover;
 }
 .news .box .subbox .image.news3{
-    background: url(/Git/portfolio/lg/images/model.png) 50% 0 no-repeat;
+    background: url(/lg/images/model.png) 50% 0 no-repeat;
     background-size: cover;
 }
 .news .box .subbox .image.news4{
-    background: url(/Git/portfolio/lg/images/activity.png) 50% 0 no-repeat;
+    background: url(/lg/images/activity.png) 50% 0 no-repeat;
     background-size: cover;
 }
 .news .box .subbox .image.news5{
-    background: url(/Git/portfolio/lg/images/newsletter.png) 70% 0 no-repeat;
+    background: url(/lg/images/newsletter.png) 70% 0 no-repeat;
     background-size: cover;
 }
 .news .box .subbox .image.news6{
-    background: url(/Git/portfolio/lg/images/charitryimage.png) 0 0 no-repeat;
+    background: url(/lg/images/charitryimage.png) 0 0 no-repeat;
     background-size: cover;
 }
 .news .box .subbox > p {
@@ -917,7 +917,7 @@ section.news{
     margin-top: 20px;
 }
 .news .clip .subbox .event{
-    background: url(/Git/portfolio/lg/images/event.png) 0 0 no-repeat;
+    background: url(/lg/images/event.png) 0 0 no-repeat;
     background-size: contain;
     width: 470px;
     height: 200px;
@@ -973,7 +973,7 @@ section.news{
 
 /* hr part */
 section.hr{
-    background: url(/Git/portfolio/lg/images/hr-bg.png) 0 0 no-repeat;
+    background: url(/lg/images/hr-bg.png) 0 0 no-repeat;
 }
 .basicSwiper .swiper-slide.swiper-slide-active .hr h2{
     animation: text1 1.2s .2s both;
@@ -1074,7 +1074,7 @@ footer .inner{
 }
 footer .inner > div:first-child a{
     display: block;
-    background: url(/Git/portfolio/lg/images/horizontal_logo.png) 0 0 no-repeat;
+    background: url(/lg/images/horizontal_logo.png) 0 0 no-repeat;
     background-size: contain;
     width: 140px;
     height: 100px;

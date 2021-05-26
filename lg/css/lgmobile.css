@@ -7,7 +7,7 @@ body{
 
 /*lg 로고 */
 body > .inner > a{
-    background: url(/Git/portfolio/lg/images/horizontal_logo.png) 0 0 no-repeat;
+    background: url(/lg/images/horizontal_logo.png) 0 0 no-repeat;
     width: 170px;
     height: 50px;
     background-size: contain;
@@ -84,7 +84,7 @@ body > .inner .mallbar.on{
 }
 .mnav .m_menu .depth1 .mnav_logo{
     display: inline-block;
-    background: url(/Git/portfolio/lg/images/circle_logo.png) 0 0 no-repeat;
+    background: url(/lg/images/circle_logo.png) 0 0 no-repeat;
     background-size: contain;
     width: 30px;
     height: 30px;
@@ -213,7 +213,7 @@ nav{
 
 /* intro3 */
 .intro3{
-    background: url(/Git/portfolio/lg/images/hanriver.jpg) 40% 20% no-repeat;
+    background: url(/lg/images/hanriver.jpg) 40% 20% no-repeat;
 }
 .intro3 h1{
     font-size: 2.6rem;
@@ -382,12 +382,12 @@ section.investment{
     height: 60px;
 }
 .swiper-button-prev{
-    background: url(/Git/portfolio/lg/images/previousarrow.png) 0 0 no-repeat;
+    background: url(/lg/images/previousarrow.png) 0 0 no-repeat;
     background-size: contain;
     left: 3px;
 }
 .swiper-button-next{
-    background: url(/Git/portfolio/lg/images/nextarrow.png) 0 0 no-repeat;
+    background: url(/lg/images/nextarrow.png) 0 0 no-repeat;
     background-size: contain;
     right: 3px;
 }
@@ -443,7 +443,7 @@ iframe{
 
 /* hr part */
 section.hr{
-    background: url(/Git/portfolio/lg/images/hr-bg.png) 20% 50% no-repeat;
+    background: url(/lg/images/hr-bg.png) 20% 50% no-repeat;
 }
 .hr h2{
     font-size: 2rem;

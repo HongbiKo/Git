@@ -6,7 +6,7 @@ body{
 }
 /*lg 로고 */
 body > .inner > a{
-    background: url(/Git/portfolio/lg/subimages/horizontal_logo_gray.png) 0 0 no-repeat;
+    background: url(/lg/subimages/horizontal_logo_gray.png) 0 0 no-repeat;
     width: 170px;
     height: 50px;
     background-size: contain;
@@ -51,7 +51,7 @@ body > .inner .mallbar.on{
 }
 .mnav .m_menu .depth1 .mnav_logo{
     display: inline-block;
-    background: url(/Git/portfolio/lg/images/circle_logo.png) 0 0 no-repeat;
+    background: url(/lg/images/circle_logo.png) 0 0 no-repeat;
     background-size: contain;
     width: 30px;
     height: 30px;
