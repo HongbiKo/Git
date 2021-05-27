@@ -477,17 +477,17 @@ h2 > span{
 .subSwiper3 .swiper-slide.swiper-slide-active .intro .introduction > h1:last-of-type,
 .subSwiper3 .swiper-slide.swiper-slide-active .intro2 > h1:last-of-type,
 .subSwiper3 .swiper-slide.swiper-slide-active .intro3 > p{
-    animation: text1 1s .6s both;
+    animation: text1 1s .8s both;
 }
 .subSwiper3 .swiper-slide.swiper-slide-active .intro .introduction > p,
 .subSwiper3 .swiper-slide.swiper-slide-active .intro2 > p,
 .subSwiper3 .swiper-slide.swiper-slide-active .intro3 > a{
-    animation: text1 1s .8s both;
+    animation: text1 1s 1.2s both;
 }
 .subSwiper3 .swiper-slide.swiper-slide-active .intro .introduction > a,
 .subSwiper3 .swiper-slide.swiper-slide-active .intro2 > a,
 .subSwiper3 .swiper-slide.swiper-slide-active .intro3 > div.companypic{
-    animation: text1 1s 1.2s both;
+    animation: text1 1s 1.6s both;
 }
 
 @keyframes text1{
