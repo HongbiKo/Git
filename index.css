@@ -160,11 +160,13 @@ h2{
 .about .wrap_about .wrap > p{
     font-size: 2rem;
 }
-.about .wrap_about .wrap > div{
+.about .wrap_about .wrap > div,
+.about .wrap_about .wrap > div > span{
     font-size: 1.5rem;
 }
 .about .wrap_about .wrap > div .skill{
     display: flex;
+    flex-flow: column wrap;
 }
 
 /* work section */
