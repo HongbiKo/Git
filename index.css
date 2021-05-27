@@ -131,7 +131,7 @@ h2{
 
 /* about section */
 .about{
-    height: 110vh;
+    height: 120vh;
 }
 .about .wrap_about{
     height: 100%;
@@ -141,6 +141,7 @@ h2{
 }
 .about .wrap_about h2{
     color: #FAFBF4;
+    padding-top: 0;
 }
 .about .wrap_about .wrap{
     font-family: 'Syncopate', sans-serif;
@@ -150,7 +151,20 @@ h2{
     height: auto;
 }
 .about .wrap_about .wrap > span:first-of-type{
-    font-size: 4rem;
+    font-size: 6rem;
+}
+.about .wrap_about .wrap > span:nth-of-type(2){
+    font-size: 3rem;
+}
+.about .wrap_about .wrap > span:last-of-type,
+.about .wrap_about .wrap > p{
+    font-size: 2rem;
+}
+.about .wrap_about .wrap > div{
+    font-size: 1.5rem;
+}
+.about .wrap_about .wrap > div .skill{
+    display: flex;
 }
 
 /* work section */
