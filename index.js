@@ -1,3 +1,50 @@
+$(document).ready(function(){
+    //리사이징 할때마다 새로고침
+    var lastWidth = $(window).width();
+    $(window).resize(function(){
+        if($(window).width()!=lastWidth){
+            location.reload();
+            lastWidth = $(window).width();
+            return false;
+        }
+    });
+
+    //스크롤버튼
+    $(".scroll a").each(function(){
+        var thisOffset = $("."+$(this).data('id')).offset().top;
+
+        $(this).click(function(){
+            $("html, body").animate({
+                scrollTop : thisOffset
+            }, 1000);
+            $(this).addClass('on');
+        });
+    });
+
+    //마우스툴팁
+    $(".circle, .tip").mousemove(function(event) {
+        var x = event.pageX;
+        var y = event.pageY;
+        $(".tip").css({left: x + 50 , top: y - 40}).addClass("on");
+    }).mouseleave(function() {
+        $(".tip").removeClass("on");
+    });
+
+    // slide hover
+    if($(window).width() > 640){
+        $('.sec1').mouseover(function(){
+            $(this).addClass('on');
+            $(this).children('p').addClass('on');
+        })
+        $('.sec1').mouseleave(function(){
+            $(this).removeClass('on');
+            $(this).children('p').removeClass('on');
+        })
+    }
+    
+});
+
+
 // 마우스&헤더
 const cursor = document.querySelector('.cursor');
 const cursorFollow = document.querySelector('.follow');
@@ -44,56 +91,6 @@ for (let i = 0; i < button.length; i++) {
         cursorFollow.style.borderRadius = '100%';
     });
 }
-
-
-
-
-
-$(document).ready(function(){
-    //리사이징 할때마다 새로고침
-    var lastWidth = $(window).width();
-    $(window).resize(function(){
-        if($(window).width()!=lastWidth){
-            location.reload();
-            lastWidth = $(window).width();
-            return false;
-        }
-    });
-
-    //스크롤버튼
-    $(".scroll a").each(function(){
-        var thisOffset = $("."+$(this).data('id')).offset().top;
-
-        $(this).click(function(){
-            $("html, body").animate({
-                scrollTop : thisOffset
-            }, 1000);
-            $(this).addClass('on');
-        });
-    });
-
-    //마우스툴팁
-    $(".circle, .tip").mousemove(function(event) {
-        var x = event.pageX;
-        var y = event.pageY;
-        $(".tip").css({left: x + 50 , top: y - 40}).addClass("on");
-    }).mouseleave(function() {
-        $(".tip").removeClass("on");
-    });
-
-    // slide hover
-    if($(window).width() > 640){
-        $('.sec1').mouseover(function(){
-            $(this).addClass('on');
-            $(this).children('p').addClass('on');
-        })
-        $('.sec1').mouseleave(function(){
-            $(this).removeClass('on');
-            $(this).children('p').removeClass('on');
-        })
-    }
-    
-});
 
 
 //스와이퍼
