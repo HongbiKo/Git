@@ -80,6 +80,18 @@ $(document).ready(function(){
     }).mouseleave(function() {
         $(".tip").removeClass("on");
     });
+
+    // slide hover
+    if($(window).width() > 640){
+        $('.sec1').mouseover(function(){
+            $(this).addClass('on');
+            $(this).children('p').addClass('on');
+        })
+        $('.sec1').mouseleave(function(){
+            $(this).removeClass('on');
+            $(this).children('p').removeClass('on');
+        })
+    }
     
 });
 
