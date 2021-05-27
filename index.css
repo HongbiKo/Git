@@ -131,10 +131,26 @@ h2{
 
 /* about section */
 .about{
-    height: 100vh;
+    height: 110vh;
 }
-.about h2{
+.about .wrap_about{
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+.about .wrap_about h2{
     color: #FAFBF4;
+}
+.about .wrap_about .wrap{
+    font-family: 'Syncopate', sans-serif;
+    font-weight: 700;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+}
+.about .wrap_about .wrap > span:first-of-type{
+    font-size: 4rem;
 }
 
 /* work section */
