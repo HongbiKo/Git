@@ -85,13 +85,13 @@ header{
 .main .circle{
     background:
         radial-gradient(circle at 50% 0,
-        rgba(157, 252, 255, 0.8),
+        rgba(157, 252, 255, 0.9),
         rgba(255,0,0,0) 50.71%),
         radial-gradient(circle at 6.7% 75%,
-        rgba(255, 157, 252, 0.8),
+        rgba(255, 157, 252, 0.9),
         rgba(0,0,255,0) 60.71%),
         radial-gradient(circle at 93.3% 75%,
-        rgba(252, 255, 157, 0.8),
+        rgba(252, 255, 157, 0.9),
         rgba(0,255,0,0) 50.71%) beige;
     border-radius: 50%;
     width: 600px;
@@ -123,6 +123,7 @@ h2{
 .wrap{
     display: flex;
     flex-flow: column nowrap;
+    width: 100%;
 }
 .box{
     display: flex;
@@ -158,13 +159,15 @@ h2{
 .work .wrap_work .wrap .box{
     justify-content: space-between;
     width: 100%;
-    margin-bottom: 15%;    
+    margin-bottom: 10%;   
 }
 .work .wrap_work .wrap .box .subboxL{
-    width: 35%;
-}
-.work .wrap_work .wrap .box .subboxR{
-    width: 60%;
+    width: 26%;
+    height: 600px;
+    margin-left: 50px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
 }
 .work .wrap_work .wrap .box .subboxL .description{
     display: flex;
@@ -188,6 +191,7 @@ h2{
     margin-bottom: 30px;
 }
 .work .wrap_work .wrap .box .subboxL .description .box{
+    justify-content: space-between;
     width: 100%;
     margin-bottom: 30px;
 }
@@ -197,6 +201,9 @@ h2{
     align-items: center;
     font-family: 'Syncopate', sans-serif;
     font-weight: 700;
+}
+.work .wrap_work .wrap .box .subboxL .description .commonbox:first-child{
+    margin-right: 10px;
 }
 .work .wrap_work .wrap .box .subboxL .description .commonbox > span{
     font-size: 1.5rem;
@@ -213,7 +220,7 @@ h2{
     text-align: center;
     font-family: 'Noto Sans KR';
     font-weight: 300;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 /* description .box들어감 */
 .work .wrap_work .wrap .box .subboxL .description .box .commonbox > div .color.red{
@@ -299,12 +306,34 @@ h2{
     font-family: 'Syncopate', sans-serif;
     font-size: 1rem;
 }
-.work .wrap_work .wrap .box .subboxR{
-    border: 1px solid #000;
+
+/* swiper */
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill{
+    background-color: #00FBDB;
 }
-
-
-
-
+.swiper-button-next{
+    background: url(images/arrow_next.png) 0 0 no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 80px;
+}
+.swiper-button-prev{
+    background: url(images/arrow_pre.png) 0 0 no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 80px;
+}
+.swiper-container.project{
+    margin-left: 0;
+    margin-right: 0;
+    width: 65%;
+}
+.swiper-container.project .swiper-slide .sec1{
+    background: url(images/lg-main.png) 50% 0 no-repeat;
+    background-size: cover;
+    width: 75%;
+    height: 500px;
+    margin: 50px auto 0;
+}
 
 
