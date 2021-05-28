@@ -94,8 +94,8 @@ header{
         rgba(252, 255, 157, 0.9),
         rgba(0,255,0,0) 50.71%) beige;
     border-radius: 50%;
-    width: 600px;
-    height: 600px;
+    width: 630px;
+    height: 630px;
     text-align: center;
     margin-top: 30px;
     background-attachment: fixed;
@@ -194,7 +194,7 @@ h2{
     margin-bottom: 10%;   
 }
 .work .wrap_work .wrap .box .subboxL{
-    width: 26%;
+    width: 30%;
     height: 600px;
     margin-left: 50px;
     display: flex;
@@ -366,7 +366,7 @@ h2{
 .swiper-container.project .swiper-slide .sec1{
     background: url(images/lg-main.png) 50% 0 no-repeat;
     background-size: cover;
-    width: 75%;
+    width: 88%;
     height: 500px;
     margin: 50px auto 0;
     display: flex;
@@ -406,15 +406,7 @@ h2{
 .swiper-container.project .swiper-slide .sec2{
     background: url(images/slide2.png) 0 0 no-repeat;
     background-size: cover;
-    width: 75%;
-    height: 500px;
-    margin: 50px auto 0;
-    background-color: #FAFBF4;
-}
-.swiper-container.project .swiper-slide .sec3{
-    background: url(images/slide3.png) 0 0 no-repeat;
-    background-size: cover;
-    width: 75%;
+    width: 88%;
     height: 500px;
     margin: 50px auto 0;
     background-color: #FAFBF4;
