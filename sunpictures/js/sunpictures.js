@@ -49,12 +49,19 @@ $(document).ready(function(){
 
 
 
-var swiper = new Swiper(".mySwiper.ticketSwiper", {
+var swiper = new Swiper(".ticketSwiper", {
     pagination: {
         el: ".swiper-pagination.ticketPagination",
         clickable: true,
     },
-    });
+});
+
+var swiper2 = new Swiper(".voucherSwiper", {
+    pagination: {
+        el: ".swiper-pagination.voucherPagination",
+        clickable: true,
+    },
+});
 
 
 
