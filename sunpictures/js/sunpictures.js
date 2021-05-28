@@ -50,8 +50,6 @@ $(document).ready(function(){
 
 
 var swiper = new Swiper(".mySwiper.ticketSwiper", {
-    slidesPerView: 2,
-    spaceBetween: 10,
     pagination: {
         el: ".swiper-pagination.ticketPagination",
         clickable: true,
