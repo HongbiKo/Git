@@ -103,6 +103,7 @@ var swiper = new Swiper(".project", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
+    loop: true
 });
 
 

@@ -189,14 +189,14 @@ h2{
     color: #0bf080;
 }
 .work .wrap_work .wrap .box{
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
     margin-bottom: 10%;   
 }
 .work .wrap_work .wrap .box .subboxL{
-    width: 30%;
-    height: 600px;
-    margin-left: 50px;
+    width: 35%;
+    height: 450px;
+    margin-right: 20px;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -359,15 +359,15 @@ h2{
     height: 80px;
 }
 .swiper-container.project{
-    margin-left: 0;
+    margin-left: 20px;
     margin-right: 0;
-    width: 65%;
+    width: 60%;
 }
 .swiper-container.project .swiper-slide .sec1{
     background: url(images/lg-main.png) 50% 0 no-repeat;
     background-size: cover;
-    width: 88%;
-    height: 500px;
+    width: 80%;
+    height: 350px;
     margin: 50px auto 0;
     display: flex;
     flex-flow: column wrap;
@@ -406,8 +406,8 @@ h2{
 .swiper-container.project .swiper-slide .sec2{
     background: url(images/slide2.png) 50% 50% no-repeat;
     background-size: cover;
-    width: 88%;
-    height: 500px;
+    width: 80%;
+    height: 350px;
     margin: 50px auto 0;
     background-color: #FAFBF4;
 }
