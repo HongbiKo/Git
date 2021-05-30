@@ -80,7 +80,7 @@ header{
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 110vh;
 }
 .main .circle{
     background:
@@ -97,7 +97,6 @@ header{
     width: 630px;
     height: 630px;
     text-align: center;
-    margin-top: 30px;
     background-attachment: fixed;
 }
 .tip{
@@ -137,11 +136,11 @@ h2{
     height: 100%;
     display: flex;
     flex-flow: column wrap;
-    justify-content: center;
+
 }
 .about .wrap_about h2{
     color: #FAFBF4;
-    padding-top: 0;
+    padding-top: 50px;
 }
 .about .wrap_about .wrap{
     font-family: 'Syncopate', sans-serif;
@@ -150,24 +149,43 @@ h2{
     flex-wrap: wrap;
     height: auto;
 }
-.about .wrap_about .wrap > span:first-of-type{
-    font-size: 6rem;
+.about .wrap_about .wrap .name{
+    display: flex;
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 18%;
 }
-.about .wrap_about .wrap > span:nth-of-type(2){
-    font-size: 3rem;
+.about .wrap_about .wrap .name p{
+    width: 110px;
+    position: relative;
 }
-.about .wrap_about .wrap > span:last-of-type,
-.about .wrap_about .wrap > p{
+.about .wrap_about .wrap .name p::before,
+.about .wrap_about .wrap .name p::after {
+    display: inline-block;
+    content: attr(data-letter);
+    color: hsl(183, 100%, 50%);
+    position: absolute;
+    font-size: 7rem;
+}
+.about .wrap_about .wrap .name p::before {
+    text-transform: uppercase;
+    color: hsl(9, 100%, 50%);
+    top: 0;
+    left: 0;
+}
+.about .wrap_about .wrap .name p::after {
+    mix-blend-mode: multiply;
+    top: 0;
+    left: -5px;
+}
+.about .wrap_about .wrap .name p:hover::after {
+    transform: translateX(-20%);
+    transition: transform 375ms ease-in-out;
+}
+.about .wrap_about .wrap .letter{
     font-size: 2rem;
 }
-.about .wrap_about .wrap > div,
-.about .wrap_about .wrap > div > span{
-    font-size: 1.5rem;
-}
-.about .wrap_about .wrap > div .skill{
-    display: flex;
-    flex-flow: column wrap;
-}
+
 
 /* work section */
 .work h2{
@@ -337,6 +355,14 @@ h2{
     border-radius: 30px;
     font-family: 'Syncopate', sans-serif;
     font-size: 1rem;
+    transition: box-shadow 0.5s;
+}
+.work .wrap_work .wrap .box .subboxL .description .link a:hover {
+    background: rgba(157, 252, 255, 0.9);
+    color: #aaa;
+    box-shadow: 0 0 100px rgba(157, 252, 255, 0.9), 0 0 25px rgba(157, 252, 255, 0.9), 0 0 50px rgba(157, 252, 255, 0.9),
+    0 0 200px rgba(157, 252, 255, 0.9);
+    border: none;
 }
 
 /* swiper */

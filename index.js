@@ -106,5 +106,13 @@ var swiper = new Swiper(".project", {
     loop: true
 });
 
-
-
+gsap.to(".letter1", {
+    scrollTrigger:{
+        trigger: ".letter", 
+        start: "top bottom", 
+        end: "bottom top", 
+        scrub: 1
+    },
+    x: 100,
+    pin: true
+});
