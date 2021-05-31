@@ -123,6 +123,7 @@ h2{
     display: flex;
     flex-flow: column nowrap;
     width: 100%;
+    margin-bottom: 3%;
 }
 .box{
     display: flex;
@@ -153,7 +154,7 @@ h2{
     justify-content: center;
     width: 100%;
     margin-top: 7%;
-    margin-bottom: 15%;
+    margin-bottom: 16%;
 }
 .about .wrap_about .wrap .name p{
     width: 110px;
@@ -238,7 +239,7 @@ h2{
     display: block;
     content: "";
     width: 80%;
-    height: 8px;
+    height: 8.5px;
     border-radius: 30px;
     background-color: #fff;
     position: absolute;
@@ -260,11 +261,6 @@ h2{
 .about .wrap_about .wrap .letter:last-child .skill .bar:last-child .prograss::before{
     width: 100%;
 }
-
-
-
-
-
 
 /* work section */
 .work h2{
@@ -521,5 +517,23 @@ h2{
     background-color: #FAFBF4;
 }
 
-
-
+/* contact section */
+.contact{
+    height: 70vh;
+}
+.contact h2{
+    color: #FAFBF4;
+}
+.contact .wrap{
+    flex-wrap: wrap;
+}
+.contact .wrap .text{
+    font-family: 'Syncopate', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.contact .wrap .text:first-child{
+    margin-top: 5%;
+}
