@@ -276,7 +276,7 @@ body{
 
 /* facility section */
 .silver{
-    background: #fdfaf6;
+    background-color: #fdfaf6;
 }
 .facility .inner{
     position: relative;
@@ -386,6 +386,7 @@ body{
 .ticket .inner .bigbox .box .container .subbox > span{
     font-weight: 700;
     font-size: 4rem;
+    width: 145%;
 }
 .ticket .inner .bigbox .box .container .subbox.movieticket > span,
 .ticket .inner .bigbox .box .container .subbox.movietour > span{
@@ -421,10 +422,10 @@ body{
     font-family: 'Italiana', serif;
 }
 .ticket .inner .bigbox .box .container .subbox.movieticket .ticketSwiper .swiper-wrapper .swiper-slide .brownpaper > span:first-child{
-    font-size: 4rem;
+    font-size: 2.8rem;
 }
 .ticket .inner .bigbox .box .container .subbox.movieticket .ticketSwiper .swiper-wrapper .swiper-slide .brownpaper > span:last-child{
-    font-size: 3.5rem;
+    font-size: 3rem;
 }
 .ticket .inner .bigbox .box .container .subbox.movievoucher .voucherSwiper .swiper-wrapper .swiper-slide .redpaper{
     background: url(../images/redpaper2.jpg) 0 0 no-repeat;
