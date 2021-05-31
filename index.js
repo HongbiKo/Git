@@ -84,7 +84,7 @@ for (let i = 0; i < button.length; i++) {
 for (let i = 0; i < button.length; i++) {
     button[i].addEventListener('mouseleave', () => {
         buttonHoverFlag = false;
-        cursor.style.backgroundColor = '#FBDB00';
+        cursor.style.backgroundColor = '#F7354F';
         cursorFollow.style.width = 10 + 'px';
         cursorFollow.style.height = 10 + 'px';
         cursorFollow.style.padding = 32 + 'px';
@@ -113,7 +113,7 @@ var swiper = new Swiper(".project", {
 ScrollTrigger.create({
 	trigger: '.aboutbox',
 	animation: gsap.fromTo('.aboutsubbox', {scale: 1 }, {scale: 1.8}),
-	start: 'center center',
+	start: '-=100 center',
 	end: '+=200 bottom',
 	scrub: 1,
 	// markers: true,
@@ -127,7 +127,7 @@ ScrollTrigger.create({
 	trigger: '.aboutbox',
 	animation: tl,
 	pin: true,
-	start: 'center center',
+	start: '-=100 center',
 	end: '+=300 bottom',
 	scrub: 1, 
 	// markers: true,
