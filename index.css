@@ -190,7 +190,7 @@ h2{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: url(/images/me2.jpg) 50% 50% no-repeat;
+	background: url(images/me2.jpg) 50% 50% no-repeat;
     background-size: cover;
     filter: hue-rotate(-40deg);
 }
