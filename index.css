@@ -130,13 +130,12 @@ h2{
 
 /* about section */
 .about{
-    height: 120vh;
+    height: 110vh;
 }
 .about .wrap_about{
     height: 100%;
     display: flex;
     flex-flow: column wrap;
-
 }
 .about .wrap_about h2{
     color: #FAFBF4;
@@ -151,9 +150,10 @@ h2{
 }
 .about .wrap_about .wrap .name{
     display: flex;
+    justify-content: center;
     width: 100%;
-    margin-top: 5%;
-    margin-bottom: 18%;
+    margin-top: 7%;
+    margin-bottom: 15%;
 }
 .about .wrap_about .wrap .name p{
     width: 110px;
@@ -182,9 +182,88 @@ h2{
     transform: translateX(-20%);
     transition: transform 375ms ease-in-out;
 }
-.about .wrap_about .wrap .letter{
-    font-size: 2rem;
+.about .wrap_about .wrap .aboutbox {
+	width: 700px;
+	height: 400px;
+    margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: url(/images/me2.jpg) 50% 50% no-repeat;
+    background-size: cover;
+    filter: hue-rotate(-40deg);
 }
+
+.about .wrap_about .wrap .aboutbox .aboutsubbox {
+	width: 20px;
+	height: 20px;
+    background-color:#47ffff;
+	color: white;
+    overflow: hidden;
+}
+.about .wrap_about .wrap .letter{
+    transform: translateX(-10000%);
+    margin-top: 20px;
+}
+.about .wrap_about .wrap .letter:first-child{
+    font-size: 1.5rem;
+}
+.about .wrap_about .wrap .letter:nth-child(2){
+    font-size: 1.4rem;
+}
+.about .wrap_about .wrap .letter:nth-child(3){
+    font-size: 0.8rem;
+}
+.about .wrap_about .wrap .letter:last-child > span{
+    font-size: 1.5rem;
+}
+.about .wrap_about .wrap .letter:last-child .skill{
+    font-size: 0.8rem;
+}
+.about .wrap_about .wrap .letter:last-child .skill .bar{
+    display: flex;
+}
+.about .wrap_about .wrap .letter:last-child .skill .bar > span{
+    margin-right: 10px;
+}
+.about .wrap_about .wrap .letter:last-child .skill .bar .prograss{
+    width: 40%;
+    height: 10px;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    position: relative;
+    margin-bottom: 10px;
+}
+.about .wrap_about .wrap .letter:last-child .skill .bar .prograss::before{
+    display: block;
+    content: "";
+    width: 80%;
+    height: 8px;
+    border-radius: 30px;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.about .wrap_about .wrap .letter:last-child .skill .bar:nth-child(3) .prograss::before{
+    width: 50%;
+}
+.about .wrap_about .wrap .letter:last-child .skill .bar:nth-child(4) .prograss::before{
+    width: 40%;
+}
+.about .wrap_about .wrap .letter:last-child .skill .bar:nth-child(5) .prograss::before{
+    width: 50%;
+}
+.about .wrap_about .wrap .letter:last-child .skill .bar:last-child .prograss{
+    margin-top: 7px;
+}
+.about .wrap_about .wrap .letter:last-child .skill .bar:last-child .prograss::before{
+    width: 100%;
+}
+
+
+
+
 
 
 /* work section */
@@ -212,9 +291,9 @@ h2{
     margin-bottom: 10%;   
 }
 .work .wrap_work .wrap .box .subboxL{
-    width: 35%;
+    width: 30%;
     height: 450px;
-    margin-right: 20px;
+    margin-right: 40px;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -288,7 +367,11 @@ h2{
     color: #fff;
 }
 .work .wrap_work .wrap .box .subboxL .description .box .commonbox > div .color.brown{
-    background-color: #722a2a;
+    background-color: #660000;
+    color: #fff;
+}
+.work .wrap_work .wrap .box .subboxL .description .box .commonbox > div .color.redbrown{
+    background-color: #990000;
     color: #fff;
 }
 .work .wrap_work .wrap .box .subboxL .description .box .commonbox > div .color.salmon{
@@ -358,10 +441,10 @@ h2{
     transition: box-shadow 0.5s;
 }
 .work .wrap_work .wrap .box .subboxL .description .link a:hover {
-    background: rgba(157, 252, 255, 0.9);
+    background: rgba(142, 255, 207, 0.9);
     color: #aaa;
-    box-shadow: 0 0 100px rgba(157, 252, 255, 0.9), 0 0 25px rgba(157, 252, 255, 0.9), 0 0 50px rgba(157, 252, 255, 0.9),
-    0 0 200px rgba(157, 252, 255, 0.9);
+    box-shadow: 0 0 100px rgba(142, 255, 207, 0.9), 0 0 25px rgba(142, 255, 207, 0.9), 0 0 50px rgba(142, 255, 207, 0.9),
+    0 0 200px rgba(142, 255, 207, 0.9);
     border: none;
 }
 
@@ -390,10 +473,10 @@ h2{
     width: 60%;
 }
 .swiper-container.project .swiper-slide .sec1{
-    background: url(images/lg-main.png) 50% 0 no-repeat;
+    background: url(images/lg-main.png) 50% 50% no-repeat;
     background-size: cover;
     width: 80%;
-    height: 350px;
+    height: 400px;
     margin: 50px auto 0;
     display: flex;
     flex-flow: column wrap;
@@ -430,10 +513,10 @@ h2{
     margin-bottom: 15px;
 }
 .swiper-container.project .swiper-slide .sec2{
-    background: url(images/slide2.png) 50% 50% no-repeat;
+    background: url(images/slide2.png) 50% 60% no-repeat;
     background-size: cover;
     width: 80%;
-    height: 350px;
+    height: 400px;
     margin: 50px auto 0;
     background-color: #FAFBF4;
 }

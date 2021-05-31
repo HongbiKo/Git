@@ -106,13 +106,40 @@ var swiper = new Swiper(".project", {
     loop: true
 });
 
-gsap.to(".letter1", {
-    scrollTrigger:{
-        trigger: ".letter", 
-        start: "top bottom", 
-        end: "bottom top", 
-        scrub: 1
-    },
-    x: 100,
-    pin: true
-});
+// gsap.to(".letter1", {
+//     scrollTrigger:{
+//         trigger: ".letter", 
+//         start: "top bottom", 
+//         end: "bottom top", 
+//         scrub: 1
+//     },
+//     x: 100,
+//     pin: true
+// });
+
+gsap.registerPlugin(ScrollTrigger)
+
+
+
+ScrollTrigger.create({
+	trigger: '.aboutbox',
+	animation: gsap.fromTo('.aboutsubbox', {scale: 1 }, {scale: 1.8}),
+	start: 'center center',
+	end: '+=200 bottom',
+	scrub: 1,
+	// markers: true,
+})
+
+const text = document.querySelectorAll('.aboutsubbox > *')
+
+const tl = gsap.timeline().to('.aboutsubbox', {width: 350, height: 350}).fromTo(text, {x: -450}, {x: 20, stagger: 0.5});
+
+ScrollTrigger.create({
+	trigger: '.aboutbox',
+	animation: tl,
+	pin: true,
+	start: 'center center',
+	end: '+=300 bottom',
+	scrub: 1, 
+	// markers: true,
+})
