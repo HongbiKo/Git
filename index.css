@@ -273,6 +273,7 @@ h2{
     flex-flow: column wrap;
 }
 .work .wrap_work .wrap > p{
+    padding-top: 50px;
     font-family: 'Syncopate', sans-serif;
     font-size: 4.5rem;
     font-weight: 700;
