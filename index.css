@@ -484,7 +484,7 @@ h2{
     transition: all 0.6s;
 }
 .swiper-container.project .swiper-slide .sec1.sunpic{
-    background: url(images/sunpictures-main.png) 50% 0 no-repeat;
+    background: url(images/sunpictures-main.png) 100% 0 no-repeat;
     background-size: cover;
 }
 .swiper-container.project .swiper-slide .sec1.on{
