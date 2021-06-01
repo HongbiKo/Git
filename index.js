@@ -41,7 +41,11 @@ $(document).ready(function(){
             $(this).children('p').removeClass('on');
         })
     }
-    
+
+    //mobile menu
+    $(".m_menu").click(function(){
+        $("header").toggleClass("on");
+    })
 });
 
 
@@ -109,7 +113,8 @@ var swiper = new Swiper(".project", {
 // gsap.registerPlugin(ScrollTrigger)
 
 
-
+var iw = window.innerWidth;
+if(iw > 640){
 ScrollTrigger.create({
 	trigger: '.aboutbox',
 	animation: gsap.fromTo('.aboutsubbox', {scale: 1 }, {scale: 1.8}),
@@ -132,6 +137,7 @@ ScrollTrigger.create({
 	scrub: 1, 
 	// markers: true,
 })
+}
 
 gsap.to(".text", {
     scrollTrigger:{
@@ -143,3 +149,32 @@ gsap.to(".text", {
     scale: 1.5,
     pin: true
 });
+
+
+var iw = window.innerWidth;
+if(iw < 641) {
+    ScrollTrigger.create({
+        trigger: '.aboutbox',
+        animation: gsap.fromTo('.aboutsubbox', {scale: 1 }, {scale: 1.3}),
+        start: '-=100 center',
+        end: '+=200 bottom',
+        scrub: 1,
+        // markers: true,
+    })
+
+
+    const text = document.querySelectorAll('.aboutsubbox > *')
+
+    const tl = gsap.timeline().to('.aboutsubbox', {width: 240, height: 370}).fromTo(text, {x: -250}, {x: 5, stagger: 0.5});
+
+    ScrollTrigger.create({
+        trigger: '.aboutbox',
+        animation: tl,
+        pin: true,
+        start: '-=100 center',
+        end: '+=300 bottom',
+        scrub: 1, 
+        // markers: true,
+    })
+
+}

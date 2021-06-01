@@ -105,6 +105,9 @@ header{
     text-align: center;
     background-attachment: fixed;
 }
+.main .circle .mtext{
+    display: none;
+}
 .tip{
     width: 400px;
     height: 200px;

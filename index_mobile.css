@@ -22,11 +22,18 @@ h2{
     position: fixed;
     top: 10px;
     left: 10px;
+    font-size: 1.5rem;
+    color: #47FFFF;
 }
 header{
     margin: 0;
     flex-flow: column wrap;
-    justify-content: flex-start;
+    align-items: flex-end;
+    display: none;
+    background-color: #fff;
+}
+header.on{
+    display: flex;
 }
 .button{
     display: block;
@@ -36,13 +43,23 @@ header{
 
 /* main section */
 .main{
-    height: auto;
+    height: 100vh;
+
 }
 .main .circle{
     width: 280px;
     height: 280px;
     background-attachment: scroll;
     margin-top: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main .circle .mtext{
+    display: block;
+    font-family: 'Syncopate', sans-serif;
+    font-size: 1.5rem;
+    color: #fff;
 }
 .tip{
     display: none;
@@ -50,20 +67,20 @@ header{
 
 /* about section */
 .about{
-    height: auto;
+    height: 110vh;
 }
 .about .wrap_about h2{
-    padding-top: 0;
+    padding-top: 66px;
 }
 .about .wrap_about .wrap .name p{
     width: 50px;
 }
 .about .wrap_about .wrap .name p::before,
 .about .wrap_about .wrap .name p::after {
-    font-size: 2.5rem;
+    font-size: 2.6rem;
 }
 .about .wrap_about .wrap .aboutbox{
-    display: none;
+    width: 100%;
 }
 
 /* work section */
@@ -74,6 +91,7 @@ header{
     padding-top: 0;
     font-size: 2.2rem;
     margin-top: 0;
+    text-align: center;
 }
 .work .wrap_work .wrap .box{
     flex-flow: column wrap;
@@ -91,12 +109,16 @@ header{
     width: 100%;
     margin: 0;
 }
-.swiper-container.project .swiper-slide .sec1{
+.swiper-container.project .swiper-slide .sec1,
+.swiper-container.project .swiper-slide .sec2{
     width: 100%;
-    height: 300px;
+    height: 180px;
     margin: 0;
 }
-
+.swiper-button-next,
+.swiper-button-prev{
+    display: none;
+}
 
 /* contact section */
 .contact{
