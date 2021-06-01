@@ -1,1 +1,104 @@
 @charset "utf-8";
+body{
+    min-width: 320px;
+}
+.inner{
+    width: 90%;
+    position: relative;
+}
+html{
+    cursor: auto;
+}
+.cursor_wrap{
+    display: none;
+}
+h2{
+    padding-top: 0;
+}
+
+/* menu section */
+.m_menu{
+    display: block;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
+header{
+    margin: 0;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+}
+.button{
+    display: block;
+    font-size: 1.5rem;
+    padding: 0;
+}
+
+/* main section */
+.main{
+    height: auto;
+}
+.main .circle{
+    width: 280px;
+    height: 280px;
+    background-attachment: scroll;
+    margin-top: 20%;
+}
+.tip{
+    display: none;
+}
+
+/* about section */
+.about{
+    height: auto;
+}
+.about .wrap_about h2{
+    padding-top: 0;
+}
+.about .wrap_about .wrap .name p{
+    width: 50px;
+}
+.about .wrap_about .wrap .name p::before,
+.about .wrap_about .wrap .name p::after {
+    font-size: 2.5rem;
+}
+.about .wrap_about .wrap .aboutbox{
+    display: none;
+}
+
+/* work section */
+.work .wrap_work .wrap{
+    flex-wrap: wrap;
+}
+.work .wrap_work .wrap > p{
+    padding-top: 0;
+    font-size: 2.2rem;
+    margin-top: 0;
+}
+.work .wrap_work .wrap .box{
+    flex-flow: column wrap;
+    justify-content: flex-start;
+}
+.work .wrap_work .wrap .box .subboxL{
+    width: 100%;
+    height: auto;
+}
+
+
+
+/* swiper */
+.swiper-container.project{
+    width: 100%;
+    margin: 0;
+}
+.swiper-container.project .swiper-slide .sec1{
+    width: 100%;
+    height: 300px;
+    margin: 0;
+}
+
+
+/* contact section */
+.contact{
+    display: none;
+}

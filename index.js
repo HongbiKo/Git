@@ -9,7 +9,7 @@ $(document).ready(function(){
         }
     });
 
-    //스크롤버튼
+    //scroll button
     $(".scroll a").each(function(){
         var thisOffset = $("."+$(this).data('id')).offset().top;
 
@@ -21,7 +21,7 @@ $(document).ready(function(){
         });
     });
 
-    //마우스툴팁
+    //mouse tultip
     $(".circle, .tip").mousemove(function(event) {
         var x = event.pageX;
         var y = event.pageY;
@@ -45,7 +45,7 @@ $(document).ready(function(){
 });
 
 
-// 마우스&헤더
+// mouse&header
 const cursor = document.querySelector('.cursor');
 const cursorFollow = document.querySelector('.follow');
 const cursorFollowActiveBuffer = 0;
@@ -93,7 +93,7 @@ for (let i = 0; i < button.length; i++) {
 }
 
 
-//스와이퍼
+//swiper
 var swiper = new Swiper(".project", {
     pagination: {
         el: ".swiper-pagination",
