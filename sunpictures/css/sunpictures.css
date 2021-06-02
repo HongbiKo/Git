@@ -9,7 +9,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 :root {
     font-size: 16px;
@@ -421,18 +421,23 @@ body{
     font-family: 'Italiana', serif;
 }
 .ticket .inner .bigbox .box .container .subbox.movieticket .ticketSwiper .swiper-wrapper .swiper-slide .brownpaper > span:first-child{
-    font-size: 2.8rem;
+    font-size: 3rem;
+    text-align: center;
 }
 .ticket .inner .bigbox .box .container .subbox.movieticket .ticketSwiper .swiper-wrapper .swiper-slide .brownpaper > span:last-child{
-    font-size: 3rem;
+    font-size: 2.2rem;
 }
 .ticket .inner .bigbox .box .container .subbox.movievoucher .voucherSwiper .swiper-wrapper .swiper-slide .redpaper{
     background: url(../images/redpaper2.jpg) 0 0 no-repeat;
     background-size: cover;
-    width: 400px;
+    width: 300px;
     height: 250px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Italiana', serif;
 }
-
 
 
 
