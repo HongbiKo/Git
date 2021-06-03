@@ -369,13 +369,13 @@ body{
     flex-flow: column wrap;
 }
 .ticket .inner .bigbox .box .container .subbox.movieticket{
-    width: 55%;
+    width: 70%;
 }
 .ticket .inner .bigbox .box .container .subbox.movievoucher{
-    width: 55%;
+    width: 70%;
 }
 .ticket .inner .bigbox .box .container .subbox.movietour{
-    width: 70%;
+    width: 85%;
 }
 .ticket .inner .bigbox .box .container .subbox.venue{
     width: 100%;
@@ -444,6 +444,15 @@ body{
     justify-content: center;
     align-items: center;
     font-family: 'Italiana', serif;
+}
+.ticket .inner .bigbox .box .container .subbox.movietour{
+    align-items: flex-end;
+}
+.ticket .inner .bigbox .box .container .subbox.movietour > div{
+    background: url(../images/woodypaper.png) 0 0 no-repeat;
+    background-size: cover;
+    width: 500px;
+    height: 300px;
 }
 
 
