@@ -9,7 +9,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 :root {
     font-size: 16px;
@@ -453,11 +453,25 @@ body{
     background-size: cover;
     width: 500px;
     height: 300px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
 }
-
-
-
-
+.ticket .inner .bigbox .box .container .subbox.movietour > div > span{
+    font-family: 'Italiana', serif;
+    /* color: #596e7a; */
+}
+.ticket .inner .bigbox .box .container .subbox.movietour > div > span:first-child{
+    font-size: 3.5rem;
+}
+.ticket .inner .bigbox .box .container .subbox.movietour > div > span:nth-child(2),
+.ticket .inner .bigbox .box .container .subbox.movietour > div > span:nth-child(3){
+    font-size: 2.3rem;
+}
+.ticket .inner .bigbox .box .container .subbox.movietour > div > span:last-child{
+    font-size: 2.5rem;
+}
 
 /* movie section*/
 
