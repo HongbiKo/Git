@@ -9,7 +9,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 :root {
     font-size: 16px;
@@ -369,10 +369,10 @@ body{
     flex-flow: column wrap;
 }
 .ticket .inner .bigbox .box .container .subbox.movieticket{
-    width: 60%;
+    width: 55%;
 }
 .ticket .inner .bigbox .box .container .subbox.movievoucher{
-    width: 70%;
+    width: 55%;
 }
 .ticket .inner .bigbox .box .container .subbox.movietour{
     width: 70%;
@@ -420,12 +420,19 @@ body{
     align-items: center;
     font-family: 'Italiana', serif;
 }
-.ticket .inner .bigbox .box .container .subbox.movieticket .ticketSwiper .swiper-wrapper .swiper-slide .brownpaper > span:first-child{
+.ticket .inner .bigbox .box .container .subbox.movieticket .ticketSwiper .swiper-wrapper .swiper-slide .brownpaper > span:first-child,
+.ticket .inner .bigbox .box .container .subbox.movievoucher .voucherSwiper .swiper-wrapper .swiper-slide .redpaper > span:first-child{
     font-size: 3rem;
+    line-height: 90%;
     text-align: center;
 }
-.ticket .inner .bigbox .box .container .subbox.movieticket .ticketSwiper .swiper-wrapper .swiper-slide .brownpaper > span:last-child{
-    font-size: 2.2rem;
+.ticket .inner .bigbox .box .container .subbox.movieticket .ticketSwiper .swiper-wrapper .swiper-slide .brownpaper > span:last-child,
+.ticket .inner .bigbox .box .container .subbox.movievoucher .voucherSwiper .swiper-wrapper .swiper-slide .redpaper > span:last-child{
+    font-size: 2.5rem;
+}
+.ticket .inner .bigbox .box .container .subbox.movieticket .ticketSwiper .swiper-wrapper .swiper-slide .brownpaper > span:first-child > span,
+.ticket .inner .bigbox .box .container .subbox.movievoucher .voucherSwiper .swiper-wrapper .swiper-slide .redpaper > span:first-child > span{
+    font-size: 2rem;
 }
 .ticket .inner .bigbox .box .container .subbox.movievoucher .voucherSwiper .swiper-wrapper .swiper-slide .redpaper{
     background: url(../images/redpaper2.jpg) 0 0 no-repeat;

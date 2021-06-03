@@ -50,6 +50,7 @@ $(document).ready(function(){
 
 
 var swiper = new Swiper(".ticketSwiper", {
+    spacebetween: 100,
     pagination: {
         el: ".swiper-pagination.ticketPagination",
         clickable: true,
@@ -57,6 +58,7 @@ var swiper = new Swiper(".ticketSwiper", {
 });
 
 var swiper2 = new Swiper(".voucherSwiper", {
+    spacebetween: 100,
     pagination: {
         el: ".swiper-pagination.voucherPagination",
         clickable: true,
