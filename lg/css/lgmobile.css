@@ -180,9 +180,15 @@ nav{
 
 
 /* intro*/
+.ie10 .intro .inner .introduction h1,
+.ie11 .intro .inner .introduction h1,
 .intro .inner .introduction h1{
     font-size: 1.3rem;
     letter-spacing: 0;
+}
+.ie10 .intro .inner .introduction h1:first-child,
+.ie11 .intro .inner .introduction h1:first-child{
+    font-size: 1.6rem;
 }
 .intro .inner .introduction h1:first-child{
     font-size: 2.6rem;
@@ -195,14 +201,24 @@ nav{
 
 
 /* intro2 */
+.ie10 .intro2,
+.ie11 .intro2{
+    background-position: 30% 70%;
+}
 .intro2{
     background-position: 40% 70%;
+}
+.ie10 .intro2 h1,
+.ie11 .intro2 h1{
+    font-size: 1.6rem;
 }
 .intro2 h1{
     font-size: 2.6rem;
     text-shadow: none;
     padding: 0 20px 0 20px;
 }
+.ie10 .intro2 h1 + h1,
+.ie11 .intro2 h1 + h1,
 .intro2 h1 + h1{
     font-size: 1rem;
     margin-bottom: 40px;
@@ -214,6 +230,10 @@ nav{
 /* intro3 */
 .intro3{
     background: url(../images/hanriver.jpg) 40% 20% no-repeat;
+}
+.ie10 .intro3 h1,
+.ie11 .intro3 h1{
+    font-size: 1.6rem;
 }
 .intro3 h1{
     font-size: 2.6rem;
@@ -504,6 +524,8 @@ footer .button{
 footer{
     height: auto;
 }
+.ie10 footer .inner,
+.ie10 footer .inner,
 footer .inner{
     display: flex;
     flex-flow: column wrap;
@@ -512,6 +534,11 @@ footer .inner{
 }
 footer .inner > div:first-child a{
     display: none;
+}
+.ie10 footer .inner .text div:first-child,
+.ie11 footer .inner .text div:first-child{
+    display: flex;
+    flex-flow: column wrap;
 }
 footer .inner .text div:nth-child(2) > p:first-child,
 footer .inner .text div:nth-child(2) > p:nth-child(2){

@@ -145,6 +145,8 @@ body > .inner .mallbar.on{
 footer{
     height: auto;
 }
+.ie10 footer .inner,
+.ie11 footer .inner,
 footer .inner{
     display: flex;
     flex-flow: column wrap;
@@ -153,6 +155,11 @@ footer .inner{
 }
 footer .inner > div:first-child a{
     display: none;
+}
+.ie10 footer .inner .text div:first-child,
+.ie11 footer .inner .text div:first-child{
+    display: flex;
+    flex-flow: column wrap;
 }
 footer .inner .text div:nth-child(2) > p:first-child,
 footer .inner .text div:nth-child(2) > p:nth-child(2){

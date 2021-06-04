@@ -260,22 +260,47 @@ section.business{
     width: 270px;
     height: 270px;
 }
+.ie10 .business .box .wrapper .subbox.maincircle,
+.ie11 .business .box .wrapper .subbox.maincircle{
+    width: 220px;
+    height: 220px;
+}
 .business .box .wrapper > p{
     display: block;
     width: 100%;
     font-size: 1rem;
 }
+.ie10 .business .box .wrapper > p,
+.ie11 .business .box .wrapper > p{
+    font-size: 0.7rem;
+}
 .business .box .wrapper .subbox.maincircle > div:first-child > span:first-child{
     font-size: 2.2rem;
+}
+.ie10 .business .box .wrapper .subbox.maincircle > div:first-child > span:first-child,
+.ie11 .business .box .wrapper .subbox.maincircle > div:first-child > span:first-child{
+    font-size: 1.8rem;
 }
 .business .box .wrapper .subbox.maincircle > div:first-child > span:last-child{
     font-size: 1.5rem;
 }
+.ie10 .business .box .wrapper .subbox.maincircle > div:first-child > span:last-child,
+.ie11 .business .box .wrapper .subbox.maincircle > div:first-child > span:last-child{
+    font-size: 1.1rem;
+}
 .business .box .wrapper .subbox.maincircle > div:last-child > span:first-child{
     font-size: 3rem;
 }
+.ie10 .business .box .wrapper .subbox.maincircle > div:last-child > span:first-child,
+.ie11 .business .box .wrapper .subbox.maincircle > div:last-child > span:first-child{
+    font-size: 2rem;
+}
 .business .box .wrapper .subbox.maincircle > div:last-child > span:last-child{
     font-size: 1.3rem;
+}
+.ie10 .business .box .wrapper .subbox.maincircle > div:last-child > span:last-child,
+.ie11 .business .box .wrapper .subbox.maincircle > div:last-child > span:last-child{
+    font-size: 0.8rem;
 }
 .business .box .wrapper .subbox.maincircle > div:last-child > span:last-child::before{
     width: 50px;
