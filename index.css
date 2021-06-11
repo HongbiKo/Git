@@ -527,6 +527,15 @@ h2{
     margin: 50px auto 0;
     background-color: #FAFBF4;
 }
+.swiper-container.project .swiper-slide .sec3{
+    width: 80%;
+    height: 400px;
+    margin: 50px auto 0;
+    background-color: #FAFBF4;
+}
+.swiper-container.project .swiper-slide .sec3 > p{
+    font-size: 2rem;
+}
 
 /* contact section */
 .contact{
