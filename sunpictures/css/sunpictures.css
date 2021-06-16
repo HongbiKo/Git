@@ -60,7 +60,7 @@ body{
     background-color: #660000;
 }
 .bgcolor.brown .inner{
-    height: 105vh;
+    height: 108vh;
 }
 .intro{
     width: 100%;
@@ -128,7 +128,7 @@ body{
     margin-bottom: 25px;
 }
 .intro .animation-box .first-text h1{
-    font-size: 11rem;
+    font-size: 10rem;
     font-weight: 400;
     opacity: 0;
     position: relative;
