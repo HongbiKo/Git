@@ -417,7 +417,7 @@ iframe{
 .news .clip .subbox .event{
     background-size: cover;
     width: 70%;
-    height: 200px;
+    height: auto;
     margin-left: 0;
     border: 2px solid #c60d41;
     margin-top: 20px;
