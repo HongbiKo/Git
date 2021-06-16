@@ -60,7 +60,7 @@ body{
     background-color: #660000;
 }
 .bgcolor.brown .inner{
-    height: 108vh;
+    height: 115vh;
 }
 .intro{
     width: 100%;
@@ -138,7 +138,7 @@ body{
 }
 .intro .animation-box .second-text {
     width: 100%;
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 400;
     text-align: right;
     position: relative;
@@ -152,7 +152,7 @@ body{
     height: 100%;
     overflow-y: hidden;
     transform: rotate(90deg);
-    font-size: 2.5rem;
+    font-size: 2rem;
     position: absolute;
     right: 0;
     bottom: 0;
