@@ -1,3 +1,21 @@
+var swiper4 = new Swiper('.swiper-container.subSwiper3', {
+    spaceBetween: 0,
+    // centeredSlides: true,
+    effect: 'fade',
+    autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+    },
+    loop: true,
+    scrollbar: {
+        el: '.swiper-scrollbar.controller3',
+        hide: true,
+        clickable: true
+    }
+
+});
+
+
 var swiper1 = new Swiper('.swiper-container.basicSwiper', {
     direction: 'vertical',
     slidesPerView: 1,
@@ -71,22 +89,6 @@ var swiper3 = new Swiper('.swiper-container.subSwiper2', {
     
 });
 
-var swiper4 = new Swiper('.swiper-container.subSwiper3', {
-    spaceBetween: 0,
-    // centeredSlides: true,
-    effect: 'fade',
-    autoplay: {
-    delay: 4000,
-    disableOnInteraction: false,
-    },
-    loop: true,
-    scrollbar: {
-        el: '.swiper-scrollbar.controller3',
-        hide: true,
-        clickable: true
-    }
-
-});
 
 
 function counting() {
