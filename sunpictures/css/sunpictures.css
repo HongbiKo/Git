@@ -23,6 +23,7 @@ a{
     font-family: 'Playfair Display SC', serif;
     font-weight: 700;
     color: #1a0000;
+    color: #fff;
 }
 body{
     min-width: 85%;
@@ -58,6 +59,8 @@ body{
 /* intro section */
 .bgcolor.brown{
     background-color: #660000;
+    background-color: #540101;
+    background-color: #f2ecec;
 }
 .bgcolor.brown .inner{
     height: 115vh;
@@ -135,6 +138,7 @@ body{
     z-index: 2;
     animation: topFadeOut 3s both;
     color: #fff;
+    color: #961212;
 }
 .intro .animation-box .second-text {
     width: 100%;
@@ -146,6 +150,7 @@ body{
     opacity: 0;
     animation: bottomFadeOut 4s 1.8s both;
     color: #fff;
+    color: #961212;
     margin-bottom: 20px;
 }
 .intro .animation-box .third-text {
@@ -160,12 +165,14 @@ body{
     opacity: 0;
     animation: fadeInOut 7s 1.8s both;
     color: #3f1717;
+    color: #fff;
     white-space: nowrap;
 }
 .intro .animation-box .fourth-text {
     font-size: 2.5rem;
     opacity: 0;
     color: #fff;
+    color: #961212;
     animation: fadeInOut 3s 3.5s both;
     text-align: center;
 }
@@ -276,7 +283,7 @@ body{
 
 /* facility section */
 .silver{
-    background-color: #fdfaf6;
+    background-color: #ede5e5;
 }
 .facility .inner{
     position: relative;
