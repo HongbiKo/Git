@@ -917,7 +917,7 @@ section.news{
     margin-top: 20px;
 }
 .news .clip .subbox .event{
-    background: url(../images/event.png) 0 0 no-repeat;
+    background: url(../images/event.png) 50% 50% no-repeat;
     background-size: contain;
     width: 470px;
     height: 200px;
