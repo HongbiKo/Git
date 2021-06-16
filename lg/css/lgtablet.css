@@ -177,7 +177,7 @@ nav{
 
 /* intro*/
 .intro{
-    background: url(../images/bg1-1.png) 70% 60% no-repeat;
+    background: url(../images/intro-bg.png) 70% 60% no-repeat;
     background-size: cover;
     background-color: rgb(0, 0, 0, 0.5);
     background-blend-mode: multiply;
