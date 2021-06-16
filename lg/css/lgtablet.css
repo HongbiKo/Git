@@ -403,7 +403,7 @@ section.investment{
 iframe{
     margin-top: 20px;
     width: 500px;
-    height: 200px;
+    height: 100px;
 }
 .order1{
     order: 1;
@@ -417,7 +417,7 @@ iframe{
 .news .clip .subbox .event{
     background-size: cover;
     width: 70%;
-    height: auto;
+    height: 200px;
     margin-left: 0;
     border: 2px solid #c60d41;
     margin-top: 20px;
