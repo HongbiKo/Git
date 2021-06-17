@@ -42,7 +42,7 @@ body{
     width: 350px;
     height: 130px;
     position: relative;
-    top: -75px;
+    top: -35px;
     left: 30%;
 }
 .postit h2{
@@ -52,7 +52,8 @@ body{
     font-family: 'Italiana', serif;
     font-weight: 400;
     letter-spacing: 5px;
-    font-size: 9.5rem;
+    font-size: 8rem;
+    color: #fff;
 }
 
 
@@ -61,6 +62,7 @@ body{
     background-color: #660000;
     background-color: #540101;
     background-color: #f2ecec;
+    padding-bottom: 150px;
 }
 .bgcolor.brown .inner{
     height: 115vh;
@@ -240,6 +242,7 @@ body{
     word-break: break-all;
     text-align: justify;
     margin-top: 30px;
+    color: #171616;
 }
 .history .bigbox.first .box,
 .history .bigbox.third .box{
