@@ -1,0 +1,217 @@
+@charset "utf-8";
+body{
+    font-size: 16px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+a:hover{
+    text-decoration: none;
+}
+p, ul, h1, h2{
+    margin-bottom: 0;
+}
+
+
+/* intro */
+.board{
+    width: 100%;
+    height: 490px;
+    background: url(../images/board.png) 100% 100% no-repeat;
+    background-color: rgba(0, 0, 0, 0.55);
+    background-blend-mode: multiply;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+.board > h2{
+    color: #fff;
+    font-size: 2.8rem;
+    margin-top: 2%;
+    padding-left: 10%;
+    font-weight: 500;
+}
+
+/* content */
+.entireinner .container{
+    margin: 5% auto;
+    border: 3px solid #000;
+    border-radius: 10px;
+    padding: 30px;
+}
+.entireinner .container h2{
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-align: center;
+    color: #091119;
+    margin-bottom: 50px;
+}
+
+/* text section */
+.entireinner .container div.form-group{
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+}
+.entireinner .container div.form-group.sec3{
+    display: flex;
+    justify-content: space-between;
+}
+.entireinner .container div.form-group.sec3 .subbox{
+    display: flex;
+}
+.entireinner .container div.form-group.sec3 .subbox > label{
+    width: 90px;
+}
+.entireinner .container div.form-group.sec3 .subbox .form-check{
+    width: 28px; 
+    height: 28px;
+    border: 1px solid #ccc;
+}
+.entireinner .container div.form-group.sec4{
+    display: block;
+    margin-top: 60px;
+}
+.entireinner .container .form-group label{
+    font-size: 1.1rem;
+    font-weight: 700;
+    width: 100px;
+    margin-right: 10px;
+}
+.entireinner .container .form-group .form-control{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* button group */
+.entireinner .container .button-group{
+    display: flex;
+
+    justify-content: flex-end;
+}
+.entireinner .container .button-group button{
+    color:#fff;
+    padding: 6px 20px;
+    background-color: #000;
+    border: 2px solid transparent;
+    transition: all 0.3s;
+}
+.entireinner .container .button-group > a{
+    margin-right: 20px;
+}
+.entireinner .container .button-group > a.except{
+    margin-right: 0;
+}
+.entireinner .container .button-group button.regibtn{
+    margin-right: 20px;
+}
+.entireinner .container .button-group button:hover{
+    color:#000;
+    background-color: #fff;
+    border: 2px solid #000;
+}
+
+
+
+
+
+/* ----------------------------------------------detail.css */
+.entireinner .container .button-group > button.list{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 0;
+}
+
+/* ----------------------------------------------modify.css */
+.entireinner .container .button-group > div:nth-child(2){
+    margin: 0 20px;
+}
+
+
+
+
+
+
+
+
+/* tablet */
+@media screen and (min-width:767px) and (max-width:1024px) {
+    
+    body{
+        font-size: 14px;
+    }
+    
+    /* intro */
+    .board{
+        height: 300px;
+    }
+    .board > h2{
+        width: 100%;
+        font-size: 2.5rem;
+        margin-top: 0;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    /* content */
+    .entireinner .container h2{
+        font-size: 2rem;
+    }
+    
+}
+
+
+
+/* mobile */
+@media screen and (max-width:767px) {
+    
+    body{
+        font-size: 12px;
+    }
+    .board{
+        height: 210px;
+    }
+    .board > h2{
+        width: 100%;
+        font-size: 2rem;
+        margin-top: 0;
+        padding-left: 0;
+        text-align: center;
+    }
+    .entireinner{
+        width: 90%;
+    }
+
+    /* content */
+    .entireinner .container h2{
+        font-size: 1.8rem;
+    }
+    .entireinner .container div.form-group.sec3 {
+        margin-top: 20px;
+    }
+    .entireinner .container .button-group button{
+        padding: 6px 10px;
+    }
+    .entireinner .container .button-group > div:nth-child(2){
+        margin: 0 10px;
+    }
+
+    /* form */
+    .entireinner .container div.form-group.sec3{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+    }
+    .entireinner .container div.form-group.sec3 .subbox{
+        width: 100%;
+    }
+    .entireinner .container div.form-group.sec3 .subbox > label{
+        width: 100px;
+    }
+    .entireinner .container div.form-group.sec3 .subbox:first-child > label {
+        width: 75px;
+    }
+    .entireinner .container div.form-group.sec3 .subbox .form-check{
+        width: 20px; 
+        height: 20px;
+    }
+}

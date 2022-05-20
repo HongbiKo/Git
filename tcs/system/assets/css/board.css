@@ -1,0 +1,307 @@
+@charset "utf-8";
+a{
+    color :black;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+a:hover{
+    text-decoration: none;
+}
+.entireinner{
+    position: relative;
+    margin-bottom: 10%;
+}
+p, ul, h1, h2{
+    margin-bottom: 0;
+}
+
+/* intro */
+.board{
+    width: 100%;
+    height: 490px;
+    background: url(../images/board.png) 100% 100% no-repeat;
+    background-color: rgba(0, 0, 0, 0.55);
+    background-blend-mode: multiply;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+.board > h2{
+    color: #fff;
+    font-size: 2.8rem;
+    margin-top: 2%;
+    padding-left: 10%;
+    font-weight: 500;
+}
+
+
+
+/* content */
+
+/* searchbox */
+.entireinner .searchbox{
+    display: flex;
+    justify-content: center;
+    margin: 5% 0;
+    width: 100%;
+    height: auto;
+}
+.entireinner .searchbox .input-group-append:first-child{
+    width: 130px;
+    margin-right: 30px;
+}
+.form-control{
+    height: auto;
+    padding: 0 10px;
+}
+.entireinner .searchbox .search-input{
+    width: 40%;
+    margin-right: 30px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+}
+.entireinner .searchbox .btn-success{
+    width: 100px;
+    background-color: #000;
+    border: 2px solid transparent;
+    color: #fff;
+    transition: all 0.3s;
+    font-weight: 500;
+}
+.entireinner .searchbox .btn-success:hover{
+    background-color: #fff;
+    border-color: #000;
+    color: #000;
+    font-weight: 500;
+}
+
+/* table */
+.entireinner table{
+    text-align: center;
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto 100px;
+}
+.entireinner table thead th{
+    border: none;
+    border-top: 1px solid #dee2e6;
+    border-bottom: 2px solid #dee2e6;
+}
+.entireinner table tbody td{
+    border-bottom: 1px solid #dee2e6;
+}
+.table-bordered{
+    border: none;
+}
+.table-bordered td{
+    border: none;
+}
+.entireinner table thead tr th:first-child,
+.entireinner table thead tr th:last-child{
+    width: 9%;
+}
+.entireinner table thead tr th:nth-child(2){
+    width: 50%;
+}
+.entireinner table thead tr th:nth-child(3){
+    width: 12%;
+}
+.entireinner table thead tr th:nth-child(4){
+    width: 20%;
+}
+.entireinner table thead tr th{
+    padding: 13px;
+}
+.entireinner table tbody tr td{
+    padding: 10px;
+}
+
+
+/* pagination */
+.entireinner .pagination .page-item.active .page-link{
+    background-color:rgb(226, 226, 226);
+}
+.entireinner .pagination .page-item .page-link{
+    color: #000;
+}
+.entireinner .pagination .page-item.active .page-link{
+    border-color: #ccc;
+}
+.entireinner .pagination .page-item:first-child .page-link,
+.entireinner .pagination .page-item:last-child .page-link{
+    background-color: #000000;
+    border-color: #000000;
+    color: #fff;
+    transition: all 0.3s;
+}
+.entireinner .pagination .page-item:first-child .page-link:hover,
+.entireinner .pagination .page-item:last-child .page-link:hover{
+    background-color: #ffffff;
+    border-color: #000000;
+    color: #000;
+}
+/* .use{
+    background-color: #000000;
+    border-color: #000000;
+    color: #fff;
+} */
+
+/* 글쓰기 button*/
+.entireinner #letter{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: block;
+}
+.entireinner #letter .btn-outline-primary{
+    color:#fff;
+    background-color: #000;
+    border: 2px solid transparent;
+    transition: all 0.5s;
+    font-weight: 500;
+    font-size: 0.95rem;
+    padding: 8px 26px;
+}
+.entireinner #letter .btn-outline-primary:hover{
+    color: #000;
+    background-color: #fff;
+    border: 2px solid #000;
+} 
+
+.fa-key:before {
+    content: "\f084";
+    margin-right: 3px;
+}
+
+
+
+/* tablet */
+@media screen and (min-width:767px) and (max-width:1024px) {
+    
+    body{
+        font-size: 14px;
+    }
+    
+    /* intro */
+    .board{
+        height: 300px;
+    }
+    .board > h2{
+        width: 100%;
+        font-size: 2.5rem;
+        margin-top: 0;
+        padding-left: 0;
+        text-align: center;
+    }
+        
+    /* content */
+    
+    /* searchbox */
+    .entireinner .searchbox .input-group-append:first-child{
+        width: 100px;
+        margin-right: 20px;
+    }
+    .entireinner .searchbox .search-input{
+        width: 50%;
+        margin-right: 20px;
+    }
+    .entireinner .searchbox .btn-success{
+        width: 60px;
+    }
+    
+    /* table */
+    .entireinner table{
+        margin: 0 auto 80px;
+    }
+    .entireinner table thead tr th,
+    .entireinner table tbody tr td{
+        padding: 7px;
+    }
+    
+    
+    /* 글쓰기 버튼 */
+    .entireinner #letter .btn-outline-primary{
+        padding: 6px 22px;
+    }
+}
+
+
+
+/* mobile */
+@media screen and (max-width:767px) {
+    
+    body{
+        font-size: 12px;
+    }
+    .board{
+        height: 210px;
+    }
+    .board > h2{
+        width: 100%;
+        font-size: 2rem;
+        margin-top: 0;
+        padding-left: 0;
+        text-align: center;
+    }
+    .entireinner{
+        width: 90%;
+    }
+
+    /* content */
+    
+    /* searchbox */
+    .entireinner .searchbox{
+        padding: 0 15px;
+    }
+    .entireinner .searchbox .input-group-append:first-child{
+        width: 80px;
+        margin-right: 10px;
+    }
+    .entireinner .searchbox .search-input{
+        width: 50%;
+        margin-right: 10px;
+        padding-left: 8px;
+    }
+    .entireinner .searchbox .btn-success{
+        width: 60px;
+    }
+    
+    /* table */
+    .entireinner table{
+        margin: 0 auto 60px;
+    }
+    .entireinner table thead{
+        width: 100%;
+    }
+    .entireinner table thead tr{
+        display: flex;
+        align-self: center;
+    }
+    .entireinner table thead tr th,
+    .entireinner table tbody tr td{
+        padding: 4px;
+    }
+    .entireinner table thead tr{
+        display: flex;
+    }
+    .entireinner table thead tr th{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .table td, .table th{
+        border-top: none;
+    }
+    .table-bordered thead td, .table-bordered thead th{
+        border-bottom: none;
+    }
+    
+    
+    /* 글쓰기 버튼 */
+    .entireinner #letter .btn-outline-primary{
+        padding: 6px 22px;
+    }
+}

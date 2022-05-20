@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/management.css">    
+    <link rel="stylesheet" href="../assets/css/board.css">
+</head>
+<body>
+    <!-- content -->
+    <div class="entireinner page-start">
+            <div class="wrap">
+                <h1>회원 리스트</h1>
+                <!-- search header -->
+                <div class="searchbox">
+                    <div class="input-group-append">
+                        <select class="form-control" name="selectBox" id="selectBox">
+                            <option value="1" selected>아이디</option>
+                            <option value="2">이름</option>
+                            <option value="3">Email</option>
+                        </select>
+                    </div>
+                    <input type="text" class="search-input" name="search" id="search" placeholder="Search">
+                    <div class="input-group-append">
+                        <button class="btn btn-success" id="searchBtn" onclick="searchData()">검색</button>
+                    </div>
+                </div>
+                <div class="tablebox">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>번호</th>
+                                <th>아이디</th>
+                                <th>이름</th>
+                                <th>Email</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table-body">
+
+                        </tbody>
+                    </table>
+                    <ul class="pagination justify-content-center" id="pagination">
+                            
+                    </ul>
+                </div>
+        </div>
+    </div>
+
+    <!-- script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../assets/js/managementSearch.js"></script>
+</body>
+</html>

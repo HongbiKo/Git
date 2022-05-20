@@ -1,0 +1,309 @@
+@charset "utf-8";
+body{
+    font-size: 16px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+a:hover{
+    text-decoration: none;
+}
+.entireinner{
+    position: relative;
+    margin-bottom: 10%;
+}
+p, ul, h1, h2{
+    margin-bottom: 0;
+}
+
+/* intro */
+.recruitment{
+    width: 100%;
+    height: 490px;
+    background: url(../images/recruitment.jpg) center center no-repeat;
+    background-color: rgba(0, 0, 0, 0.55);
+    background-blend-mode: multiply;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+.recruitment > h2{
+    color: #fff;
+    font-size: 2.8rem;
+    margin-top: 2%;
+    padding-left: 10%;
+    font-weight: 500;
+}
+
+/* content */
+
+/* top */
+.top{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/recuritbg.png) center 100% no-repeat;
+    background-size: cover;
+    background-color: rgba(255,255,255,0.2);
+    background-blend-mode: screen;
+    margin-bottom: 3%;
+}
+.top .topbox{
+    margin-top: 4%;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center; 
+}
+.top .topbox > h2{
+    width: 90%;
+    word-break: keep-all;
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 5%;
+    font-weight: 700;
+}
+.top .topbox .iconbox{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5%;
+}
+.top .topbox .iconbox .icon{
+    width: 70px;
+    height: 70px;
+}
+.top .topbox .iconbox .icon.together{
+    background: url(../images/togethericon.png) 0 0 no-repeat;
+    background-size: cover;
+}
+.top .topbox .iconbox .icon.puzzle{
+    background: url(../images/puzzleicon.png) 0 0 no-repeat;
+    background-size: cover;
+}
+.top .topbox .iconbox .icon.scale{
+    background: url(../images/scaleicon.png) 0 0 no-repeat;
+    background-size: cover;
+}
+.top .topbox .description{
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.2rem;
+    word-break: keep-all;
+}
+
+/* bottom */
+.entireinner .bottom{
+    display: flex;
+    flex-flow: column nowrap;
+}
+.entireinner .bottom > h2{
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 3%;
+}
+.entireinner .bottom .bottombox{
+    width: 100%;
+    height: auto;
+}
+
+/* table */
+.entireinner .bottom .bottombox > table{
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+    text-align: center;
+}
+.table-bordered th{
+    border: none;
+    border-top: 1px solid #dee2e6
+}
+.entireinner .bottom .bottombox > table thead tr th,
+.entireinner .bottom .bottombox > table tbody tr td{
+    padding: 10px;
+}
+.entireinner .bottom .bottombox > table thead tr th:first-child{
+    width: 5%;
+}
+.entireinner .bottom .bottombox > table thead tr th:nth-child(2){
+    width: 15%;
+}
+.entireinner .bottom .bottombox > table thead tr th:nth-child(3){
+    width: 65%;
+}
+.entireinner .bottom .bottombox > table thead tr th:last-child{
+    width: 15%;
+}
+
+
+/* pagination */
+.entireinner .bottom .bottombox .pagination .page-item.active .page-link{
+    background-color:rgb(226, 226, 226);
+}
+.entireinner .bottom .bottombox .pagination .page-item .page-link{
+    color: #000;
+}
+.entireinner .bottom .bottombox .pagination .page-item.active .page-link{
+    border-color: #ccc;
+}
+.entireinner .bottom .bottombox .pagination .page-item:first-child .page-link,
+.entireinner .bottom .bottombox .pagination .page-item:last-child .page-link{
+    background-color: #000000;
+    border-color: #000000;
+    color: #fff;
+    transition: all 0.3s;
+}
+.entireinner .bottom .bottombox .pagination .page-item:first-child .page-link:hover,
+.entireinner .bottom .bottombox .pagination .page-item:last-child .page-link:hover{
+    background-color: #ffffff;
+    border-color: #000000;
+    color: #000;
+}
+
+
+/* tablet */
+@media screen and (min-width:767px) and (max-width:1024px) {
+    
+    body{
+        font-size: 14px;
+    }
+    
+    /* intro */
+    .recruitment{
+        height: 300px;
+    }
+    .recruitment > h2{
+        width: 100%;
+        font-size: 2.5rem;
+        margin-top: 0;
+        padding-left: 0;
+        text-align: center;
+    }
+        
+    /* content */
+
+    /* top */
+    .top{
+        height: 500px;
+        margin-bottom: 10%;
+    }
+    .top .topbox{
+        margin-top: 9%;
+        width: 70%;
+        height: 70%;
+    }
+    .top .topbox .iconbox{
+        width: 50%;
+    }
+    .top .topbox .iconbox .icon{
+        width: 65px;
+        height: 65px;
+    }
+    .top .topbox .description{
+        font-size: 1.15rem;
+    }
+
+    /* bottom */
+    .entireinner .bottom > h2{
+        margin-bottom: 4%;
+    }
+
+    /* table */
+    .entireinner .bottom .bottombox > table thead tr th,
+    .entireinner .bottom .bottombox > table tbody tr td{
+        padding: 7px;
+    }
+    .entireinner .bottom .bottombox > table thead tr th:first-child{
+        width: 10%;
+    }
+    .entireinner .bottom .bottombox > table thead tr th:nth-child(2){
+        width: 15%;
+    }
+    .entireinner .bottom .bottombox > table thead tr th:nth-child(3){
+        width: 60%;
+    }
+    .entireinner .bottom .bottombox > table thead tr th:last-child{
+        width: 15%;
+    }
+}
+
+
+
+/* mobile */
+@media screen and (max-width:767px) {
+    
+    body{
+        font-size: 12px;
+    }
+    .recruitment{
+        height: 210px;
+    }
+    .recruitment > h2{
+        width: 100%;
+        font-size: 2rem;
+        margin-top: 0;
+        padding-left: 0;
+        text-align: center;
+    }
+    .entireinner{
+        width: 90%;
+    }
+
+    /* content */
+    /* content */
+
+    /* top */
+    .top{
+        height: 450px;
+        margin-bottom: 8%;
+    }
+    .top .topbox{
+        margin-top: 9%;
+        width: 90%;
+        height: 90%;
+    }
+    .top .topbox .iconbox{
+        width: 60%;
+    }
+    .top .topbox .iconbox .icon{
+        width: 50px;
+        height: 50px;
+    }
+    .top .topbox .description{
+        font-size: 1.15rem;
+    }
+
+    /* bottom */
+    .entireinner .bottom > h2{
+        margin-bottom: 5%;
+    }
+
+    /* table */
+    .entireinner .bottom .bottombox > table thead tr th,
+    .entireinner .bottom .bottombox > table tbody tr td{
+        padding: 4px;
+    }
+    .entireinner .bottom .bottombox > table thead tr th:first-child{
+        width: 10%;
+    }
+    .entireinner .bottom .bottombox > table thead tr th:nth-child(2){
+        width: 15%;
+    }
+    .entireinner .bottom .bottombox > table thead tr th:nth-child(3){
+        width: 60%;
+    }
+    .entireinner .bottom .bottombox > table thead tr th:last-child{
+        width: 15%;
+    }
+
+    .entireinner .bottom .bottombox > table thead tr{
+        display: flex;
+    }
+    .entireinner .bottom .bottombox > table thead tr th{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

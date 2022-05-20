@@ -1,0 +1,124 @@
+@charset "utf-8";
+
+/* content */
+.entireinner{
+    margin-bottom: 6%;
+    position: relative;
+}
+.entireinner .orchartbg{
+    background: url(../images/orgbg.png) 0 0 no-repeat;
+    background-size: cover;
+    width: 510px;
+    height: 550px;
+    position: fixed;
+    top: 40%;
+    right: 5%;
+    z-index: -1;
+}
+.entireinner .wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    height: auto;
+    margin-top: 5%;
+}
+.entireinner .wrap .box{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+.entireinner .wrap .box .title{
+    width: 180px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(30px);
+}
+.entireinner .wrap .box .title > span{
+    color: #fff;
+    font-size: 1.3rem;
+}
+.entireinner .wrap .box .info,
+.entireinner .wrap .box .experience{
+    width: 240px;
+    border: 4px solid #000;
+    border-radius: 20px;
+}
+.entireinner .wrap .box .info{
+    height: 250px;
+}
+.entireinner .wrap .box .experience{
+    height: 160px;
+    margin-top: 20px;
+}
+.entireinner .wrap .box .info > p,
+.entireinner .wrap .box .experience > p{
+    text-align: center;
+}
+.entireinner .wrap .box .info > p:first-child{
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 50px 0 15px;
+}
+.entireinner .wrap .box .info > p:last-child{
+    margin-bottom: 30px;
+}
+.entireinner .wrap .box .experience > p:first-child{
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 10px 0 10px;
+}
+
+
+
+/* tablet */
+@media screen and (min-width:767px) and (max-width:1024px) {
+    
+    .entireinner .orchartbg{
+        width: 415px;
+        height: 450px;
+    }
+    .entireinner .wrap .box .title{
+        width: 160px;
+    }
+    .entireinner .wrap .box .info,
+    .entireinner .wrap .box .experience{
+        width: 200px;
+    }
+    .entireinner .wrap .box .info{
+        height: 230px;
+    }
+    .entireinner .wrap .box .experience{
+        height: 140px;
+    }
+}
+
+/* mobile */
+@media screen and (max-width:767px) {
+
+    .entireinner .orchartbg{
+        width: 323px;
+        height: 350px;
+        right: 3%;
+    }
+    .entireinner .wrap .box .title{
+        width: 110px;
+    }
+    .entireinner .wrap .box .info,
+    .entireinner .wrap .box .experience{
+        width: 150px;
+    }
+    .entireinner .wrap .box .info > p:first-child {
+        margin: 40px 0 10px;
+    }
+    .entireinner .wrap .box .info{
+        height: 180px;
+    }
+    .entireinner .wrap .box .experience{
+        height: 130px;
+    }
+}

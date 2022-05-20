@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TCS</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/login.css">
+    <link rel="stylesheet" href="../assets/css/pwChange.css">
+</head>
+<body>
+    <!-- header logo+nav -->
+    <header>
+        <!-- logo -->
+        <h1><a href="../../index.html" class="logo"></a></h1>
+        <!-- navigaition -->
+        <nav>
+            <ul class="gnb">
+                <li>
+                    <a href="#">회사소개</a>
+                    <ul class="snb">
+                        <li><a href="./companyIntro.html">인사말</a></li>
+                        <li><a href="./history.html">연혁</a></li>
+                        <li><a href="./organizationChart.html">조직도</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./business.html">사업소개</a>
+                </li>
+                <li><a href="./recruit.html">채용정보</a></li>
+                <li>
+                    <a href="#">고객지원</a>
+                    <ul class="snb">
+                        <li><a href="./board.html">기술문의</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <a href="./login.html" class="loginbox">
+                <span>로그인</span>
+            </a>
+        </nav>
+        <div class="m-menu"><i class="fas fa-bars"></i></div>
+    </header>
+
+    <!-- content -->
+    <div class="content">
+        <div class="login-box">
+            <div class="login-title">
+                <span>비밀번호변경</span>
+            </div>
+            <div class="userId-box">
+                <span>ID</span>
+                <div class="userId">
+                    <input type="text" name="id" id="id" readonly>
+                </div>
+            </div>
+            <div class="userPw-box">
+                <span>기존비밀번호</span>
+                <div class="userPw">
+                    <input type="password" name="pw" id="pw">
+                </div>
+            </div>
+            <div class="userPw-box">
+                <span>비밀번호변경</span>
+                <div class="userPw">
+                    <input type="password" name="pw1" id="newPw">
+                </div>
+            </div>
+            <div class="userPw2-box">
+                <span>변경확인</span>
+                <div class="userPw">
+                    <input type="password" name="pw2" id="newPw2">
+                </div>
+            </div>
+            <button class="login-btn" onclick="pwChangeData()">
+                <span>변경</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="footinfo">
+            <p>기업명 : <span>(주)</span>탑코어시스템</p>
+            <p>기업부설연구소 : 충청북도 청주시 흥덕구 봉명로31 T1타워 704호</p>
+            <p>서울사무소 : 서울특별시 중구 세종대로9길 41(서소문동) 퍼시픽타워 16층</p>
+            <p>Copyright &copy; 2020 Top Core System Co., Ltd. All rights reserved.</p>
+        </div>
+        <div class="footlink">
+            <a href="https://www.youtube.com/channel/UCy2MjFCCPKjh1MsClFLQuCw" target="_blank">
+                <i class="fab fa-youtube"></i>
+                <span>Youtube</span>
+            </a>
+        </div>
+    </footer>
+
+
+    <!-- script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="../assets/js/login.js"></script>
+</body>
+</html>

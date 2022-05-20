@@ -1,0 +1,155 @@
+@charset "utf-8";
+
+/* content */
+.conbg{
+    background: url(../images/historybg.png) center center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    background-attachment: fixed;
+}
+.conbg .entireinner{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 6%;
+}
+.conbg .entireinner .wrap{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 90px 0;
+}
+.conbg .entireinner .wrap .circle{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.conbg .entireinner .wrap:nth-child(2) .circle{
+    position: relative;
+}
+.conbg .entireinner .wrap:nth-child(2) .circle::before{
+    display: block;
+    content: "";
+    width: 2px;
+    height: 260%;
+    background-color: #000;
+    position: absolute;
+    top: -235%;
+}
+.conbg .entireinner .wrap:nth-child(2) .circle::after{
+    display: block;
+    content: "";
+    width: 2px;
+    height: 170%;
+    background-color: #000;
+    position: absolute;
+    top: 100%;
+}
+.conbg .entireinner .wrap .circle > span{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.conbg .entireinner .wrap .info{
+    width: 80%;
+    display: flex;
+    flex-flow: column nowrap;
+    margin-left: 8%;
+}
+.conbg .entireinner .wrap .info > p{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2%;
+}
+.conbg .entireinner .wrap .info > p > span:first-child{
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-right: 10px;
+}
+.conbg .entireinner .wrap .info > p > span:last-child{
+    display: block;
+    font-size: 1.3rem;
+    width: 80%;
+}
+
+
+/* tablet */
+@media screen and (min-width:767px) and (max-width:1024px) {
+
+    .conbg .entireinner{
+        padding-top: 60px;
+        padding-bottom: 80px;
+    }
+    .conbg .entireinner .wrap{
+        margin: 60px 0;
+    }
+    .conbg .entireinner .wrap .circle{
+        width: 140px;
+        height: 140px;
+    }
+    .conbg .entireinner .wrap:nth-child(2) .circle::before{
+        display: block;
+        content: "";
+        width: 2px;
+        height: 232%;
+        background-color: #000;
+        position: absolute;
+        top: -218%;
+    }
+    .conbg .entireinner .wrap .circle > span{
+        font-size: 1.8rem;
+    }
+    .conbg .entireinner .wrap .info > p > span:first-child{
+        font-size: 1.3rem;
+    }
+    .conbg .entireinner .wrap .info > p > span:last-child{
+        font-size: 1.1rem;
+    }
+}
+
+/* mobile */
+@media screen and (max-width:767px) {
+
+    .conbg .entireinner{
+        padding-top: 40px;
+        padding-bottom: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .conbg .entireinner .wrap{
+        margin: 20px 0;
+    }
+    .conbg .entireinner .wrap .info{
+        margin-left: 5%;
+    }
+    .conbg .entireinner .wrap .circle{
+        width: 100px;
+        height: 100px;
+    }
+    .conbg .entireinner .wrap:nth-child(2) .circle::before{
+        display: block;
+        content: "";
+        width: 2px;
+        height: 232%;
+        background-color: #000;
+        position: absolute;
+        top: -232%;
+    }
+    .conbg .entireinner .wrap .circle > span{
+        font-size: 1.5rem;
+    }
+    .conbg .entireinner .wrap .info > p > span:first-child{
+        font-size: 1.2rem;
+    }
+    .conbg .entireinner .wrap .info > p > span:last-child{
+        font-size: 1.1rem;
+    }
+
+}

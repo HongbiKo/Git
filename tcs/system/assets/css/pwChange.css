@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+/* id,pwbox */
+.content .login-box .userId-box,
+.content .login-box .userPw-box,
+.content .login-box .userPw2-box,
+.content .login-box .login-check,
+.content .login-box .id-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3%;
+}
+.content .login-box .userId-box span,
+.content .login-box .userPw-box span,
+.content .login-box .userPw2-box span,
+.content .login-box .id-box span {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #fff;
+    width: 9.5rem;
+}
+.content .login-box .userId-box .userId input,
+.content .login-box .userPw-box .userPw input,
+.content .login-box .userPw2-box .userPw input,
+#findId {
+    width: 15rem;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+/* tablet */
+@media screen and (min-width:767px) and (max-width:1024px) {
+
+    /* content */
+
+    /* id,pwbox */
+    .content .login-box .userId-box .userId input,
+    .content .login-box .userPw-box .userPw input,
+    .content .login-box .userPw2-box .userPw input{
+        height: 35px;
+        padding: 10px;
+    }
+
+}
+
+
+/* mobile */
+@media screen and (max-width:767px) {
+
+    /* id,pwbox */
+    .content .login-box .userId-box,
+    .content .login-box .userPw-box,
+    .content .login-box .userPw2-box{
+        flex-flow: column nowrap;
+        align-items: flex-end;
+        margin-bottom: 5%;
+    }
+    .content .login-box .userId-box span,
+    .content .login-box .userPw-box span,
+    .content .login-box .userPw2-box span{
+        text-align: right;
+        font-size: 1.4rem;
+    }
+    .content .login-box .userId-box .userId input,
+    .content .login-box .userPw-box .userPw input,
+    .content .login-box .userPw2-box .userPw input{
+        width: 14rem;
+        height: 30px;
+        font-size: 1rem;
+    }
+    
+}
+

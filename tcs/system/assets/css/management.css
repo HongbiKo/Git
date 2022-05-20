@@ -1,0 +1,39 @@
+@charset "utf-8";
+body{
+    font-size: 16px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+a:hover{
+    text-decoration: none;
+}
+.entireinner{
+    position: relative;
+    margin-bottom: 10%;
+}
+p, ul, h1, h2{
+    margin-bottom: 0;
+}
+
+/* contents */
+.wrap{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.wrap > h1{
+    text-align: center;
+    margin: 30px 0;
+    font-weight: 700;
+}
+.wrap .tablebox{
+    width: 90%;
+    height: auto;
+}
+.wrap .tablebox > table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.wrap .tablebox > table tr th,
+.wrap .tablebox > table tr td{
+    text-align: center;
+}

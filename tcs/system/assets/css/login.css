@@ -1,0 +1,223 @@
+@charset "utf-8";
+body{
+    font-size: 16px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+a:hover{
+    text-decoration: none;
+}
+p, ul, h1, h2{
+    margin-bottom: 0;
+}
+
+/* content */
+.content{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content .login-box{
+    width: 45%;
+    height: fit-content;
+    border: 3px solid #fff;
+    border-radius: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 1.5rem;
+}
+
+/* login title */
+.content .login-box .login-title{
+    text-align: center;
+    margin-bottom: 5%;
+}
+.content .login-box .login-title span{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+/* id,pwbox */
+.content .login-box .userId-box,
+.content .login-box .userPw-box,
+.content .login-box .login-check,
+.content .login-box .id-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3%;
+}
+.content .login-box .userPw-box{
+    margin-bottom: 1%;
+}
+.content .login-box .userId-box span,
+.content .login-box .userPw-box span,
+.content .login-box .id-box span {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #fff;
+    width: 8rem;
+}
+.content .login-box .userId-box .userId input,
+.content .login-box .userPw-box .userPw input,
+#findId{
+    width: 15rem;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+}
+.content .login-box > a.remember{
+    margin-bottom: 3%;
+    cursor: pointer;
+    color: #fff;
+    transition: color 0.2s;
+}
+.content .login-box > a.remember:hover{
+    color: rgb(91, 161, 253);
+    transition: color 0.2s;
+}
+.content .login-box .login-check > input{
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+}
+.content .login-box .login-check > span{
+    color: #fff;
+    font-size: 1.1rem;
+}
+.content .login-box .login-btn{
+    width: 15rem;
+    height: 45px;
+    line-height: 45px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4297e2;
+    margin-bottom: 3%;
+}
+.content .login-box .login-btn > span{
+    color: #fff;
+    font-weight: 700;
+}
+.content .login-box .login-tx > span{
+    color: #fff;
+}
+.content .login-box .login-tx > span > a{
+    transition: color 0.2s;
+}
+.content .login-box .login-tx > span > a:hover{
+    color: rgb(91, 161, 253);
+    transition: color 0.2s;
+}
+.content .login-box .login-tx.search{
+    margin-top: 10px;
+}
+
+
+
+/* id & pw search button */
+.content .login-box .login-btn.search-btn{
+    margin-top: 3%;
+}
+
+
+
+/* tablet */
+@media screen and (min-width:767px) and (max-width:1024px) {
+
+    /* content */
+    .content .login-box{
+        width: 55%;
+    }
+
+    /* id,pwbox */
+    .content .login-box .userId-box .userId input,
+    .content .login-box .userPw-box .userPw input{
+        height: 35px;
+        line-height: 35px;
+        padding: 10px;
+    }
+    /* login button */
+    .content .login-box .login-btn{
+        height: 40px;
+    }
+
+}
+
+
+/* mobile */
+@media screen and (max-width:767px) {
+
+    /* content */
+    .content .login-box{
+        width: 80%;
+    }
+
+    /* login title */
+    .content .login-box .login-title span{
+        font-size: 1.8rem;
+    }
+
+    /* id,pwbox */
+    .content .login-box .userId-box,
+    .content .login-box .userPw-box{
+        flex-flow: column nowrap;
+        align-items: flex-end;
+        margin-bottom: 5%;
+    }
+    .content .login-box .userPw-box{
+        margin-bottom: 0;
+    }
+    .content .login-box .userId-box span,
+    .content .login-box .userPw-box span{
+        text-align: right;
+        font-size: 1.4rem;
+    }
+    .content .login-box .userId-box .userId input,
+    .content .login-box .userPw-box .userPw input,
+    #findId{
+        width: 14rem;
+        height: 30px;
+        line-height: 30px;
+        font-size: 1rem;
+    }
+    .content .login-box > a.remember{
+        margin-bottom: 7%;
+        font-size: 1rem;
+    }
+
+    /* login check */
+    .content .login-box .login-check{
+        margin-bottom: 5%;
+        align-items: center;
+    }
+    .content .login-box .login-check > input{
+        width: 16px;
+        height: 16px;
+        margin-top: 0;
+        margin-right: 15px;
+    }
+    .content .login-box .login-check > span{
+        font-size: 1.2rem;
+    }
+
+    /* loginbutton */
+    .content .login-box .login-btn{
+        width: 14rem;
+        height: 35px;
+        line-height: 35px;
+    }
+    .content .login-box .login-btn > span{
+        font-size: 1.15rem;
+    }
+    .content .login-box .login-tx > span{
+        font-size: 1rem;
+    }
+
+}

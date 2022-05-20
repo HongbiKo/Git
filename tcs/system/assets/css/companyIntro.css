@@ -1,0 +1,156 @@
+@charset "utf-8";
+
+/* content */
+.entireinner > h3{
+    font-size: 2rem;
+    margin: 70px 0 50px 0;
+}
+.entireinner .wrap{
+    display: flex;
+    flex-flow: column nowrap;
+}
+.entireinner .wrap .box{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.entireinner .wrap .box .img{
+    width: 55%;
+    height: 400px;
+    border-radius: 5px;
+}
+.entireinner .wrap .box .description{
+    width: 40%;
+    height: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+.entireinner .wrap .box .description > p{
+    word-break: keep-all;
+    font-size: 1.2rem;
+}
+.entireinner .wrap .box .description > p:first-child{
+    margin-bottom: 60px;
+}
+.entireinner .wrap .box .description > p > span{
+    font-size: 0.9rem;
+}
+.entireinner .wrap .box .img.introThreed.order1{
+    order: 2;
+}
+.entireinner .wrap .box .description.order2{
+    order: 1;
+}
+.entireinner .wrap .box:first-child{
+    position: relative;
+}
+.entireinner .wrap .box .img.introSmartcity{
+    background: url(../images/companyintro-smartcity.jpg) center 70% no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 40px;
+}
+.entireinner .wrap .box .img.introThreed{
+    background: url(../images/companyintro-3d.jpg) 70% 30% no-repeat;
+    background-size: cover;
+}
+
+/* sublogo */
+.entireinner .sublogo{
+    background: url(../images/tcsletter.png) 0 0 no-repeat;
+    background-size: cover;
+    width: 140px;
+    height: 61px;
+    margin: 50px 0 150px;
+}
+
+
+
+
+/* tablet */
+@media screen and (min-width:767px) and (max-width:1024px) {
+
+    /* content */
+    .entireinner > h3{
+        font-size: 1.8rem;
+        margin: 50px 0 20px 0;
+    }
+    .entireinner .wrap .box .img{
+        width: 55%;
+        height: 350px;
+    }
+    .entireinner .wrap .box .description > p{
+        word-break: keep-all;
+        font-size: 1.1rem;
+    }
+
+    /* sublogo */
+    .entireinner .sublogo{
+        width: 120px;
+        height: 52px;
+    }
+}
+
+
+/* mobile */
+@media screen and (max-width:767px) {
+
+    /* content */
+    .entireinner > h3{
+        font-size: 1.6rem;
+        margin: 40px 0;
+        text-align: center;
+    }
+    .entireinner .wrap{
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    .entireinner .wrap .box{
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+    }
+    .entireinner .wrap .box .img{
+        width: 100%;
+        height: 230px;
+        border-radius: 0;
+    }
+    .entireinner .wrap .box .description{
+        width: 100%;
+        justify-content: flex-start;
+        padding: 0 15px;
+    }
+    .entireinner .wrap .box .description > p{
+        word-break: keep-all;
+        text-align: center;
+    }
+    .entireinner .wrap .box .description > p:first-child{
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+    .entireinner .wrap .box .description > p:last-child{
+        margin-bottom: 30px;
+    }
+    .entireinner .wrap .box .img.introThreed.order1{
+        order: 1;
+    }
+    .entireinner .wrap .box .description.order2{
+        order: 2;
+    }
+    .entireinner .wrap .box:first-child{
+        position: static;
+    }
+    .entireinner .wrap .box .img.introSmartcity{
+        position: static;
+    }
+    
+    /* sublogo */
+    .entireinner .sublogo{
+        width: 92px;
+        height: 40px;
+        margin: 50px auto;
+    }
+
+}
+

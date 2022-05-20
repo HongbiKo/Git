@@ -1,0 +1,804 @@
+@charset "utf-8";
+
+html, body {
+    position: relative;
+    height: 100%;
+}
+
+
+/* banner */
+.bannerbox{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.bannerbox .banner{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bannerbox .banner .inner{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relatve;
+}
+.bannerbox .banner.sec1 .inner h2{
+    width: fit-content;
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+.bannerbox .banner.sec1 .inner h2:before{
+    display: block;
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: #fff;
+}
+.bannerbox .banner.sec1 .inner h2:after{
+    display: block;
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: #fff;
+    margin-top: 20px;
+}
+.bannerbox .banner.sec2 .inner h2,
+.bannerbox .banner.sec3 .inner h2{
+    width: 70%;
+    font-size: 1.5rem;
+    text-align: center;
+    word-break: keep-all;
+}
+.bannerbox .banner .inner > a {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    position: absolute;
+    bottom: 40px;
+    color: #fff;
+}
+.bannerbox .banner .inner > a > span{
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.bannerbox .banner .inner > a > i {
+    font-size: 1.5rem;
+    margin-top: 30px;
+    animation: upanddown 2s ease infinite;
+}
+@keyframes upanddown{
+    0%{
+        transform: translateY(-80%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+.bannerbox .banner.sec1{
+    background: url(../images/bg1.jpg) center center no-repeat;
+    background-size: cover;
+    background-color: rgba(0,0,0,.7);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    color: #fff;
+}
+.bannerbox .banner.sec2{
+    background: url(../images/bg2.jpg) center center no-repeat;
+    background-size: cover;
+    background-color: rgba(0,0,0,.7);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    color: #fff;
+}
+.bannerbox .banner.sec3{
+    background: url(../images/bg3.jpg) center center no-repeat;
+    background-size: cover;
+    background-color: rgba(0,0,0,.7);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+
+/* content1 */
+.con1{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.con1 .iconbox{
+    display: flex;
+    justify-content: space-between;
+    width: 28%;
+    margin-bottom: 2%;
+}
+.con1 .iconbox .iconcircle{
+    width: 100px;
+    height: 100px;
+    border: 3px solid rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.con1 .iconbox .iconcircle .icon{
+    width: 60px;
+    height: 60px;
+}
+.con1 .iconbox .iconcircle .icon.robot{
+    background: url(../images/roboticon.png) 0 0 no-repeat;
+    background-size: cover;
+}
+.con1 .iconbox .iconcircle .icon.network{
+    background: url(../images/networkicon.png) 0 0 no-repeat;
+    background-size: cover;
+}
+.con1 .iconbox .iconcircle .icon.tap{
+    background: url(../images/tapicon.png) 0 0 no-repeat;
+    background-size: cover;
+    width: 55px;
+    height: 55px;
+}
+.con1 > p{
+    width: 45%;
+    word-break: keep-all;
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.1rem;
+}
+
+/* content2 */
+.con2{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.con2 .box{
+    width: 100%;
+    display: flex;
+}
+.con2 .box .img{
+    width: 35%;
+    height: 500px;
+}
+.con2 .box .description{
+    width: 65%;
+    height: 500px;
+    background: #000000;
+    background: linear-gradient(to bottom right, #333333 20%, #000000 70%);
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.con2 .box:nth-child(2) .description{
+    background: linear-gradient(to bottom left, #333333 20%, #000000 70%);
+}
+.con2 .box .description > span{
+    font-size: 2.3rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.con2 .box .description > p{
+    font-size: 1.2rem;
+    font-weight: 100;
+    width: 60%;
+    text-align: center;
+    word-break: keep-all;
+}
+.con2 .box .img.ai{
+    background: url(../images/ai.jpg) center center no-repeat;
+    background-size: cover;
+}
+.con2 .box .img.threed{
+    background: url(../images/threed.jpg) 100% center no-repeat;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, .05);
+    background-blend-mode: screen;
+    order: 2;
+}
+.con2 .box .img.threed + .description{
+    order: 1;
+} 
+.con2 .box .img.smartcity{
+    background: url(../images/smartcity.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+/* content3 */
+.con3{
+    width: 100%;
+    height: auto;
+    background-color: #000;
+    color: #fff;
+    padding-bottom: 18%;
+}
+.con3 .entireinner{
+    display: flex;
+    flex-flow: column nowrap;
+}
+.con3 .entireinner > h3{
+    font-size: 3.8rem;
+    text-align: center;
+    margin: 10% 0 1%;
+}
+.con3 .entireinner > p{
+    font-size: 1.1rem;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 7%;
+}
+.con3 .entireinner .clipbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 7%;
+}
+.con3 .entireinner .clipbox > iframe{
+    position: relative;
+    z-index: 1;
+    width: 50%;
+    height: 500px;
+    overflow: hidden;
+    border: 0;
+}
+.con3 .entireinner .clipbox .subclip:last-child{
+    margin-right: 0;
+}
+.con3 .entireinner .clipbox .clipsubbox{
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-end;
+}
+.con3 .entireinner .clipbox .clipsubbox .cliptext{
+    position: relative;
+    z-index: 2;
+    right: 5%;
+    font-size: 2.3rem;
+    font-weight: 700;
+    text-shadow: 4px 2px 2px rgba(0,0,0,.7);
+    margin-bottom: 20%;
+}
+.con3 .entireinner .clipbox .clipsubbox > a{
+    display: block;
+    width: 150px;
+    height: 60px;
+    background-color: #fff;
+    color: #000;
+    position: relative;
+}
+.con3 .entireinner .clipbox .clipsubbox > a > span{
+    font-weight: 700;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 60px;
+}
+.con3 .entireinner .clipbox .clipsubbox > a::before,
+.con3 .entireinner .clipbox .clipsubbox > a::after{
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: rgb(255, 255, 255);
+    transition: all 0.3s ease;
+}
+.con3 .entireinner .clipbox .clipsubbox > a::before {
+    height: 0%;
+    width: 2px;
+}
+.con3 .entireinner .clipbox .clipsubbox > a::after {
+    width: 0%;
+    height: 2px;
+}
+.con3 .entireinner .clipbox .clipsubbox > a:hover{
+    background: transparent;
+}
+.con3 .entireinner .clipbox .clipsubbox > a:hover::before {
+    height: 100%;
+}
+.con3 .entireinner .clipbox .clipsubbox > a:hover::after {
+    width: 100%;
+}
+.con3 .entireinner .clipbox .clipsubbox > a > span:hover{
+    color: rgb(255, 255, 255);
+}
+.con3 .entireinner .clipbox .clipsubbox > a > span::before,
+.con3 .entireinner .clipbox .clipsubbox > a > span::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: rgb(255, 255, 255);
+    transition: all 0.5s ease;
+}
+.con3 .entireinner .clipbox .clipsubbox > a > span::before {
+    width: 2px;
+    height: 0%;
+}
+.con3 .entireinner .clipbox .clipsubbox > a > span::after {
+    width: 0%;
+    height: 2px;
+}
+.con3 .entireinner .clipbox .clipsubbox > a > span:hover::before {
+    height: 100%;
+}
+.con3 .entireinner .clipbox .clipsubbox > a > span:hover:after {
+    width: 100%;
+}
+.con3 > h4{
+    font-size: 2.3rem;
+    margin-bottom: 3%;
+    text-align: center;
+}
+.con3 .swiperbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.con3 .swiperbox .swiper .swiper-wrapper .swiper-slide{
+    display: flex;
+    justify-content: center;
+}
+.con3 .swiperbox .swiper .swiper-wrapper .swiper-slide .utubebox{
+    width: 27rem;
+    height: 20rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+.con3 .swiperbox .swiper .swiper-wrapper .swiper-slide .utubebox > span{
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-align: center;
+    color: transparent;
+    transition: color 0.5s;
+}
+.con3 .swiperbox .swiper .swiper-wrapper .swiper-slide .utubebox .slidebutton{
+    display: block;
+    font-size: 1.1rem;
+    padding: 8px 40px;
+    border: none;
+    color: transparent;
+    margin-top: 20px;
+    overflow: hidden;
+    transition: all 0.5s;
+    position: relative;
+}
+.con3 .swiperbox .swiper .swiper-wrapper .swiper-slide .utubebox .slidebutton::before,
+.con3 .swiperbox .swiper .swiper-wrapper .swiper-slide .utubebox .slidebutton::after{
+    background: rgba(255,255,255, 0.3);
+    content: '';
+    position: absolute;
+    z-index: -1;
+}
+.con3 .swiperbox .swiper .swiper-wrapper .swiper-slide .utubebox .slidebutton::after{
+    height: 100%;
+    left: -38%;
+    top: 0;
+    transform: skew(50deg);
+    transition-duration: 0.6s;
+    transform-origin: top left;
+    width: 0;
+    transition: all 0.3s;
+}
+.con3 .swiperbox .swiper .swiper-wrapper .swiper-slide .utubebox .slidebutton:hover::after{
+    height: 100%;
+    width: 140%;
+}
+.con3 .swiperbox .swiper .swiper-wrapper .swiper-slide .utubebox .slidebutton.hover{
+    color: #fff;
+    border: 1px solid #fff;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.con3 .swiperbox .swiper .swiper-wrapper .swiper-slide .utubebox > span.hover{
+    color: #fff;
+    transition: color 0.5s;
+}
+.con3 .swiperbox .swiper .swiper-wrapper .swiper-slide .utubebox.slide.hover{
+    background-color: rgba(0,0,0,.75);
+    background-blend-mode: multiply;
+    transform: scale(1.03);
+    transition: all 0.5s;
+}
+
+.con3 .swiperbox .swiper .swiper-wrapper .swiper-slide .utubebox.slide1{
+    background: url(../images/slide01.png) 40% center no-repeat;
+    background-size: cover;
+}
+.con3 .swiperbox .swiper .swiper-wrapper .swiper-slide .utubebox.slide2{
+    background: url(../images/slide02.png) center center no-repeat;
+    background-size: cover;
+}
+.con3 .swiperbox .swiper .swiper-wrapper .swiper-slide .utubebox.slide3{
+    background: url(../images/slide03.png) center center no-repeat;
+    background-size: cover;
+}
+.con3 .swiperbox .swiper .swiper-wrapper .swiper-slide .utubebox.slide4{
+    background: url(../images/slide04.png) center center no-repeat;
+    background-size: cover;
+}
+.con3 .swiperbox .swiper .swiper-wrapper .swiper-slide .utubebox.slide5{
+    background: url(../images/slide05.png) center center no-repeat;
+    background-size: cover;
+}
+.con3 .swiperbox .swiper .swiper-wrapper .swiper-slide .utubebox.slide6{
+    background: url(../images/slide06.png) 0 0 no-repeat;
+    background-size: cover;
+}
+.con3 .swiperbox .swiper .swiper-wrapper .swiper-slide .utubebox.slide7{
+    background: url(../images/slide07.png) center center no-repeat;
+    background-size: cover;
+}
+.con3 .swiperbox .swiper .swiper-wrapper .swiper-slide .utubebox.slide8{
+    background: url(../images/slide08.png) center center no-repeat;
+    background-size: cover;
+}
+.con3 .swiperbox .swiper .swiper-wrapper .swiper-slide .utubebox.slide9{
+    background: url(../images/slide09.png) center center no-repeat;
+    background-size: cover;
+}
+.swiper-button-prev{
+    left: 50px;
+}
+.swiper-button-next{
+    right: 50px;
+}
+.swiper-button-next,
+.swiper-button-prev{
+    color: #fff;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after{
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+
+/* content4 */
+.con4{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.con4 .conbox{
+    width: 50%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.con4 .conbox > a{
+    color: #fff;
+    font-size: 2rem;
+    transition: transform 0.5s;
+}
+.con4 .conbox > a.hover{
+    transform: scale(1.2);
+    transition: transform 0.5s;
+}
+.con4 .conbox.employment{
+    background: url(../images/employment.png) center center no-repeat;
+    background-size: cover;
+}
+.con4 .conbox.customercenter{
+    background: url(../images/customercenter.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+
+
+/* tablet */
+@media screen and (min-width:767px) and (max-width:1024px) {
+
+    /* banner */
+    .bannerbox .banner .inner{
+        width: 80%;
+    }
+    .bannerbox .banner.sec1 .inner h2{
+        width: fit-content;
+        font-size: 3.5rem;
+        text-align: center;
+    }
+    .bannerbox .banner.sec1 .inner h2:after{
+        margin-top: 10px;
+    }
+
+    /* content1 */
+    .con1{
+        height: 300px;
+    }
+    .con1 > p{
+        width: 78%;
+    }
+    .con1 .iconbox{
+        width: 45%;
+    }
+    .con1 .iconbox .iconcircle{
+        width: 90px;
+        height: 90px;
+    }
+    .con1 .iconbox .iconcircle .icon{
+        width: 55px;
+        height: 55px;
+    }
+    .con1 .iconbox .iconcircle .icon.tap{
+        width: 50px;
+        height: 50px;
+    }
+
+    /* con2 */
+    .con2 .box .img{
+        width: 40%;
+        height: 350px;
+    }
+    .con2 .box .description{
+        width: 60%;
+        height: 350px;
+    }
+    .con2 .box .description > span{
+        font-size: 1.7rem;
+    }
+    .con2 .box .description > p{
+        font-size: 1.1rem;
+    }    
+
+    /* content3 */
+    .con3 .entireinner > h3{
+        font-size: 3rem;
+    }
+    .con3 .entireinner > p{
+        font-size: 1rem;
+        text-align: center;
+        margin: 0;
+        margin-bottom: 8%;
+    }
+    .con3 .entireinner .clipbox{
+        display: flex;
+        flex-flow: column nowrap;
+        position: static;
+        margin-bottom: 7%;
+    }
+    .con3 .entireinner .clipbox > iframe{
+        position: static;
+        width: 100%;
+        height: 400px;
+        margin-bottom: 10%;
+    }
+    .con3 .entireinner .clipbox .clipsubbox{
+        position: static;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 13%;
+    }
+    .con3 .entireinner .clipbox .clipsubbox .cliptext{
+        position: static;
+        right: auto;
+        font-size: 2rem;
+        text-shadow: none;
+        margin-bottom: 8%;
+    }
+    .con3 .entireinner .clipbox .clipsubbox > a{
+        width: 140px;
+        height: 45px;
+    }
+    .con3 .entireinner .clipbox .clipsubbox > a > span{
+        line-height: 45px;
+    }
+    .con3 .swiperbox .swiper .swiper-wrapper .swiper-slide .utubebox{
+        width: 22rem;
+        height: 15rem;
+    }
+    .con3 .swiperbox .swiper .swiper-wrapper .swiper-slide .utubebox > span{
+        font-size: 1.1rem;
+        color: #fff;
+    }
+    .con3 .swiperbox .swiper .swiper-wrapper .swiper-slide .utubebox .slidebutton{
+        font-size: 0.9rem;
+        padding: 8px 20px;
+        border: 1px solid #fff;
+        color: #fff;
+        margin-top: 10px;
+    }
+    .con3 .swiperbox .swiper .swiper-wrapper .swiper-slide .utubebox .slidebutton::after{
+        left: -55%;
+        top: 0;
+    }
+    .con3 .swiperbox .swiper .swiper-wrapper .swiper-slide .utubebox .slidebutton:hover::after{
+        height: 100%;
+        width: 160%;
+    }
+    .swiper-button-next::after,
+    .swiper-button-prev::after{
+        font-size: 3rem;
+    }
+    .con3 .swiperbox .swiper .swiper-wrapper .swiper-slide .utubebox.slide{
+        background-color: rgba(0,0,0,.4);
+        background-blend-mode: multiply;
+    }
+
+}
+
+
+/* mobile */
+@media screen and (max-width:767px) {
+
+    /* banner */
+    .bannerbox .banner .inner{
+        width: 80%;
+    }
+    .bannerbox .banner.sec1 .inner h2{
+        width: fit-content;
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .bannerbox .banner.sec1 .inner h2:after{
+        margin-top: 10px;
+    }
+
+    /* content1 */
+    .con1{
+        height: 230px;
+    }
+    .con1 > p{
+        width: 80%;
+    }
+    .con1 .iconbox{
+        width: 55%;
+    }
+    .con1 .iconbox .iconcircle{
+        width: 80px;
+        height: 80px;
+        border: none;
+    }
+    .con1 .iconbox .iconcircle .icon{
+        width: 45px;
+        height: 45px;
+    }
+    .con1 .iconbox .iconcircle .icon.tap{
+        width: 40px;
+        height: 40px;
+    }
+
+    /* content2 */
+    .con2 .box{
+        display: flex;
+        flex-flow: column wrap;
+    }
+    .con2 .box .img{
+        width: 100%;
+        height: 250px;
+    }
+    .con2 .box .description{
+        width: 100%;
+        height: 230px;
+    }
+    .con2 .box .description > span{
+        font-size: 1.5rem;
+        padding: 0 15px;
+    }
+    .con2 .box .description > p{
+        font-size: 1rem;
+    }   
+    .con2 .box .img.threed{
+        order: 1;
+    }
+
+    /* content3 */
+    .con3{
+        border-top: 1px solid #525252;
+    }
+    .con3 .entireinner > h3{
+        font-size: 2.8rem;
+        margin-top: 20%;
+    }
+    .con3 .entireinner > p{
+        font-size: 1rem;
+        padding: 0 15px;
+        text-align: center;
+        margin: 0;
+        margin-bottom: 12%;
+    }
+    .con3 .entireinner .clipbox{
+        display: flex;
+        flex-flow: column nowrap;
+        position: static;
+        margin-bottom: 15%;
+    }
+    .con3 .entireinner .clipbox > iframe{
+        position: static;
+        width: 100%;
+        height: 300px;
+        margin-bottom: 10%;
+    }
+    .con3 .entireinner .clipbox .clipsubbox{
+        position: static;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 13%;
+    }
+    .con3 .entireinner .clipbox .clipsubbox .cliptext{
+        position: static;
+        right: auto;
+        font-size: 1.5rem;
+        text-shadow: none;
+        margin-bottom: 8%;
+        padding: 0 15px;
+        text-align: center;
+    }
+    .con3 .entireinner .clipbox .clipsubbox > a{
+        width: 110px;
+        height: 45px;
+    }
+    .con3 .entireinner .clipbox .clipsubbox > a > span{
+        line-height: 45px;
+    }
+    .con3 .swiperbox .swiper .swiper-wrapper .swiper-slide{
+        display: flex;
+        justify-content: center;
+    }
+    .con3 .swiperbox .swiper .swiper-wrapper .swiper-slide .utubebox{
+        width: 16rem;
+        height: 17rem;
+    }
+    .con3 .swiperbox .swiper .swiper-wrapper .swiper-slide .utubebox > span{
+        font-size: 1.1rem;
+        color: #fff;
+    }
+    .con3 .swiperbox .swiper .swiper-wrapper .swiper-slide .utubebox .slidebutton{
+        font-size: 0.9rem;
+        padding: 8px 20px;
+        border: 1px solid #fff;
+        color: #fff;
+        margin-top: 10px;
+    }
+    .con3 .swiperbox .swiper .swiper-wrapper .swiper-slide .utubebox .slidebutton::after{
+        left: -55%;
+        top: 0;
+    }
+    .con3 .swiperbox .swiper .swiper-wrapper .swiper-slide .utubebox .slidebutton:hover::after{
+        height: 100%;
+        width: 160%;
+    }
+    .swiper-button-prev{
+        left: 20px;
+    }
+    .swiper-button-next{
+        right: 20px;
+    }
+    .swiper-button-next::after,
+    .swiper-button-prev::after{
+        font-size: 3rem;
+    }
+    .con3 .swiperbox .swiper .swiper-wrapper .swiper-slide .utubebox.slide{
+        background-color: rgba(0,0,0,.4);
+        background-blend-mode: multiply;
+    }
+}
+
+
+
+
+
+
+

@@ -1,0 +1,102 @@
+@charset "utf-8";
+
+/* contents */
+.content .login-box .userId-box{
+    margin-bottom: 1%;
+}
+.content .login-box .login-btn.dup{
+    height: 40px;
+    line-height: 40px;
+}
+.content .login-box .userPw2-box,
+.content .login-box .userName-box,
+.content .login-box .userMail-box{
+    display: flex;
+    align-items: center;
+    margin-bottom: 3%;
+}
+.content .login-box .userPw2-box span,
+.content .login-box .userName-box span,
+.content .login-box .userMail-box span{
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #fff;
+    width: 8rem;
+}
+.content .login-box .userPw2-box span{
+    font-size: 1.4rem;
+}
+.content .login-box .userPw2-box .userPw input,
+.content .login-box .userName-box .userId input,
+.content .login-box .userMail-box .userId input{
+    width: 15rem;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+/* tablet */
+@media screen and (min-width:767px) and (max-width:1024px) {
+    
+    .content .login-box .login-btn.dup{
+        height: 35px;
+        line-height: 35px;
+    }
+    .content .login-box .userPw2-box .userPw input,
+    .content .login-box .userName-box .userId input,
+    .content .login-box .userMail-box .userId input{
+        height: 35px;
+        line-height: 35px;
+        padding: 10px;
+    }
+    
+}
+
+/* mobile */
+@media screen and (max-width:767px) {
+    .content{
+        height: 110%;
+    }
+    .content .login-box{
+        margin-top: 10%;
+    }
+    .content .login-box .login-btn.dup{
+        height: 33px;
+        line-height: 33px;
+    }
+    .content .login-box .login-btn.dup > span{
+        font-size: 1rem;
+    }
+    .content .login-box .userPw2-box,
+    .content .login-box .userName-box,
+    .content .login-box .userMail-box{
+        flex-flow: column nowrap;
+        align-items: flex-end;
+        margin-bottom: 5%;
+    }
+    .content .login-box .userId-box{
+        margin-bottom: 3%;
+    }
+    .content .login-box .userPw-box{
+        margin-bottom: 3%;
+    }
+    .content .login-box .userPw2-box span,
+    .content .login-box .userName-box span,
+    .content .login-box .userMail-box span{
+        text-align: right;
+        font-size: 1.4rem;
+    }
+    .content .login-box .userPw2-box .userPw input,
+    .content .login-box .userName-box .userId input,
+    .content .login-box .userMail-box .userId input{
+        width: 14rem;
+        height: 30px;
+        line-height: 30px;
+        padding: 5px;
+        font-size: 1rem;
+    }
+
+}

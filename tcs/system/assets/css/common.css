@@ -1,0 +1,367 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://pro.fontawesome.com/releases/v5.10.0/css/all.css');
+@-ms-viewport {
+    width: device-width;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    font-size: 16px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul, li{
+    list-style: none;
+}
+.entireinner{
+    width: 80%;
+    margin: 0 auto;
+}
+body{
+    position: relative;
+}
+
+/* header */
+header{
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    top:0;
+    left:0;
+    z-index: 200;
+    /* background-color: black; */
+    transition-duration:0.4s;
+    transition-timing-function:ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.down {
+    background-color: #000;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+}
+/* header logo */
+header > h1{
+    width: 100px;
+    height: 31px;
+    margin-left: 5%;
+}
+header > h1 > a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(../images/tcswhitelogo.png) 0 0 no-repeat;
+    background-size: cover;
+}
+/* header nav */
+header > nav{
+    width: 40%;
+    height: auto;
+    display: flex;
+}
+header > nav > ul.gnb{
+    display: flex;
+    align-items: center;
+    width: 88%;
+}
+header > nav > ul.gnb > li{
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+}
+header > nav > ul.gnb > li > a{
+    font-size: 1rem;
+    color: #fff;
+}
+header > nav > ul.gnb > li.pwchanging > a{
+    font-size: 0.85rem;
+}
+header > nav ul.snb{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 40px;
+    background: #000;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    display: none;
+}
+header > nav ul.snb > li{
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+header > nav ul.snb > li > a{
+    color: #fff;
+    font-size: 0.9rem;
+}
+header > nav > a.loginbox{
+    display: block;
+    width: fit-content;
+}
+header > nav > a.loginbox > span{
+    color: #fff;
+    font-size: 0.85rem;
+}
+
+
+/* footer */
+footer{
+    width: 100%;
+    height: 160px;
+    background-color: #222;
+    color: #6D6D6D;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* footinfo */
+footer .footinfo{
+    font-weight: 100;
+    font-size: 0.8rem;
+    margin-left: 60px;
+}
+footer .footinfo > p:first-child{
+    margin-bottom: 10px;
+}
+footer .footinfo > p:last-child{
+    margin-top: 10px;
+}
+/* footlink */
+footer .footlink{
+    margin-right: 60px;
+}
+footer .footlink > a{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+footer .footlink > a > i{
+    font-size: 2rem;
+}
+footer .footlink > a > span{
+    font-size: 0.7rem;
+    font-weight: 100;
+}
+
+
+/* mobile menu button */
+.m-menu{
+    color: #fff;
+    margin-right: 5%;
+    display: none;
+}
+
+/* topArrow button */
+.topArrow{
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border: 1px solid #000;
+    position: fixed;
+    right: 20px;
+    bottom: 190px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.topArrow > i{
+    color: #000;
+}
+
+
+/* desktop */
+/* @media screen and (min-width:1024px) {
+    
+} */
+/* tablet */
+@media screen and (min-width:767px) and (max-width:1024px) {
+    :root {
+        font-size: 14px;
+    }
+    .m-menu{
+        display: block;
+        font-size: 2rem;
+        position: relative;
+        z-index: 300;
+    }
+
+
+    /* header */
+    header{
+        height: 60px;
+    }
+    header > h1{
+        width: 81px;
+        height: 25px;
+    }
+    header > nav{
+        height: 100vh;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 201;
+        background-color: #000;
+        display: none;
+        overflow-y: auto;
+    }
+    header > nav > ul.gnb{
+        width: 100%;
+        display: flex;
+        flex-flow: column wrap;
+        margin-top: 80px;
+    }
+    header > nav > ul.gnb > li{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    header > nav > ul.gnb > li > a{
+        font-size: 1.3rem;
+    }
+    header > nav > ul.gnb > li.pwchanging > a{
+        font-size: 1.3rem;
+    }
+    header > nav ul.snb{
+        position: static;
+        border: none;
+        display: none;
+    }
+    header > nav ul.snb > li > a{
+        font-size: 1rem;
+    }
+    header > nav > a.loginbox{
+        position: absolute;
+        right: 10%;
+        bottom: 8%;
+    }
+    header > nav > a.loginbox > span{
+        font-size: 1.2rem;
+    }
+    nav.on{
+        width: 50%;
+        margin: 0;
+        display: block;
+    }
+
+
+    /* topArrow */
+    .topArrow{
+        width: 40px;
+        height: 40px;
+    }
+}
+
+
+/* mobile */
+@media screen and (max-width:767px) {
+    :root {
+        font-size: 12px;
+    }
+    .entireinner{
+        width: 100%;
+    }
+    .m-menu{
+        display: block;
+        font-size: 1.7rem;
+        position: relative;
+        z-index: 300;
+    }
+    header{
+        height: 50px;
+    }
+    header > h1{
+        width: 72px;
+        height: 22px;
+    }
+    header > nav{
+        height: 100vh;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 201;
+        background-color: #000;
+        overflow-y: auto;
+        display: none;
+    }
+    header > nav > ul.gnb{
+        width: 100%;
+        display: flex;
+        flex-flow: column wrap;
+        margin-top: 80px;
+    }
+    header > nav > ul.gnb > li{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    header > nav > ul.gnb > li > a{
+        font-size: 1.3rem;
+    }
+    header > nav > ul.gnb > li.pwchanging > a{
+        font-size: 1.3rem;
+    }
+    header > nav ul.snb{
+        position: static;
+        border: none;
+        display: none;
+    }
+    header > nav ul.snb > li > a{
+        font-size: 1rem;
+    }
+    header > nav > a.loginbox{
+        position: absolute;
+        right: 10%;
+        bottom: 8%;
+    }
+    header > nav > a.loginbox > span{
+        font-size: 1.2rem;
+    }
+    nav.on{
+        width: 50%;
+        margin: 0;
+        display: block;
+    }
+
+
+    /* footer */
+    footer{
+        flex-flow: column nowrap;
+        height: 180px;
+    }
+    footer .footinfo,
+    footer .footlink{
+        width: 80%;
+        margin: 0;
+        margin-top: 10px;
+    }
+    footer .footinfo > p{
+        font-weight: 1rem;
+        word-break: keep-all;
+        text-align: center;
+    }
+    footer .footlink{
+        margin-bottom: 10px;
+    }
+
+    /* topArrow */
+    .topArrow{
+        width: 35px;
+        height: 35px;
+    }
+}

@@ -248,7 +248,7 @@ h2{
 .about .wrap_about .wrap .letter:last-child .skill .bar .prograss::before{
     display: block;
     content: "";
-    width: 80%;
+    width: 98%;
     height: 8.5px;
     border-radius: 30px;
     background-color: #fff;
@@ -260,7 +260,7 @@ h2{
     width: 50%;
 }
 .about .wrap_about .wrap .letter:last-child .skill .bar:nth-child(4) .prograss::before{
-    width: 40%;
+    width: 60%;
 }
 .about .wrap_about .wrap .letter:last-child .skill .bar:nth-child(5) .prograss::before{
     width: 50%;
@@ -373,6 +373,10 @@ h2{
     background-color: #000;
     color: #fff;
 }
+.work .wrap_work .wrap .box .subboxL .description .box .commonbox > div .color.lightblue{
+    background-color: #4297e2;
+    color: #fff;
+}
 .work .wrap_work .wrap .box .subboxL .description .box .commonbox > div .color.brown{
     background-color: #660000;
     color: #fff;
@@ -393,8 +397,7 @@ h2{
     color: #aaa;
 }
 .work .wrap_work .wrap:last-child .box .subboxL .description .box .commonbox .font{
-    font-family: 'Italiana', serif;
-    font-size: 1.5rem;
+    text-align: center;
 }
 /* -------여기까지 */
 
@@ -492,7 +495,7 @@ h2{
     transition: all 0.6s;
 }
 .swiper-container.project .swiper-slide .sec1.sunpic{
-    background: url(images/sunpictures-main.png) 100% 0 no-repeat;
+    background: url(images/tcs_main.png) center 0 no-repeat;
     background-size: cover;
 }
 .swiper-container.project .swiper-slide .sec1.on{
@@ -528,6 +531,8 @@ h2{
     background-color: #FAFBF4;
 }
 .swiper-container.project .swiper-slide .sec3{
+    background: url(images/tcs-image.png) 100% 0 no-repeat;
+    background-size: cover;
     width: 80%;
     height: 400px;
     margin: 50px auto 0;
